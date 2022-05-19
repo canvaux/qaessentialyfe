@@ -49,7 +49,7 @@
                   </li><span id="nav-link-spacer">&bull;</span>
                   <li class="rd-nav-item"><a class="rd-nav-link" href="services">Services</a>
                   </li><span id="nav-link-spacer">&bull;</span>
-                  <li class="rd-nav-item"><a class="rd-nav-link" href="about">Who we are</a>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="about">About Us</a>
                   </li><span id="nav-link-spacer">&bull;</span>
                   <li class="rd-nav-item"><a class="rd-nav-link" href="contact">Contact Us</a>
                 </ul>

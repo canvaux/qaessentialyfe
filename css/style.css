@@ -333,7 +333,7 @@ a, a:focus, a:active {
 }
 
 a:hover {
-	color:lightgrey;
+	color:rgb(0, 0, 0);
 }
 
 a[href*='tel'], a[href*='mailto'] {
@@ -24975,16 +24975,25 @@ img.mfp-img {
 .about-card-name_first {
     color: #333 !important;
     font-weight: 600;
-    margin-top: 4px !important;
-    font-size: 20px;
+    margin-top: 10px !important;
+    font-size: 22px;
+}
+
+.card .about-card-name {
+	margin-top: 2px !important;
+	font-size: 16px;
+}
+.card .about_card_body {
+	text-align: start;
 }
 
 .about_card_bio {
     /* text-align: justify !important; */
     word-spacing: -1px;
     padding: 0px;
-    line-height: 22px;
+    line-height: 25px;
     color: #151515;
+	font-size: 13px;
 }
 
 .about_card_hobbies {
