@@ -1,9 +1,9 @@
 <?php
 error_reporting(E_ALL ^ E_NOTICE); 
 
-$servername = "Localhost";
-$username = "ybuhphmy_prp";
-$password = "5f;F?-4S9{c*";
+$servername = "localhost";
+$username = "root";
+$password = "";
 
 session_start();
 
@@ -32,7 +32,7 @@ if (!isset($wedding_y) & !isset($wedding_n) & !isset($search) & !isset($previous
 // $Bedrooms = $_POST['Bedrooms'];
 
 try {
-  $conn = new PDO("mysql:host=Localhost;dbname=ybuhphmy_properties", $username, $password);
+  $conn = new PDO("mysql:host=localhost;dbname=ybuhphmy_properties", $username, $password);
   // set the PDO error mode to exception
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {

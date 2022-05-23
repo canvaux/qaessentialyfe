@@ -58,13 +58,13 @@
                                     <div class="tab-pane fade show active" id="tabs-4-1">
                                         <!-- <h3 class="text-spacing-25 font-weight-normal title-opacity-9">Essentalyfe</h3> -->
                                         <!-- <h3 class="text-spacing-25 font-weight-normal  ">Who we are</h3> -->
-                                        <p>EssentiaLyfe is a luxury home rentals service in Southern California,
+                                        <!-- <p>EssentiaLyfe is a luxury home rentals service in Southern California,
                                             providing the finest homes & exotic cars.
                                             We focus on villas and unique estates for luxury vacation rentals, events
                                             and film productions.<br><br>
 
                                             EssentiaLyfe is a boutique firm made up of a highly experienced and
-                                            dedicated group of professionals and tastemakers</p><br>
+                                            dedicated group of professionals and tastemakers</p><br> -->
 
                                         <strong>
                                             World-Class Rental Services For Luxury Seekers.
@@ -187,81 +187,73 @@
                 <!-- <h4 class="text-center mt-3 ">Managers</h4> -->
             </caption>
             <div class="row">
-                <div class="col-3">
-                    <div class="card" style="width: 18rem; height: 100%;padding:10px;">
+                <div class="col-sm-3">
+                    <div class="card" style="width: 105%; height: 100%;padding:10px;">
                         <img class="card-img-top" src="./images/essentialyfeceo.jpg" alt="Card image cap">
                         <div class="card-body about_card_body">
                             <h3 class="card-text text-center about-card-name_first ">Avi Shabtai</h3>
-                            <h6 class="card-text text-center about-card-name mt-2">Founder</h6>
-                            <p class="card-text text-center about-card  mt-2 about_card_bio ">Experienced CEO with a
-                                demonstrated history of working in the retail industry. Skilled in Negotiation, Business
-                                Development Customer Service, Retail, Sales, and Strategic Planning. </p>
+                            <h6 class="card-text text-center about-card-name mt-2">CEO, Quality Assurance & Director of Client Relations</h6>
+                            <p class="card-text text-center about-card  mt-2 about_card_bio "> Experienced CEO with a demonstrated history of working in corporate world. Skilled in Negotiation, Business Development Customer Service, Quality Assurance, Retail, Sales, and Strategic Planning. </p>
 
                             <div class="mt-3">
                                 <p class="card-text text-center about-card about_card_hobbies " style="margin-top: -10px !important;">Hobbies: &nbspTennis l
                                     Swimming l Chess
                                 </p>
-                                <p class="card-text text-center about-card about_card_email"><a
-                                        href="mailto:avi@essentialyfe.com">avi@essentialyfe.com</a></p>
+                                <p class="card-text text-center about-card about_card_email"><a  style="color: blue;" href="mailto:avi@essentialyfe.com">avi@essentialyfe.com</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="card" style="width: 18rem; height: 85%;padding:10px;">
-                        <img class="card-img-top"
-                            src="https://t3.ftcdn.net/jpg/01/09/00/64/360_F_109006426_388PagqielgjFTAMgW59jRaDmPJvSBUL.jpg"
-                            alt="Card image cap">
-                        <div class="card-body about_card_body">
-                            <h3 class="card-text text-center about-card-name_first ">Lea Verlin</h3>
-                            <h6 class="card-text text-center about-card-name mt-2">Client Relations/ Corporate &
-                                Production Rentals </h6>
-                            <p class="card-text text-center about-card  mt-2 about_card_bio ">Bio </p>
-
-                            <div class="mt-3">
-                                <p class="card-text text-center about-card about_card_hobbies ">Hobbies
-                                </p>
-                                <p class="card-text text-center about-card about_card_email"><a
-                                        href="mailto:Lea@essentialyfe.com">Lea@essentialyfe.com</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="card" style="width: 18rem; height: 85%;padding:10px;">
+                <div class="col-sm-3">
+                    <div class="card" style="width: 105%; height: 85%;padding:10px;">
                         <img class="card-img-top"
                             src="https://t3.ftcdn.net/jpg/01/09/00/64/360_F_109006426_388PagqielgjFTAMgW59jRaDmPJvSBUL.jpg"
                             alt="Card image cap">
                         <div class="card-body about_card_body">
                             <h3 class="card-text text-center about-card-name_first ">Martina Makarova</h3>
-                            <h6 class="card-text text-center about-card-name mt-2">Client Relations</h6>
+                            <h6 class="card-text text-center about-card-name mt-2">Client Relations/ Vacation Rentals & Private Events Dept.</h6>
                             <p class="card-text text-center about-card  mt-2 about_card_bio ">Bio </p>
 
                             <div class="mt-3">
                                 <p class="card-text text-center about-card about_card_hobbies ">Hobbies
                                 </p>
-                                <p class="card-text text-center about-card about_card_email"><a
-                                        href="mailto:martina@essentialyfe.com">martina@essentialyfe.com</a></p>
+                                <p class="card-text text-center about-card about_card_email"><a style="color: blue;" href="mailto:martina@essentialyfe.com">martina@essentialyfe.com</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="card" style="width: 18rem; height: 85%;padding:10px;">
+                <div class="col-sm-3">
+                    <div class="card" style="width: 105%; height: 85%;padding:10px;">
+                        <img class="card-img-top"
+                            src="https://t3.ftcdn.net/jpg/01/09/00/64/360_F_109006426_388PagqielgjFTAMgW59jRaDmPJvSBUL.jpg"
+                            alt="Card image cap">
+                        <div class="card-body about_card_body">
+                            <h3 class="card-text text-center about-card-name_first ">Lea Verlin</h3>
+                            <h6 class="card-text text-center about-card-name mt-2">Client Relations/ Corporate Events & Film Locations Dept. </h6>
+                            <p class="card-text text-center about-card  mt-2 about_card_bio ">Bio </p>
+
+                            <div class="mt-3">
+                                <p class="card-text text-center about-card about_card_hobbies ">Hobbies
+                                </p>
+                                <p class="card-text text-center about-card about_card_email"><a style="color: blue;" href="mailto:Lea@essentialyfe.com">Lea@essentialyfe.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 105%; height: 85%;padding:10px;">
                         <img class="card-img-top"
                             src="https://t3.ftcdn.net/jpg/01/09/00/64/360_F_109006426_388PagqielgjFTAMgW59jRaDmPJvSBUL.jpg"
                             alt="Card image cap">
                         <div class="card-body about_card_body">
                             <h3 class="card-text text-center about-card-name_first ">Brooke Mora</h3>
-                            <h6 class="card-text text-center about-card-name mt-2">Homeowner Relations/ Luxury Villas
-                            </h6>
+                            <h6 class="card-text text-center about-card-name mt-2">Homeowner Relations/ Luxury Villas Dept.</h6>
                             <p class="card-text text-center about-card  mt-2 about_card_bio ">Bio </p>
 
                             <div class="mt-3">
                                 <p class="card-text text-center about-card about_card_hobbies ">Hobbies
                                 </p>
-                                <p class="card-text text-center about-card about_card_email"><a
-                                        href="mailto:brooke@essentialyfe.com">brooke@essentialyfe.com</a></p>
+                                <p class="card-text text-center about-card about_card_email"><a style="color: blue;" href="mailto:brooke@essentialyfe.com">brooke@essentialyfe.com</a></p>
                             </div>
                         </div>
                     </div>
@@ -274,7 +266,7 @@
             </caption>
             <div class="row">
                 <div class="col-3">
-                    <div class="card" style="width: 18rem; height: 100%;padding:10px;">
+                    <div class="card" style="width: 105%; height: 100%;padding:10px;">
                         <img class="card-img-top"
                             src="https://t3.ftcdn.net/jpg/01/09/00/64/360_F_109006426_388PagqielgjFTAMgW59jRaDmPJvSBUL.jpg"
                             alt="Card image cap">
@@ -284,29 +276,27 @@
                             <p class="card-text text-center about-card  mt-2 about_card_bio ">Bio </p>
                             <p class="card-text text-center about-card about_card_hobbies ">Hobbies
                             </p>
-                            <p class="card-text text-center about-card about_card_email"><a
-                                    href="mailto:parker@essentialyfe.com">parker@essentialyfe.com</a></p>
+                            <p class="card-text text-center about-card about_card_email"><a style="color: blue;" href="mailto:parker@essentialyfe.com">parker@essentialyfe.com</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="card" style="width: 18rem; height: 100%;padding:10px;">
+                    <div class="card" style="width: 105%; height: 100%;padding:10px;">
                         <img class="card-img-top"
                             src="https://t3.ftcdn.net/jpg/01/09/00/64/360_F_109006426_388PagqielgjFTAMgW59jRaDmPJvSBUL.jpg"
                             alt="Card image cap">
                         <div class="card-body about_card_body">
                             <h3 class="card-text text-center about-card-name_first ">Dylan Abekasis</h3>
-                            <h6 class="card-text text-center about-card-name mt-2">Listings & Pricing Specialist</h6>
+                            <h6 class="card-text text-center about-card-name mt-2">Marketing / Listings & Pricing Specialist</h6>
                             <p class="card-text text-center about-card  mt-2 about_card_bio ">Bio </p>
                             <p class="card-text text-center about-card about_card_hobbies ">Hobbies
                             </p>
-                            <p class="card-text text-center about-card about_card_email"><a
-                                    href="mailto:dylan@essentialyfe.com">dylan@essentialyfe.com</a></p>
+                            <p class="card-text text-center about-card about_card_email"><a style="color: blue;" href="mailto:dylan@essentialyfe.com">dylan@essentialyfe.com</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="card" style="width: 18rem; height: 100%;padding:10px;">
+                    <div class="card" style="width: 105%; height: 100%;padding:10px;">
                         <img class="card-img-top"
                             src="https://t3.ftcdn.net/jpg/01/09/00/64/360_F_109006426_388PagqielgjFTAMgW59jRaDmPJvSBUL.jpg"
                             alt="Card image cap">
@@ -316,13 +306,12 @@
                             <p class="card-text text-center about-card  mt-2 about_card_bio ">Bio </p>
                             <p class="card-text text-center about-card about_card_hobbies ">Hobbies
                             </p>
-                            <p class="card-text text-center about-card about_card_email"><a
-                                    href="mailto:joe@essentialyfe.com">joe@essentialyfe.com</a></p>
+                            <p class="card-text text-center about-card about_card_email"><a style="color: blue;" href="mailto:joe@essentialyfe.com">joe@essentialyfe.com</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="card" style="width: 18rem; height: 100%;padding:10px;">
+                    <div class="card" style="width: 105%; height: 100%;padding:10px;">
                         <img class="card-img-top"
                             src="https://t3.ftcdn.net/jpg/01/09/00/64/360_F_109006426_388PagqielgjFTAMgW59jRaDmPJvSBUL.jpg"
                             alt="Card image cap">
@@ -332,15 +321,14 @@
                             <p class="card-text text-center about-card  mt-2 about_card_bio ">Bio </p>
                             <p class="card-text text-center about-card about_card_hobbies ">Hobbies
                             </p>
-                            <p class="card-text text-center about-card about_card_email"><a
-                                    href="mailto:orel@essentialyfe.com">orel@essentialyfe.com</a></p>
+                            <p class="card-text text-center about-card about_card_email"><a style="color: blue;" href="mailto:orel@essentialyfe.com">orel@essentialyfe.com</a></p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-3">
-                    <div class="card" style="width: 18rem; height: 100%;padding:10px;">
+                    <div class="card" style="width: 105%; height: 100%;padding:10px;">
                         <img class="card-img-top"
                             src="https://t3.ftcdn.net/jpg/01/09/00/64/360_F_109006426_388PagqielgjFTAMgW59jRaDmPJvSBUL.jpg"
                             alt="Card image cap">
@@ -350,12 +338,12 @@
                             <p class="card-text text-center about-card  mt-2 about_card_bio ">Bio </p>
                             <p class="card-text text-center about-card about_card_hobbies ">Hobbies
                             </p>
-                            <p class="card-text text-center about-card about_card_email"><a href="mailto:">Email</a></p>
+                            <p class="card-text text-center about-card about_card_email"><a style="color: blue;" ="mailto:">Email</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="card" style="width: 18rem; height: 100%;padding:10px;">
+                    <div class="card" style="width: 105%; height: 100%;padding:10px;">
                         <img class="card-img-top"
                             src="https://t3.ftcdn.net/jpg/01/09/00/64/360_F_109006426_388PagqielgjFTAMgW59jRaDmPJvSBUL.jpg"
                             alt="Card image cap">
@@ -365,13 +353,12 @@
                             <p class="card-text text-center about-card  mt-2 about_card_bio ">Bio </p>
                             <p class="card-text text-center about-card about_card_hobbies ">Hobbies
                             </p>
-                            <p class="card-text text-center about-card about_card_email"><a
-                                    href="mailto:Email">Email</a></p>
+                            <p class="card-text text-center about-card about_card_email"><a style="color: blue;" href="mailto:Email">Email</a></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="card" style="width: 18rem; height: 100%;padding:10px;">
+                <!-- <div class="col-3">
+                    <div class="card" style="width: 105%; height: 100%;padding:10px;">
                         <img class="card-img-top"
                             src="https://t3.ftcdn.net/jpg/01/09/00/64/360_F_109006426_388PagqielgjFTAMgW59jRaDmPJvSBUL.jpg"
                             alt="Card image cap">
@@ -381,13 +368,12 @@
                             <p class="card-text text-center about-card  mt-2 about_card_bio ">Bio </p>
                             <p class="card-text text-center about-card about_card_hobbies ">Hobbies
                             </p>
-                            <p class="card-text text-center about-card about_card_email"><a
-                                    href="mailto:Email">Email</a></p>
+                            <p class="card-text text-center about-card about_card_email"><a style="color: blue;" href="mailto:Email">Email</a></p>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-3">
-                    <div class="card" style="width: 18rem; height: 100%;padding:10px;">
+                    <div class="card" style="width: 105%; height: 100%;padding:10px;">
                         <img class="card-img-top"
                             src="https://t3.ftcdn.net/jpg/01/09/00/64/360_F_109006426_388PagqielgjFTAMgW59jRaDmPJvSBUL.jpg"
                             alt="Card image cap">
@@ -397,31 +383,12 @@
                             <p class="card-text text-center about-card  mt-2 about_card_bio ">Bio </p>
                             <p class="card-text text-center about-card about_card_hobbies ">Hobbies
                             </p>
-                            <p class="card-text text-center about-card about_card_email"><a
-                                    href="mailto:Email">Email</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3">
-                    <div class="card" style="width: 18rem; height: 100%;padding:10px;">
-                        <img class="card-img-top"
-                            src="https://t3.ftcdn.net/jpg/01/09/00/64/360_F_109006426_388PagqielgjFTAMgW59jRaDmPJvSBUL.jpg"
-                            alt="Card image cap">
-                        <div class="card-body about_card_body">
-                            <h3 class="card-text text-center about-card-name_first ">Name</h3>
-                            <h6 class="card-text text-center about-card-name mt-2">Event Planner</h6>
-                            <p class="card-text text-center about-card  mt-2 about_card_bio ">Bio </p>
-                            <p class="card-text text-center about-card about_card_hobbies ">Hobbies
-                            </p>
-                            <p class="card-text text-center about-card about_card_email"><a
-                                    href="mailto:Email">Email</a></p>
+                            <p class="card-text text-center about-card about_card_email"><a style="color: blue;" href="mailto:Email">Email</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="card" style="width: 18rem; height: 100%;padding:10px;">
+                    <div class="card" style="width: 105%; height: 100%;padding:10px;">
                         <img class="card-img-top"
                             src="https://t3.ftcdn.net/jpg/01/09/00/64/360_F_109006426_388PagqielgjFTAMgW59jRaDmPJvSBUL.jpg"
                             alt="Card image cap">
@@ -431,13 +398,31 @@
                             <p class="card-text text-center about-card  mt-2 about_card_bio ">Bio </p>
                             <p class="card-text text-center about-card about_card_hobbies ">Hobbies
                             </p>
-                            <p class="card-text text-center about-card about_card_email"><a
-                                    href="mailto:david@essentialyfe.com">david@essentialyfe.com</a></p>
+                            <p class="card-text text-center about-card about_card_email"><a style="color: blue;" href="mailto:david@essentialyfe.com">david@essentialyfe.com</a></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="card" style="width: 18rem; height: 100%;padding:10px;">
+            </div>
+            
+            <div class="row">
+                <!-- <div class="col-3">
+                    <div class="card" style="width: 105%; height: 100%;padding:10px;">
+                        <img class="card-img-top"
+                            src="https://t3.ftcdn.net/jpg/01/09/00/64/360_F_109006426_388PagqielgjFTAMgW59jRaDmPJvSBUL.jpg"
+                            alt="Card image cap">
+                        <div class="card-body about_card_body">
+                            <h3 class="card-text text-center about-card-name_first ">Name</h3>
+                            <h6 class="card-text text-center about-card-name mt-2">Event Planner</h6>
+                            <p class="card-text text-center about-card  mt-2 about_card_bio ">Bio </p>
+                            <p class="card-text text-center about-card about_card_hobbies ">Hobbies
+                            </p>
+                            <p class="card-text text-center about-card about_card_email"><a style="color: blue;" href="mailto:Email">Email</a></p>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <!-- <div class="col-3">
+                    <div class="card" style="width: 105%; height: 100%;padding:10px;">
                         <img class="card-img-top"
                             src="https://t3.ftcdn.net/jpg/01/09/00/64/360_F_109006426_388PagqielgjFTAMgW59jRaDmPJvSBUL.jpg"
                             alt="Card image cap">
@@ -447,13 +432,12 @@
                             <p class="card-text text-center about-card  mt-2 about_card_bio ">Bio </p>
                             <p class="card-text text-center about-card about_card_hobbies ">Hobbies
                             </p>
-                            <p class="card-text text-center about-card about_card_email"><a
-                                    href="mailto:julio@essentialyfe.com">julio@essentialyfe.com</a></p>
+                            <p class="card-text text-center about-card about_card_email"><a style="color: blue;" href="mailto:julio@essentialyfe.com">julio@essentialyfe.com</a></p>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-3">
-                    <div class="card" style="width: 18rem; height: 100%;padding:10px;">
+                    <div class="card" style="width: 105%; height: 100%;padding:10px;">
                         <img class="card-img-top"
                             src="https://t3.ftcdn.net/jpg/01/09/00/64/360_F_109006426_388PagqielgjFTAMgW59jRaDmPJvSBUL.jpg"
                             alt="Card image cap">
@@ -463,8 +447,7 @@
                             <p class="card-text text-center about-card  mt-2 about_card_bio ">Bio </p>
                             <p class="card-text text-center about-card about_card_hobbies ">Hobbies
                             </p>
-                            <p class="card-text text-center about-card about_card_email"><a
-                                    href="mailto:channing@essentialyfe.com">channing@essentialyfe.com</a></p>
+                            <p class="card-text text-center about-card about_card_email"><a class="card-text text-center about-card about_card_hobbies " style="color: blue;" href="mailto:channing@essentialyfe.com">channing@essentialyfe.com</a></p>
                         </div>
                     </div>
                 </div>

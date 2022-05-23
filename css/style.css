@@ -15276,7 +15276,7 @@ max-height:300px !important;
 }
 
 .rd-navbar-fixed .rd-navbar-collapse {
-	background-color: #ffffff;
+	background-color: #000000;
 	box-shadow: 0 0 22px -4px rgba(0, 0, 0, 0.17);
 }
 
@@ -17432,7 +17432,7 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .rd-navbar-corporate-contacts a, .rd-navbar-corporate-contacts a:focus, .rd-navbar-corporate-contacts a:active {
-	color: white;
+	color: white !important;
 }
 
 .rd-navbar-corporate-contacts a:hover {
@@ -25011,4 +25011,30 @@ img.mfp-img {
 
 .about_img {
     max-height: 268px;
+}
+
+
+@media (max-width: 1175px) {
+	.rd-nav-link
+	{
+		padding: 15x !important;
+		font-size: 10px !important;
+	}
+}
+
+@media (max-width: 1055px) {
+	#nav-link-spacer 
+	{
+		/* font-size: 10px !important; */
+		padding: 5px !important;
+		/* margin-left: 0px !important; */
+	}
+}
+
+@media (max-width: 1000px) {
+	#nav-link-spacer 
+	{
+		padding: 0px !important;
+		margin-left: 10px;
+	}
 }

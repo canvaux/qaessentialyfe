@@ -14,12 +14,12 @@
                   <a class="brand logo2" href="index"><img src="images/logo2.png" alt="" width="225" height="18" /></a>
                 </div>
               </div>
-              <div class="rd-navbar-aside-right rd-navbar-collapse">
+              <div class="rd-navbar-aside-right rd-navbar-collapse" style="color:black;">
                 <ul class="rd-navbar-corporate-contacts">
                   <li>
                     <div class="unit unit-spacing-xs">
                       <div class="unit-body mobile-contact-info" style="margin-top: -35px;">
-                      <a class="text-lowercase"><small class="text-uppercase" style="font-size:10px; margin-bottom:-10px;">FOR IMMEDIATE ASSISTANCE:</small><br>info@essentialyfe.com</a>
+                      <a class="text-lowercase"><small class="text-uppercase" style="font-size:10px; margin-bottom:-10px;margin-right: 37px;">FOR IMMEDIATE ASSISTANCE:</small><br>info@essentialyfe.com</a>
                         <!-- <a class="text-lowercase"><small style="font-size:10px; margin-bottom:-10px;"  ></small><br>info@essentialyfe.com</a> -->
                       </div>
                       <div class="email" style="margin-left: -165px;margin-top: 24px;">
