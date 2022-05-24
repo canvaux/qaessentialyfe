@@ -220,7 +220,7 @@
           <form name="myemailform" class="rd-form rd-form-variant-2 rd-mailform" method="post" action="form-to-email.php">
 
             <div class="row row-14 gutters-14">
-              <div class="col-md-12">
+              <div class="col-12">
                 <div class="form-wrap">
                   <div id="form-shower">
                     <select name="rental-type" id="rental-type" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -241,7 +241,7 @@
         </section>
 
         <!-- Vacation Rental/ Short Term Stay -->
-        <div class="container-xxl">
+        <div class="container-xxl px-2 px-lg-0">
           <div class="row" style="flex-wrap: inherit;">
             <!-- <div class="col-sm-10"> -->
             <section name="vacation-rental" id="vacation-rental" style="display:none; width:100%;">
@@ -251,22 +251,22 @@
                 <input type="text" name="vacation" value="Vacation Rental/ Short Term Stay" style="display:none;">
                 <input type="text" id="asv" name="vacation1" style="display:none;">
                 <!-- <input type="text" id="txtPhone_country" name="txtPhone_country" value="" style="display:none;"> -->
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0" >
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="vr-name" type="text" name="vr-name" style="background:#0E0C0D; color:white; height:30px;" data-constraints="@Required" required>
                       <label class="form-label" for="vr-name" style="color:white;">Full Name:</label>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto; padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto; padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="vr-mail" type="mail" name="vr-mail" data-constraints="@Required" style="background:#0E0C0D; color:white; height:30px;" required>
                       <label class="form-label" for="vr-mail" style="color:white;">Email Address:</label>
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto;  padding:10px;">
+                <div class="row mt-0 mx-0" >
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap" style="display: grid;">
                       <div style="max-width:75px;" onclick="enable_disable1()">
                         <input class="form-input" id='txtPhone' type="tel" style="background:#0E0C0D;  color:white;" name="txtPhone" />
@@ -277,15 +277,15 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="vr-insta" type="text" name="vr-insta" style="background:#0E0C0D; color:white; height:30px;" data-constraints="@Required" required>
                       <label class="form-label" for="vr-insta" style="color:white;">Social Media Handle:</label>
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto;  padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap">
                       <select name="vr-pets" id="vr-pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" onchange="ShowHideDiv1()" required>
                         <option value="">Are you bringing any pets:</option>
@@ -304,7 +304,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="vr-party" id="vr-party" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" required>
                         <option value="">Are you planning on hosting a party or a large gathering:</option>
@@ -314,14 +314,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto;  padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input chkdt datepicker" id="vr-start-date" type="text" name="vr-start-date" style="background:#0E0C0D; color:white; " placeholder="Requested Check In Date:">
                       <!-- <label class="form-label" for="vr-start-date" style="color:white;">Requested Check In Date:</label> -->
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap ">
                       <!-- <input class="form-input" type="text" id="vr-end-date" name="vr-end-date" style="background:#0E0C0D; color:white;" > -->
                       <input class="form-input datepicker" id="vr-end-date" type="text" name="vr-end-date" style="background:#0E0C0D; color:white;" placeholder="Requested Check Out Date:">
@@ -329,15 +329,15 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto;  padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap input_wrapper_div1">
                       <input class="form-input" type="time" id="vr-start-time" name="vr-start-time" style="background:#0E0C0D; color:white;">
                       <p class="reqest_para1">Requested check In time</p>
                       <!-- <label class="form-label" for="vr-start-time" style="color:white;">Requested Check In Time:</label> -->
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap input_wrapper_div">
                       <input class="form-input" type="time" id="vr-end-time" name="vr-end-time" style="background:#0E0C0D; color:white;">
                       <p class="reqest_para">Requested check Out time</p>
@@ -345,8 +345,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="vr-flex-date" id="vr-flex-date" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" required>
                         <option value="">Are you flexible with the check in/out date:</option>
@@ -355,7 +355,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px; margin-bottom:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px; margin-bottom:10px;">
                     <div class="form-wrap">
                       <select name="vr-flex-time" id="vr-flex-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" required>
                         <option value="">Are you flexible with the check in/out time:</option>
@@ -365,8 +365,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="vr-bed" id="vr-bed" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="" data-constraints="@Required"># of Bedrooms Needed:</option>
@@ -379,7 +379,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="vr-stay" id="vr-stay" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"" required>
                             <option value="" data-constraints=" @Required"># of Guests Staying Over:</option>
@@ -395,8 +395,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="vr-city" id="vr-city" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="" data-constraints="@Required">What city/area are you intersted in:</option>
@@ -419,7 +419,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <select name="vr-style" id="vr-style" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="" data-constraints="@Required">What house style are you interested in:</option>
@@ -437,8 +437,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="vr-hear" id="vr-hear" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="" data-constraints="@Required">What is your total rental budget:</option>
@@ -451,7 +451,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto; padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto; padding:10px;">
                     <div class="form-wrap">
                       <!-- <select name="vr-serv" id="vr-serv" class="form-input" style="background:#0E0C0D; color:white;" onchange="ShowHideDiv2()"> -->
                       <select name="vr-serv" id="vr-serv" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv4()" required>
@@ -495,21 +495,23 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-12" id="vr-other" style="padding:10px;display:none;">
-                  <div class="form-wrap">
-                    <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                    <textarea class="form-control" rows="3" id="vr-other_info" name="vr-other_info" style="background:#0E0C0D; color:white;"></textarea>
-                    <label class="form-label" for="vr-other_info" style="color:white;">Please fill your required services:</label>
+                <div class="row mt-0 mx-0">
+                  <div class="col-md-12" id="vr-other" style="padding:10px;display:none;">
+                    <div class="form-wrap">
+                      <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
+                      <textarea class="form-control" rows="3" id="vr-other_info" name="vr-other_info" style="background:#0E0C0D; color:white;"></textarea>
+                      <label class="form-label" for="vr-other_info" style="color:white;">Please fill your required services:</label>
+                    </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="vr-req" type="text" style="background:#0E0C0D; color:white;" name="vr-req">
                       <label class="form-label" for="vr-req" style="color:white;">Do you have any accessibility requirements:</label>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="vr-park" type="text" style="background:#0E0C0D; color:white;" name="vr-park">
                       <label class="form-label" for="vr-park" style="color:white;">Number of parking spots needed:</label>
@@ -536,49 +538,50 @@
                   </select>
                 </div>
                </div> -->
-                <div class="col-md-12" style="padding:10px; display: flex;">
-                  <div class="" style="width: 33%;">
-                    <select name="vr-visits" id="vr-visits" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" onchange="ShowHideDiv()" required>
-                      <option value="no">Are you expecting any visitors:</option>
-                      <option value="yes">Yes</option>
-                      <option value="no">No</option>
-                    </select>
-                    <select name="vr-yes_guest" id="vr-yes_guest" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px; display:none;">
-                      <option value="0" style="display:none;" selected>0</option>
-                      <option value="1-2" selected>1-2</option>
-                      <option value="3-4">3-4</option>
-                      <option value="5-6">5-6</option>
-                      <option value="7-8">7-8</option>
-                      <option value="9-10">9-10</option>
-                      <option value="10+">10+</option>
-                    </select>
-                  </div>
-
-                  <div class="" style="margin: auto;width: 33%; margin-block: inherit;">
-                    <select name="vr-hear-us" id="vr-hear-us" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
-                      <option value="" data-constraints="@Required" required>How did you hear about us:</option>
-                      <option value="Social Media">Social Media</option>
-                      <option value="Google">Google</option>
-                      <option value="Yelp">Yelp</option>
-                      <option value="Referral">Referral</option>
-                      <option value="3rd Party Booking Website">3rd Party Booking Website</option>
-                      <option value="Other">Other</option>
-                    </select>
-                  </div>
-                  <div class="" style="width: 33%;">
-                    <select name="vr-pro_film" id="vr-pro_film" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
-                      <option value="" data-constraints="@Required"> Will you be having any professional filming:</option>
-                      <option value="Yes">Yes</option>
-                      <option value="No">No</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-12" style="padding:10px;">
-                  <div class="form-wrap">
-                    <input class="form-input" id="vr-info" type="text" name="vr-info" style="background:#0E0C0D; color:white;">
-                    <label class="form-label" for="vr-info" style="color:white;">Any additional information you wish to share:</label>
-                  </div>
-                </div>
+               <div class="row mt-0 mx-0 py-2">
+                   <div class="col-12 col-sm-12 col-md-4 pading-cl" >
+                     <select name="vr-visits" id="vr-visits" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" onchange="ShowHideDiv()" required>
+                       <option value="no">Are you expecting any visitors:</option>
+                       <option value="yes">Yes</option>
+                       <option value="no">No</option>
+                     </select>
+                     <select name="vr-yes_guest" id="vr-yes_guest" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px; display:none;">
+                       <option value="0" style="display:none;" selected>0</option>
+                       <option value="1-2" selected>1-2</option>
+                       <option value="3-4">3-4</option>
+                       <option value="5-6">5-6</option>
+                       <option value="7-8">7-8</option>
+                       <option value="9-10">9-10</option>
+                       <option value="10+">10+</option>
+                     </select>
+                   </div>
+ 
+                   <div class="col-12 col-sm-12 col-md-4 p-lg-0 p-2 py-2 py-md-0" >
+                     <select name="vr-hear-us" id="vr-hear-us" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
+                       <option value="" data-constraints="@Required" required>How did you hear about us:</option>
+                       <option value="Social Media">Social Media</option>
+                       <option value="Google">Google</option>
+                       <option value="Yelp">Yelp</option>
+                       <option value="Referral">Referral</option>
+                       <option value="3rd Party Booking Website">3rd Party Booking Website</option>
+                       <option value="Other">Other</option>
+                     </select>
+                   </div>
+                   <div class="col-12 col-sm-12 col-md-4 pading-cl" >
+                     <select name="vr-pro_film" id="vr-pro_film" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
+                       <option value="" data-constraints="@Required"> Will you be having any professional filming:</option>
+                       <option value="Yes">Yes</option>
+                       <option value="No">No</option>
+                     </select>
+                   </div>
+                 </div>
+                 <div class="col-12" style="padding:10px;">
+                   <div class="form-wrap">
+                     <input class="form-input" id="vr-info" type="text" name="vr-info" style="background:#0E0C0D; color:white;">
+                     <label class="form-label" for="vr-info" style="color:white;">Any additional information you wish to share:</label>
+                   </div>
+                 </div>
+               </div>
                 <br>
                 <article class="title-classic">
                   <div class="title-classic" style="margin-left:15px;">
@@ -610,14 +613,14 @@
               <form name="myemailform" class="rd-form rd-form-variant-2 rd-mailform" method="post" action="form-to-email.php">
                 <input type="text" name="Event" value="Event Venue Rental" style="display:none;">
                 <input type="text" id="asv_1" name="vacation1" style="display:none;">
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mx-0">
+                  <div class="col-12 col-sm-12 col-md-6 " style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="ev-name" type="text" name="ev-name" style="background:#0E0C0D; color:white; height:30px;" data-constraints="@Required" required>
                       <label class="form-label" for="ev-name" style="color:white;">Full Name:</label>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto; padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6 " style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="ev-mail" type="mail" name="ev-mail" data-constraints="@Required" style="background:#0E0C0D; color:white; height:30px;" required>
                       <label class="form-label" for="ev-mail" style="color:white;">Email Address:</label>
@@ -625,8 +628,8 @@
                   </div>
                 </div>
 
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto;  padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap" style="display: grid;">
                       <div style="max-width:75px;" onclick="enable_disable2()">
                         <input class="form-input txtPhone" id='1txtPhone' type="tel" style="background:#0E0C0D;  color:white;" name="txtPhone" />
@@ -637,7 +640,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="ev-insta" type="text" name="ev-insta" style="background:#0E0C0D; color:white; height:30px;" data-constraints="@Required" required>
                       <label class="form-label" for="ev-insta" style="color:white;">Social Media Handle:</label>
@@ -657,14 +660,14 @@
                         </div>
                       </div>
                     </div> -->
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto;  padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input chkdt datepicker" id="ev-start-date" type="text" name="ev-start-date" style="background:#0E0C0D; color:white; " placeholder="Requested Check In Date:">
                       <!-- <label class="form-label" for="ev-start-date" style="color:white;">Requested Check In Date:</label> -->
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap ">
                       <!-- <input class="form-input" type="text" id="vr-end-date" name="vr-end-date" style="background:#0E0C0D; color:white;" > -->
                       <input class="form-input datepicker" id="ev-end-date" type="text" name="ev-end-date" style="background:#0E0C0D; color:white;" placeholder="Requested Check Out Date:">
@@ -672,8 +675,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto;  padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap input_wrapper_div1">
                       <!-- <input class="form-input" type="time" id="ev-start-time" name="ev-start-time" style="background:#0E0C0D; color:white;">
                           <p class="reqest_para1">Request check In time</p> -->
@@ -682,7 +685,7 @@
                       <!-- <label class="form-label" for="ev-start-time" style="color:white;">Requested Check In Time:</label> -->
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap input_wrapper_div">
                       <!-- <input class="form-input" type="time" id="ev-end-time" name="ev-end-time" style="background:#0E0C0D; color:white;">
                           <p class="reqest_para">Request check Out time</p> -->
@@ -704,8 +707,8 @@
                         </div>
                       </div>
                     </div> -->
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="ev-flex-date" id="ev-flex-date" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="" data-constraints="@Required">Are you flexible with the check in/out date:</option>
@@ -714,7 +717,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto; padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="ev-flex-time" id="ev-flex-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="" data-constraints="@Required">Are you flexible with the check in/out time:</option>
@@ -728,8 +731,8 @@
 
 
 
-                <div class="col-md-12" style="padding:10px; display: flex;">
-                  <div class="" style="width: 33%;">
+                <div class="row mt-0 mx-0 ">
+                  <div class="col-12 col-sm-12 col-md-4 pading-cl">
                     <!-- <input class="form-input" id="ev-vendors-pickup" type="text" name="ev-vendors-pickup" style="background:#0E0C0D; color:white;">
                         <label class="form-label" for="ev-vendors-pickup" style="color:white;margin-top: 9px;">Will you need next day vendors pickup:</label> -->
                     <select name="ev-bed" id="ev-bed" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
@@ -743,12 +746,12 @@
                     </select>
                   </div>
 
-                  <div class="" style="margin: auto;width: 33%; margin-block: inherit;">
+                  <div class="col-12 col-sm-12 col-md-4 p-2 px-lg-0 py-2 py-lg-0">
                     <input class="form-input" id="ev-bathroom" type="text" name="ev-bathroom" style="background:#0E0C0D; color:white;">
-                    <label class="form-label" for="ev-bathroom" style="color:white;margin-top: 9px;margin-left: 35%;"># of Bathrooms Needed:</label>
+                    <label class="form-label" for="ev-bathroom" style="color:white"># of Bathrooms Needed:</label>
                   </div>
 
-                  <div class="" style="width: 33%;">
+                  <div class="col-12 col-sm-12 col-md-4 pading-cl">
                     <select name="ev-attendees" id="ev-attendees" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" required>
                       <option selected># of Expected attendees (including staff):</option>
                       <option value='0-30'>0-30</option>
@@ -768,8 +771,8 @@
                 </div>
 
 
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <!-- <input class="form-input" id="ev-city-2" type="text" style="background:#0E0C0D; color:white;" name="ev-city-2" data-constraints="@Required" required>
                           <label class="form-label" for="ev-city-2" style="color:white;">What city/area are you intersted in:</label> -->
@@ -794,7 +797,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <!-- <input class="form-input" id="ev-style-2" type="text" style="background:#0E0C0D; color:white;" name="ev-style-2" data-constraints="@Required" required>
                           <label class="form-label" for="ev-style-2" style="color:white;">What house style are you interested in:</label> -->
@@ -814,8 +817,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <select name="ev-serve-alco" id="ev-serve-alco" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" required>
                         <option value="">Will you be serving alcohol:</option>
@@ -824,7 +827,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px; margin-bottom:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <select name="ev-sell-alco" id="ev-sell-alco" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" required>
                         <option value="">Will you be selling alcohol:</option>
@@ -834,8 +837,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <select name="ev-visits" id="ev-visits" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" required>
                         <option value="">Will you be having any professional filming:</option>
@@ -844,7 +847,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <select name="ev-app_behalf" id="ev-app_behalf" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" required>
                         <option value="">Are you applying on behalf of your self:</option>
@@ -883,8 +886,8 @@
                     </select>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0" >
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="ev-deco" id="ev-deco" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="" data-constraints="@Required">Will you be adding any decorations:</option>
@@ -893,15 +896,15 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="ev-parts" type="text" style="background:#0E0C0D; color:white;" name="ev-parts" data-constraints="@Required" required>
                       <label class="form-label" for="ev-parts" style="color:white;">Parts of the house to be used:</label>
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0" >
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="ev-park-sp" id="ev-park-sp" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="" data-constraints="@Required">Do you need additional parking space:</option>
@@ -910,7 +913,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="ev-gear" type="text" style="background:#0E0C0D; color:white;" name="ev-gear" data-constraints="@Required" required>
                       <label class="form-label" for="ev-gear" style="color:white;">Please describe the average gear load-in:</label>
@@ -937,8 +940,8 @@
                         </div>
                       </div>
                     </div> -->
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <!-- <div class="form-wrap">
                           <select name="ev-pets" id="ev-pets" class="form-input" style="background:#0E0C0D; color:white;">
                             <option value="" data-constraints="@Required" required>Are you bringing any pets:</option>
@@ -965,15 +968,15 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="ev-exocit_animals" type="text" style="background:#0E0C0D; color:white;" name="ev-exocit_animals" data-constraints="@Required" required>
                       <label class="form-label" for="ev-exocit_animals" style="color:white;">Are you bring any exotic animals:</label>
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0" style="display: flex;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="ev-hear" id="ev-hear" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="" data-constraints="@Required">Will you have any minors:</option>
@@ -982,15 +985,15 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto; padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto; padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="ev-info" type="text" name="ev-info" style="background:#0E0C0D; color:white;">
                       <label class="form-label" for="ev-info" style="color:white;">Any additional information you wish to share:</label>
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="ev-tickets" id="ev-tickets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="" data-constraints="@Required">Will you be selling tickets to your event:</option>
@@ -999,7 +1002,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto; padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="ev-event_type" id="ev-event_type" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" required>
                         <option value="">Event type:</option>
@@ -1009,55 +1012,55 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="ev-guest-arr" type="text" name="ev-guest-arr" style="background:#0E0C0D; color:white;">
                       <label class="form-label" for="ev-guest-arr" style="color:white;">How will guests be arriving:</label>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto; padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto; padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" type="text" id="ev-seated" name="ev-seated" style="background:#0E0C0D; color:white;">
                       <label class="form-label" for="ev-seated" style="color:white;">Will this be a seated or standing event:</label>
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0" style="display: flex;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="ev-park-spot" type="text" name="ev-park-spot" style="background:#0E0C0D; color:white;">
                       <label class="form-label" for="ev-park-spot" style="color:white;">Number of parking spots needed:</label>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto; padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto; padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" type="text" id="ev-hour" name="ev-hour" style="background:#0E0C0D; color:white;">
                       <label class="form-label" for="ev-hour" style="color:white;">Hours of event:</label>
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto;  padding:10px;">
+                <div class="row mt-0 mx-0" style="display: flex;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" type="time" id="ev-load-time" name="ev-load-time" style="background:#0E0C0D; color:white;">
                       <label class="form-label" for="ev-load-time" style="margin-left: 47px;color:white;">Load in time:</label>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" type="time" id="ev-load-out" name="ev-load-out" style="background:#0E0C0D; color:white;">
                       <label class="form-label" for="ev-load-out" style="margin-left: 47px;color:white;">Wrap Up time:</label>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <input class="form-input" id="ev-vehicles" type="text" name="ev-vehicles" style="background:#0E0C0D; color:white;">
                     <label class="form-label" for="ev-vehicles" style="color:white;">How many vehicles do you anticipate will park on the street:</label>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <input class="form-input" id="ev-acc" type="text" name="ev-acc" style="background:#0E0C0D; color:white;">
                     <label class="form-label" for="ev-acc" style="color:white;">Do you have any accessibility requirements:</label>
@@ -1069,31 +1072,31 @@
                  <label class="form-label" for="ev-add-serv" style="color:white;">Are you interested in any additonal services:</label>
                </div>
                </div> -->
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <input class="form-input" id="ev-vendors-anti" type="text" name="ev-vendors-anti" style="background:#0E0C0D; color:white;">
                     <label class="form-label" for="ev-vendors-anti" style="color:white;">How many vendors do you anticipate will service the event:</label>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <input class="form-input" id="ev-behalf_yourself" type="text" name="ev-behalf_yourself" style="background:#0E0C0D; color:white;">
                     <label class="form-label" for="ev-behalf_yourself" style="color:white;">Are you applying on behalf of your self?</label>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <input class="form-input" id="ev-avg_ld_gear" type="text" name="ev-avg_ld_gear" style="background:#0E0C0D; color:white;">
                     <label class="form-label" for="ev-avg_ld_gear" style="color:white;">Please describe the average gear load-in?</label>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px; display: flex;">
-                  <div class="" style="width: 33%;">
+                <div class="row mt-0 mx-0" style="padding:10px; display: flex;">
+                  <div class="col-12 col-sm-12 col-md-4 p-0">
                     <input class="form-input" id="ev-vendors-pickup" type="text" name="ev-vendors-pickup" style="background:#0E0C0D; color:white;">
-                    <label class="form-label" for="ev-vendors-pickup" style="color:white;margin-top: 9px;">Will you need next day vendors pickup:</label>
+                    <label class="form-label" for="ev-vendors-pickup" style="color:white;">Will you need next day vendors pickup:</label>
                   </div>
 
-                  <div class="" style="margin: auto;width: 33%; margin-block: inherit;">
+                  <div class="col-12 col-sm-12 col-md-4 px-md-1 px-0 py-2 py-lg-0" >
                     <select name="ev-rent" id="ev-rent" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                       <option value="" data-constraints="@Required" required>What is your total rental budget:</option>
                       <option value="5000">Up to $5,000</option>
@@ -1105,7 +1108,7 @@
                     </select>
                   </div>
 
-                  <div class="" style="width: 33%;">
+                  <div class="col-12 col-sm-12 col-md-4 p-0">
                     <select name="ev-hear-2" id="ev-hear-2" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                       <option value="" data-constraints="@Required">How did you hear about us:</option>
                       <option value="Social Media">Social Media</option>
@@ -1117,7 +1120,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <select name="ev-other-serv" id="ev-other-serv" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv13()" required>
                       <option value="">Are you interested in any additonal services:</option>
@@ -1186,14 +1189,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
+                <div class="row mt-0 mx-0">
                   <!-- <div class="col-md-6" style="margin-left: auto;  padding:10px;">
                         <div class="form-wrap">
                           <input class="form-input" id="f-phone" type="text" style="background:#0E0C0D; color:white;" name="f-phone" data-constraints="@Required" required>
                           <label class="form-label" for="f-phone" style="color:white;">Phone Number:</label>
                         </div>
                       </div> -->
-                  <div class="col-md-6" style="margin-left: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap" style="display: grid;">
                       <div style="max-width:75px;" onclick="enable_disable3()">
                         <input class="form-input txtPhone" id='2txtPhone' type="tel" style="background:#0E0C0D;  color:white;" name="txtPhone" />
@@ -1205,7 +1208,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="f-insta" type="text" name="f-insta" style="background:#0E0C0D; color:white; height:30px;" data-constraints="@Required" required>
                       <label class="form-label" for="f-insta" style="color:white;">Social Media Handle:</label>
@@ -1237,14 +1240,14 @@
                         </div>
                       </div>
                     </div> -->
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto;  padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm col-md-6" style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input chkdt datepicker" id="f-start-date" type="text" name="f-start-date" style="background:#0E0C0D; color:white;" placeholder="Requested Check In Date:">
                       <!-- <label class="form-label" for="f-start-date" style="color:white;">Requested Check In Date:</label> -->
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap ">
                       <!-- <input class="form-input" type="text" id="f-end-date" name="f-end-date" style="background:#0E0C0D; color:white;" > -->
                       <input class="form-input datepicker" id="f-end-date" type="text" name="f-end-date" style="background:#0E0C0D; color:white;" placeholder="Requested Check Out Date:">
@@ -1252,8 +1255,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto;  padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap input_wrapper_div1">
                       <!-- <input class="form-input" type="time" id="vr-start-time" name="vr-start-time"
                                 style="background:#0E0C0D; color:white;">
@@ -1263,7 +1266,7 @@
                       <!-- <label class="form-label" for="f-start-time" style="color:white;">Requested Check In Time:</label> -->
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap input_wrapper_div">
                       <!-- <input class="form-input" type="time" id="f-end-time" name="f-end-time"
                                 style="background:#0E0C0D; color:white;">
@@ -1275,8 +1278,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="f-flex-date" id="f-flex-date" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" required>
                         <option value="">Are you flexible with the check in/out date:</option>
@@ -1285,7 +1288,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;padding:10px;">
                     <div class="form-wrap">
                       <select name="f-flex-time" id="f-flex-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" required>
                         <option value="">Are you flexible with the check in/out time:</option>
@@ -1295,8 +1298,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto;  padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap">
                       <!-- <input class="form-input" id="f-bed" type="text" name="f-bed" style="background:#0E0C0D; color:white;" data-constraints="@Required" required>
                           <label class="form-label" for="f-bed" style="color:white;"># of Bedrooms Needed:</label> -->
@@ -1311,15 +1314,15 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="f-stay" type="text" name="f-stay" style="background:#0E0C0D; color:white;" data-constraints="@Required" required>
                       <label class="form-label" for="f-stay" style="color:white;"># of expected staff + Talent:</label>
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <!-- <input class="form-input" id="f-city" type="text" style="background:#0E0C0D; color:white;" name="f-city" data-constraints="@Required" required>
                           <label class="form-label" for="f-city" style="color:white;">What city/area are you intersted in:</label> -->
@@ -1344,7 +1347,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <!-- <input class="form-input" id="f-style" type="text" style="background:#0E0C0D; color:white;" name="f-style" data-constraints="@Required" required>
                           <label class="form-label" for="f-style" style="color:white;">What house style are you interested in:</label> -->
@@ -1364,8 +1367,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="f-hear" id="f-hear" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
                         <option value="" data-constraints="@Required" required>What is your total rental budget:</option>
@@ -1378,7 +1381,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px; margin-bottom:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px; margin-bottom:10px;">
                     <div class="form-wrap">
                       <select name="f-flex-pr" id="f-flex-pr" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" required>
                         <option value="">Will you be applying for a permit:</option>
@@ -1388,14 +1391,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="f-company" type="text" style="background:#0E0C0D; color:white;" name="f-company" data-constraints="@Required" required>
                       <label class="form-label" for="f-company" style="color:white;">Company Name:</label>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="f-parking-space" id="f-parking-space" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" required>
                         <option value="Do you need additional parking space:">Do you need additional parking space:</option>
@@ -1405,7 +1408,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <select name="f-attendees" id="f-attendees" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" required>
                       <option selected># of attendees:</option>
@@ -1424,7 +1427,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <select name="f-guards" id="f-guards" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" required>
                       <option value="Will you have any bodyguards during your rental:">Will you have any bodyguards during your rental:</option>
@@ -1433,7 +1436,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <select name="f-furniture" id="f-furniture" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" required>
                       <option value="Will you need to move any of the furniture:">Will you need to move any of the furniture:</option>
@@ -1443,8 +1446,8 @@
                   </div>
                 </div>
 
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="f-pets" id="f-pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" onchange="ShowHideDiv6()" required>
                         <option value="no">Are you bringing any pets:</option>
@@ -1463,7 +1466,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="padding:10px;">
                     <div class="form-wrap">
                       <select name="f-hear_us" id="f-hear_us" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
                         <option value="" data-constraints="@Required" required>How did you hear about us:</option>a
@@ -1477,13 +1480,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <input class="form-input" id="f-info" type="text" name="f-info" style="background:#0E0C0D; color:white;">
                     <label class="form-label" for="f-info" style="color:white;">Any additional information you wish to share:</label>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <input class="form-input" id="f-vehicles" type="text" name="f-vehicles" style="background:#0E0C0D; color:white;">
                     <label class="form-label" for="f-vehicles" style="color:white;">How many vehicles do you anticipate will park on the street:</label>
@@ -1495,19 +1498,19 @@
                         <label class="form-label" for="f-production-type" style="color:white;">How many vehicles do you anticipate will park on the street</label>
                       </div>
                     </div> -->
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <input class="form-input" id="f-requirements" type="text" name="f-requirements" style="background:#0E0C0D; color:white;">
                     <label class="form-label" for="f-requirements" style="color:white;">Do you have any accessibility requirements: </label>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <input class="form-input" id="f-parking" type="text" name="f-parking" style="background:#0E0C0D; color:white;">
                     <label class="form-label" for="f-parking" style="color:white;">Number of parking spots needed:</label>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <input class="form-input" id="f-production" type="text" name="f-production" style="background:#0E0C0D; color:white;">
                     <label class="form-label" for="f-production" style="color:white;">Production Type:</label>
@@ -1536,14 +1539,14 @@
                 <input type="text" name="shortterm" value="Stay Over + Event" style="display:none;">
                 <input type="text" id="asv_3" name="vacation1" style="display:none;">
                 <input type="text" name="short-term-stay-event" value="short-term-stay-event" style="display:none;">
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="st-name" type="text" name="st-name" style="background:#0E0C0D; color:white; height:30px;" data-constraints="@Required" required>
                       <label class="form-label" for="st-name" style="color:white;">Full Name:</label>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto; padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto; padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="st-mail" type="mail" name="st-mail" data-constraints="@Required" style="background:#0E0C0D; color:white; height:30px;" required>
                       <label class="form-label" for="st-mail" style="color:white;">Email Address:</label>
@@ -1566,8 +1569,8 @@
                     </div> -->
 
 
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto;  padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap" style="display: grid;">
                       <div style="max-width:75px;" onclick="enable_disable4()">
                         <input class="form-input txtPhone" id='3txtPhone' type="tel" style="background:#0E0C0D;  color:white;" name="txtPhone" />
@@ -1578,7 +1581,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="st-insta" type="text" name="st-insta" style="background:#0E0C0D; color:white; height:30px;" data-constraints="@Required" required>
                       <label class="form-label" for="st-insta" style="color:white;">Social Media Handle:</label>
@@ -1610,14 +1613,14 @@
                         </div>
                       </div>
                     </div> -->
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto;  padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input chkdt datepicker" id="st-start-date" type="text" name="st-start-date" style="background:#0E0C0D; color:white; " placeholder="Requested Check In Date:">
                       <!-- <label class="form-label" for="st-start-date" style="color:white;">Requested Check In Date:</label> -->
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap ">
                       <!-- <input class="form-input" type="text" id="st-end-date" name="st-end-date" style="background:#0E0C0D; color:white;" > -->
                       <input class="form-input datepicker" id="st-end-date" type="text" name="st-end-date" style="background:#0E0C0D; color:white;" placeholder="Requested Check Out Date:">
@@ -1625,8 +1628,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto;  padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap input_wrapper_div1">
                       <!-- <input class="form-input" type="time" id="vr-start-time" name="vr-start-time" style="background:#0E0C0D; color:white;">
                           <p class="reqest_para1">Request check In time</p> -->
@@ -1635,7 +1638,7 @@
                       <!-- <label class="form-label" for="vr-start-time" style="color:white;">Requested Check In Time:</label> -->
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap input_wrapper_div">
                       <!-- <input class="form-input" type="time" id="vr-end-time" name="vr-end-time" style="background:#0E0C0D; color:white;">
                           <p class="reqest_para">Request check Out time</p> -->
@@ -1645,8 +1648,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="st-flex-date" id="st-flex-date" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
                         <option value="" data-constraints="@Required" required>Are you flexible with the check in/out date:</option>
@@ -1655,7 +1658,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto; padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="st-flex-time" id="st-flex-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
                         <option value="" data-constraints="@Required" required>Are you flexible with the check in/out time:</option>
@@ -1665,8 +1668,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto;  padding:10px;">
+                <div class="row mt-0 mx-0" >
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
 
                     <div class="form-wrap">
                       <!-- <input class="form-input" id="st-bed" type="text" name="st-bed" style="background:#0E0C0D; color:white;" data-constraints="@Required" required>
@@ -1682,7 +1685,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <select name="st-attendees" id="st-attendees" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" required>
                         <option selected># of attendees:</option>
@@ -1702,8 +1705,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto;  padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
 
                     <div class="form-wrap">
                       <!-- <input class="form-input" id="st-guest" type="text" name="st-guest" style="background:#0E0C0D; color:white;" data-constraints="@Required" required>
@@ -1721,7 +1724,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <!-- <input class="form-input" id="st-minrs" type="text" name="st-minrs" style="background:#0E0C0D; color:white;" data-constraints="@Required" required>
                           <label class="form-label" for="st-minrs" style="color:white;">Will you have any minors:</label> -->
@@ -1734,8 +1737,8 @@
                   </div>
                 </div>
 
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <!-- <input class="form-input" id="st-city-2" type="text" style="background:#0E0C0D; color:white;" name="st-city-2" data-constraints="@Required" required>
                           <label class="form-label" for="st-city-2" style="color:white;">What city/area are you intersted in:</label> -->
@@ -1760,7 +1763,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <!-- <input class="form-input" id="st-style-2" type="text" style="background:#0E0C0D; color:white;" name="st-style-2" data-constraints="@Required" required>
                           <label class="form-label" for="st-style-2" style="color:white;">What house style are you interested in:</label> -->
@@ -1780,8 +1783,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="st-alchohol" id="st-alchohol" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" required>
                         <option value="">Will you be serving alcohol:</option>
@@ -1790,7 +1793,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px; margin-bottom:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px; margin-bottom:10px;">
                     <div class="form-wrap">
                       <select name="st-selling" id="st-selling" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" required>
                         <option value="">Will you be selling alcohol:</option>
@@ -1800,7 +1803,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <select name="st-visits" id="st-visits" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" required>
                       <option value="">Will you be having any professional filming:</option>
@@ -1809,7 +1812,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <select name="st-hear" id="st-hear" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
                       <option value="" data-constraints="@Required" required>Will you have any bodyguards during your rental:</option>
@@ -1818,7 +1821,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <select name="st-hear-7" id="st-hear-7" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
                       <option value="" data-constraints="@Required" required>Are you working with an Event Planner:</option>
@@ -1827,8 +1830,8 @@
                     </select>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="st-hear-2" id="st-hear-2" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
                         <option value="" data-constraints="@Required" required>Will you need to move any of the furniture:</option>
@@ -1837,7 +1840,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto; padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="st-hear-3" id="st-hear-3" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
                         <option value="" data-constraints="@Required" required>Will you be adding any decorations:</option>
@@ -1847,8 +1850,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="st-hear-8" id="st-hear-8" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
                         <option value="" data-constraints="@Required" required>Do you need additional parking space:</option>
@@ -1857,7 +1860,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="st-company" type="text" style="background:#0E0C0D; color:white;" name="st-company" data-constraints="@Required" required>
                       <label class="form-label" for="st-company" style="color:white;">Company Name:</label>
@@ -1865,8 +1868,8 @@
                   </div>
                 </div>
 
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="st-pets" id="st-pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" onchange="ShowHideDiv9()" required>
                         <option value="no">Are you bringing any pets:</option>
@@ -1885,7 +1888,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <!-- <input class="form-input" id="st-hear-6" type="text" style="background:#0E0C0D; color:white;" name="st-hear-6" data-constraints="@Required" required>
                           <label class="form-label" for="st-hear-6" style="color:white;">How did you hear about us :</label> -->
@@ -1910,16 +1913,16 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-12" style="margin-right: auto; padding:10px;">
+                <div class="row mt-0 mx-0" style="display: flex;">
+                  <div class="col-12" style="margin-right: auto; padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="st-info" type="text" name="st-info" style="background:#0E0C0D; color:white;">
                       <label class="form-label" for="st-info" style="color:white;">Any additional information you wish to share:</label>
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="st-tickets" id="st-tickets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
                         <option value="" data-constraints="@Required" required>Will you be selling tickets to your event:</option>
@@ -1928,7 +1931,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto; padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto; padding:10px;">
                     <div class="form-wrap">
                       <!-- <input class="form-input" id="st-event-type" type="text" name="st-event-type" style="background:#0E0C0D; color:white;">
                           <label class="form-label" for="st-event-type" style="color:white;">Event Type:</label> -->
@@ -1940,19 +1943,19 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <input class="form-input" id="st-vehicles" type="text" name="st-vehicles" style="background:#0E0C0D; color:white;">
                     <label class="form-label" for="st-vehicles" style="color:white;">How many vehicles do you anticipate will park on the street:</label>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <input class="form-input" id="st-vendors" type="text" name="st-vendors" style="background:#0E0C0D; color:white;">
                     <label class="form-label" for="st-vendors" style="color:white;">How many vendors do you anticipate:</label>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <!-- <input class="form-input" id="st-party" type="text" name="st-party" style="background:#0E0C0D; color:white;">
                         <label class="form-label" for="st-party" style="color:white;">Are you plannning to host a party:</label> -->
@@ -1963,7 +1966,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <!-- <input class="form-input" id="st-visitor" type="text" name="st-visitor" style="background:#0E0C0D; color:white;">
                         <label class="form-label" for="st-visitor" style="color:white;">Are you expecting any visitors:</label> -->
@@ -1983,45 +1986,45 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <input class="form-input" id="st-siting" type="text" name="st-siting" style="background:#0E0C0D; color:white;">
                     <label class="form-label" for="st-siting" style="color:white;">Will this be a seated or standing event:</label>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <input class="form-input" id="st-requirements" type="text" name="st-requirements" style="background:#0E0C0D; color:white;">
                     <label class="form-label" for="st-requirements" style="color:white;">Do you have any accessibility requirements:</label>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <input class="form-input" id="st-parking-sp" type="text" name="st-parking-sp" style="background:#0E0C0D; color:white;">
                     <label class="form-label" for="st-parking-sp" style="color:white;">Number of parking spots needed:</label>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <input class="form-input" id="st-event-hr" type="text" name="st-event-hr" style="background:#0E0C0D; color:white;">
                     <label class="form-label" for="st-event-hr" style="color:white;">Hours of event:</label>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto;  padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" type="time" id="st-load-time" name="st-load-time" style="background:#0E0C0D; color:white;">
                       <label class="form-label" for="st-load-time" style="margin-left: 47px;color:white;">Load in time:</label>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" type="time" id="st-load-out" name="st-load-out" style="background:#0E0C0D; color:white;">
                       <label class="form-label" for="st-load-out" style="margin-left: 47px;color:white;">Load out time:</label>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <!-- <input class="form-input" id="st-additional-ser" type="text" name="st-additional-ser" style="background:#0E0C0D; color:white;">
                         <label class="form-label" for="st-additional-ser" style="color:white;">Are you interested in any additonal services:</label> -->
@@ -2048,20 +2051,20 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-md-12" id="st-other" style="padding:10px;display:none;">
+                <div class="col-12" id="st-other" style="padding:10px;display:none;">
                   <div class="form-wrap">
                     <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
                     <textarea class="form-control" rows="3" id="st-other_info" name="st-other_info" style="background:#0E0C0D; color:white;"></textarea>
                     <label class="form-label" for="st-other_info" style="color:white;">Please fill your required services:</label>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <input class="form-input" id="st-arrive" type="text" name="st-arrive" style="background:#0E0C0D; color:white;">
                     <label class="form-label" for="st-arrive" style="color:white;">How will guests be arriving:</label>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <select name="st-hear-4" id="st-hear-4" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
                       <option value="" data-constraints="@Required" required>Are you interested in any other services:</option>
@@ -2097,8 +2100,8 @@
                     </select>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-12" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="st-budget" id="st-budget" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
                         <option value="" data-constraints="@Required" required>What is your total rental budget:</option>
@@ -2135,14 +2138,14 @@
               <form name="myemailform" class="rd-form rd-form-variant-2 rd-mailform" method="post" action="form-to-email.php">
                 <input type="text" name="Longterm" value="Long Term Furnished Rental" style="display:none;">
                 <input type="text" id="asv_4" name="vacation1" style="display:none;">
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="lt-name" type="text" name="lt-name" style="background:#0E0C0D; color:white; height:30px;" data-constraints="@Required" required>
                       <label class="form-label" for="lt-name" style="color:white;">Full Name:</label>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto; padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto; padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="lt-mail" type="mail" name="lt-mail" data-constraints="@Required" style="background:#0E0C0D; color:white; height:30px;" required>
                       <label class="form-label" for="lt-mail" style="color:white;">Email Address:</label>
@@ -2164,8 +2167,8 @@
                       </div>
                     </div> -->
 
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto;  padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap" style="display: grid;">
                       <div style="max-width:75px;" onclick="enable_disable5()">
                         <input class="form-input txtPhone" id='4txtPhone' type="tel" style="background:#0E0C0D;  color:white;" name="txtPhone" />
@@ -2176,7 +2179,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="lt-insta" type="text" name="lt-insta" style="background:#0E0C0D; color:white; height:30px;" data-constraints="@Required" required>
                       <label class="form-label" for="lt-insta" style="color:white;">Social Media Handle:</label>
@@ -2209,14 +2212,14 @@
                 </div>
                </div> -->
 
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto;  padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input chkdt datepicker" id="lt-start-date" type="text" name="lt-start-date" style="background:#0E0C0D; color:white;" placeholder="Requested Check In Date:">
                       <!-- <label class="form-label" for="lt-start-date" style="color:white;">Requested Check In Date:</label> -->
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap ">
                       <!-- <input class="form-input" type="text" id="lt-end-date" name="lt-end-date" style="background:#0E0C0D; color:white;" > -->
                       <input class="form-input datepicker" id="lt-end-date" type="text" name="lt-end-date" style="background:#0E0C0D; color:white;" placeholder="Requested Check Out Date:">
@@ -2224,8 +2227,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto;  padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap input_wrapper_div1">
                       <!-- <input class="form-input" type="time" id="vr-start-time" name="vr-start-time" style="background:#0E0C0D; color:white;">
                           <p class="reqest_para1">Request check In time</p> -->
@@ -2234,7 +2237,7 @@
                       <!-- <label class="form-label" for="vr-start-time" style="color:white;">Requested Check In Time:</label> -->
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap input_wrapper_div">
                       <!-- <input class="form-input" type="time" id="vr-end-time" name="vr-end-time" style="background:#0E0C0D; color:white;">
                           <p class="reqest_para">Request check Out time</p> -->
@@ -2244,8 +2247,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="vr-flex-date" id="vr-flex-date" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" required>
                         <option value="">Are you flexible with the check in/out date:</option>
@@ -2254,7 +2257,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px; margin-bottom:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px; margin-bottom:10px;">
                     <div class="form-wrap">
                       <select name="vr-flex-time" id="vr-flex-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" required>
                         <option value="">Are you flexible with the check in/out time:</option>
@@ -2264,8 +2267,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto;  padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
 
                     <div class="form-wrap">
                       <!-- <input class="form-input" id="lt-bed" type="text" name="lt-bed" style="background:#0E0C0D; color:white;" data-constraints="@Required" required>
@@ -2281,7 +2284,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <input class="form-input" id="lt-bathroom" type="text" name="lt-bathroom" style="background:#0E0C0D; color:white;" data-constraints="@Required" required>
                       <label class="form-label" for="lt-bathroom" style="color:white;"># of Bathrooms Needed:</label>
@@ -2289,8 +2292,8 @@
                   </div>
                 </div>
 
-                <div class="" style="display: flex;">
-                  <div class="col-md-6" style="margin-left: auto; padding:10px;">
+                <div class="row mt-0 mx-0">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <!-- <input class="form-input" id="lt-city-2" type="text" style="background:#0E0C0D; color:white;" name="lt-city-2" data-constraints="@Required" required>
                           <label class="form-label" for="lt-city-2" style="color:white;">What city/area are you intersted in:</label> -->
@@ -2315,7 +2318,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-right: auto;  padding:10px;">
+                  <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <!-- <input class="form-input" id="lt-style-2" type="text" style="background:#0E0C0D; color:white;" name="lt-style-2" data-constraints="@Required" required>
                           <label class="form-label" for="lt-style-2" style="color:white;">What house style are you interested in:</label> -->
@@ -2336,7 +2339,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-12" style="margin-right: auto; padding:10px;">
+                <div class="col-12" style="margin-right: auto; padding:10px;">
                   <!-- <div class="col-md-6" style="margin-left: auto; padding:10px;">
                         <div class="form-wrap">
                           <select name="lt-flex-date" id="lt-flex-date" class="form-input" style="background:#0E0C0D; color:white;">
@@ -2362,7 +2365,7 @@
                     <!-- </div> -->
                   </div>
                 </div>
-                <div class="col-md-12" style="margin-right: auto; padding:10px;">
+                <div class="col-12" style="margin-right: auto; padding:10px;">
                   <div class="form-wrap">
                     <input class="form-input" id="lt-info" type="text" name="lt-info" style="background:#0E0C0D; color:white;">
                     <label class="form-label" for="lt-info" style="color:white;">Any additional information you wish to share:</label>
@@ -2374,7 +2377,7 @@
                   <label class="form-label" for="lt-vehicles" style="color:white;">How many vehicles do you anticipate will park on the street:</label>
                 </div>
                </div> -->
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <select name="lt-attendees" id="lt-attendees" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" data-constraints="@Required" required>
                       <option selected># of attendees:</option>
@@ -2393,7 +2396,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <!-- <input class="form-input" id="lt-vendors" type="text" name="lt-vendors" style="background:#0E0C0D; color:white;">
                         <label class="form-label" for="lt-vendors" style="color:white;"># of Guests Staying Over:</label> -->
@@ -2410,19 +2413,19 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <input class="form-input" id="lt-requirements" type="text" name="lt-requirements" style="background:#0E0C0D; color:white;">
                     <label class="form-label" for="lt-requirements" style="color:white;">Do you have any accessibility requirements:</label>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <input class="form-input" id="lt-parking" type="text" name="lt-parking" style="background:#0E0C0D; color:white;">
                     <label class="form-label" for="lt-parking" style="color:white;">Number of parking spots needed:</label>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <!-- <input class="form-input" id="lt-pets" type="text" name="lt-pets" style="background:#0E0C0D; color:white;">
                         <label class="form-label" for="lt-pets" style="color:white;">Do you have any pets</label> -->
@@ -2443,7 +2446,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <!-- <select name="lt-hear-4" id="lt-hear-4" class="form-input" style="background:#0E0C0D; color:white;">
                           <option value="" data-constraints="@Required" required>Are you interested in any additonal services</option>
@@ -2475,14 +2478,14 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-md-12" id="lt-other" style="padding:10px;display:none;">
+                <div class="col-12" id="lt-other" style="padding:10px;display:none;">
                   <div class="form-wrap">
                     <!-- <intextareaput class="form-input" id="lt-other_info" type="textarea" name="lt-other_info" style="background:#0E0C0D; color:white;"> -->
                     <textarea class="form-control" rows="3" id="lt-other_info" name="lt-other_info" style="background:#0E0C0D; color:white;"></textarea>
                     <label class="form-label" for="lt-other_info" style="color:white;">Please fill your required services:</label>
                   </div>
                 </div>
-                <div class="col-md-12" style="padding:10px;">
+                <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
                     <select name="lt-hear-5" id="lt-hear-5" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
                       <option value="" data-constraints="@Required" required>What is your total rental budget:</option>

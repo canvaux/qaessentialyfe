@@ -1,5 +1,8 @@
 <?php 
+// error_reporting(E_ALL ^ E_NOTICE); 
+error_reporting(E_ALL ^ E_WARNING); 
 error_reporting(E_ALL ^ E_NOTICE); 
+error_reporting(0);
 
 $servername = "localhost";
 $username = "root";

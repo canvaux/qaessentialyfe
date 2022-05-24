@@ -130,10 +130,10 @@
         <h2 class="text-center">Meet Our Staff</h2>
         <!-- <h4 class="text-center mt-3 ">Managers</h4> -->
       </caption>
-      <div class="row">
-        <div class="col-3">
-          <div class="card" style="width: 18rem; padding:10px;">
-            <img class="card-img-top" src="./images/essentialyfeceo.jpg" alt="Card image cap">
+      <div class="row user-cards">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3 mb-lg-0">
+          <div class="card">
+            <img class="card-img-top img-fluid" src="./images/essentialyfeceo.jpg" alt="Card image cap">
             <div class="card-body about_card_body">
             <h3 class="card-text text-center about-card-name_first ">Avi Shabtai</h3>
               <h6 class="card-text text-center about-card-name mt-2">CEO & Quality Assurance</h6>
@@ -143,9 +143,9 @@
             </div>
           </div>
         </div>
-        <div class="col-3">
-          <div class="card" style="width: 18rem; padding:10px;">
-            <img class="card-img-top about_img" src="./images/profile2.jpg" alt="Card image cap">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3 mb-lg-0">
+          <div class="card">
+            <img class="card-img-top about_img img-fluid" src="./images/profile2.jpg" alt="Card image cap">
             <div class="card-body about_card_body">
             <h3 class="card-text text-center about-card-name_first">Jhon</h3>
               <h6 class="card-text text-center about-card-name">Manager</h6>
@@ -155,9 +155,9 @@
             </div>
           </div>
         </div>
-        <div class="col-3">
-          <div class="card" style="width: 18rem; padding:10px;">
-            <img class="card-img-top about_img" src="./images/profile2.jpg" alt="Card image cap">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3 mb-lg-0">
+          <div class="card">
+            <img class="card-img-top about_img img-fluid" src="./images/profile2.jpg" alt="Card image cap">
             <div class="card-body about_card_body">
             <h3 class="card-text text-center about-card-name_first">Jhon</h3>
               <h6 class="card-text text-center about-card-name">Manager</h6>
@@ -167,9 +167,9 @@
             </div>
           </div>
         </div>
-      <div class="col-3">
-          <div class="card" style="width: 18rem; padding:10px;">
-            <img class="card-img-top about_img" src="./images/profile2.jpg" alt="Card image cap">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3 mb-lg-0">
+          <div class="card">
+            <img class="card-img-top about_img img-fluid" src="./images/profile2.jpg" alt="Card image cap">
             <div class="card-body about_card_body">
             <h3 class="card-text text-center about-card-name_first">Jhon</h3>
               <h6 class="card-text text-center about-card-name">Manager</h6>
@@ -185,8 +185,8 @@
         <!-- <h4 class="text-center mt-5 ">Technicians</h4> -->
       </caption>
       <div class="row">
-      <div class="col-3">
-          <div class="card" style="width: 18rem; padding:10px;">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3 mb-lg-0">
+          <div class="card">
             <img class="card-img-top about_img" src="./images/profile2.jpg" alt="Card image cap">
             <div class="card-body about_card_body">
             <h3 class="card-text text-center about-card-name_first">Jhon</h3>
@@ -197,8 +197,8 @@
             </div>
           </div>
         </div>
-        <div class="col-3">
-          <div class="card" style="width: 18rem; padding:10px;">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3 mb-lg-0">
+          <div class="card">
             <img class="card-img-top about_img" src="./images/profile2.jpg" alt="Card image cap">
             <div class="card-body about_card_body">
             <h3 class="card-text text-center about-card-name_first">Jhon</h3>
@@ -209,8 +209,8 @@
             </div>
           </div>
         </div>
-        <div class="col-3">
-          <div class="card" style="width: 18rem; padding:10px;">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3 mb-lg-0">
+          <div class="card">
             <img class="card-img-top about_img" src="./images/profile2.jpg" alt="Card image cap">
             <div class="card-body about_card_body">
             <h3 class="card-text text-center about-card-name">Jhon</h3>
@@ -221,8 +221,8 @@
             </div>
           </div>
         </div>
-      <div class="col-3">
-          <div class="card" style="width: 18rem; padding:10px;">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3 mb-lg-0">
+          <div class="card">
             <img class="card-img-top about_img" src="./images/profile2.jpg" alt="Card image cap">
             <div class="card-body about_card_body">
             <h3 class="card-text text-center about-card-name_first">Jhon</h3>
