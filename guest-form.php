@@ -210,7 +210,7 @@
         <div class="container" style="width:100%;">
           <article class="title-classic">
             <div class="title-classic" style="margin-left:25px;">
-            <h5 style="color:white;font-size: xxx-large;font-weight: 500;margin-left: 40%;">Guest Form</h5>
+            <h5 style="color:white;font-size: xxx-large;font-weight: 500;">Guest Form</h5>
               <p style="color:white;"><b style="font-size: 22px;">Thank you for your interest in booking one of our Locations.</b><br><small style="color:white; font-size:15px;">To better assist you, please fill out the form:</small> </p>
             </div>
             <div id="rental-type1" style="display:block; --darkreader-inline-bgcolor:#1d2020;"> <img src="images/Guest Form Picture.jpg" alt="" style="height: 230px; max-width: 100%;margin-bottom: 25px;">
