@@ -168,7 +168,7 @@ if (isset($wedding_y)) {
                               <li>&#8226 $result[sqft] Sq. Ft.</li>
                           </ul>
                       </div>
-                      <p style='float:right; margin-bottom:5px; margin-top:-22px; font-size:12.5px;'><b>Starting at $$result[price] Per Event</b></p>
+                      <p style='float:right; margin-bottom:5px; margin-top:-22px; font-size:12.5px;'><b>Starting at $result[price] Per Event</b></p>
                       <input type='text' name='real_id' value='$result[id]' style='display:none;'>
   
                   </div><input value='Starting at $result[price] Per Event' type='submit' class='btn btn-purple' style='display:none; width:100%; font-size:14px;'></form>
@@ -211,7 +211,7 @@ if (isset($wedding_y)) {
                                 <li>&#8226 $result[sqft] Sq. Ft.</li>
                             </ul>
                         </div>
-                        <p style='float:right; margin-bottom:5px; margin-top:-22px; font-size:12.5px;'><b>Starting at $$result[price] Per Event</b></p>
+                        <p style='float:right; margin-bottom:5px; margin-top:-22px; font-size:12.5px;'><b>Starting at $result[price] Per Event</b></p>
                         <input type='text' name='real_id' value='$result[id]' style='display:none;'>
     
                     </div><input value='Starting at $result[price] Per Event' type='submit' class='btn btn-purple' style='display:none; width:100%; font-size:14px;'></form>
@@ -282,7 +282,7 @@ if (isset($wedding_y)) {
                               <li>&#8226 $result[sqft] Sq. Ft.</li>
                           </ul>
                       </div>
-                      <p style='float:right; margin-bottom:5px; margin-top:-22px; font-size:12.5px;'><b>Starting at $$result[price] Per Event</b></p>
+                      <p style='float:right; margin-bottom:5px; margin-top:-22px; font-size:12.5px;'><b>Starting at $result[price] Per Event</b></p>
                       <input type='text' name='real_id' value='$result[id]' style='display:none;'>
   
                   </div><input value='Starting at $result[price] Per Event' type='submit' class='btn btn-purple' style='display:none; width:100%; font-size:14px;'></form>
@@ -319,7 +319,7 @@ if (isset($wedding_y)) {
                               <li>&#8226 $result[sqft] Sq. Ft.</li>
                           </ul>
                       </div>
-                      <p style='float:right; margin-bottom:5px; margin-top:-22px; font-size:12.5px;'><b>Starting at $$result[price] Per Event</b></p>
+                      <p style='float:right; margin-bottom:5px; margin-top:-22px; font-size:12.5px;'><b>Starting at $result[price] Per Event</b></p>
                       <input type='text' name='real_id' value='$result[id]' style='display:none;'>
   
                   </div><input value='Starting at $result[price] Per Event' type='submit' class='btn btn-purple' style='display:none; width:100%; font-size:14px;'></form>
