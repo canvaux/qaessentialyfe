@@ -66,7 +66,7 @@
                             <option value='Woodland Hills'>Woodland Hills</option>                            
                             <option value='Tarzana'>Tarzana</option>
                         </select>
-                        <select name='Capacity' class='custom-select' id='inputGroupSelect01'>
+                        <!-- <select name='Capacity' class='custom-select' id='inputGroupSelect01'>
                             <option value="0-999999" selected># of attendees</option>
                             <option value='0-30'>0-30</option>
                             <option value='30-60'>30-60</option>
@@ -80,7 +80,7 @@
                             <option value='300-400'>300-400</option>
                             <option value='400-500'>400-500</option>
                             <option value='500-999999'>500+</option>
-                        </select>
+                        </select> -->
                         <select name='View' class='custom-select' id='inputGroupSelect01'>
                             <option value="('Y','N')" selected>View</option>
                             <option value="('Y')">Yes</option>
