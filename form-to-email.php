@@ -3,9 +3,9 @@
     document.cookie = `flag=; expires=${ now.toUTCString()}`;
 </script>
 <?php
-error_reporting(E_ALL ^ E_NOTICE); 
-error_reporting(E_ALL ^ E_WARNING); 
-error_reporting(0); 
+error_reporting(E_ALL ^ E_NOTICE);
+error_reporting(E_ALL ^ E_WARNING);
+error_reporting(0);
 //   setcookie('flag' ,'' , time()-3600);
 
 
@@ -105,16 +105,19 @@ if (isset($rental_type_vacatoin)) {
     $visitor_minor = $_POST['ev-hear'];
     $visitor_info = $_POST['ev-info'];
     $visitor_ticket = $_POST['ev-tickets'];
-    $visitor_event_behalf = $_POST['ev-behalf_yourself'];
+    $visitor_event_behalf = $_POST['ev-app_behalf'];
     $visitor_gear_load = $_POST['ev-avg_ld_gear'];
     //   $visitor_event_type = $_POST['ev-event-type'];
     $visitor_veh = $_POST['ev-vehicles'];
     $visitor_guest_arr = $_POST['ev-guest-arr'];
     $visitor_seat = $_POST['ev-seated'];
     $visitor_park = $_POST['ev-park-spot'];
-    $visitor_event_hr = $_POST['ev-hour'];
-    $visitor_load_time = $_POST['ev-load-time'];
-    $visitor_load_out = $_POST['ev-load-out'];
+    $visitor_event_hr_start = $_POST['ev-hour-start'];
+    $visitor_event_hr_end = $_POST['ev-hour-end'];
+    $visitor_load_time_start = $_POST['ev-load-time-start'];
+    $visitor_load_time_end = $_POST['ev-load-time-end'];
+    $visitor_load_out_start = $_POST['ev-load-out-start'];
+    $visitor_load_out_end = $_POST['ev-load-out-end'];
     $visitor_vec = $_POST['ev-vehicles'];
     $visitor_acc = $_POST['ev-acc'];
     // $visitor_serv = $_POST['ev-add-serv'];
@@ -131,8 +134,8 @@ if (isset($rental_type_vacatoin)) {
     $visitor_high_volt = $_POST['ev-high_volt'];
     $visitor_load_serv = $_POST['ev-load_serv'];
     $visitor_ev_where_hear = $_POST['ev-where_hear'];
-    $visitor_ev_info_city = $_POST['ev-info_city'];
-    $visitor_ev_info_house_style = $_POST['ev-info_house_style'];
+    // $visitor_ev_info_city = $_POST['ev-info_city'];
+    // $visitor_ev_info_house_style = $_POST['ev-info_house_style'];
     $visitor_ev_event_ticketed = $_POST['ev-event_ticketed'];
 
     // print_r('Yes');
@@ -259,12 +262,13 @@ if (isset($rental_type_vacatoin)) {
     $visitor_flex_time = $_POST['lt-flex-time'];
     $visitor_no_pets = $_POST['lt-no_pets'];
     $visitor_yes_pets = $_POST['lt-yes_pets'];
-    $visitor_lt_where_hear= $_POST['lt-where_hear_us'];
+    // $visitor_lt_where_hear = $_POST['lt-where_hear_us'];
     $visitor_lt_city_information = $_POST['lt-city_information'];
-    $visitor_lt_style_information= $_POST['lt-style_information'];
+    $visitor_lt_style_information = $_POST['lt-style_information'];
     $visitor_lt_content_creat = $_POST['lt-content_creat'];
     $visitor_lt_other_info = $_POST['lt-other_info'];
-    }
+ 
+}
 ?>
 
 
@@ -281,6 +285,32 @@ $data = "<img src='$countarycode'  class='flag_img'>";
 // }
 // echo $cookiName = $_COOKIE['flag'];
 // echo $countarycode;
+if ($visitor_vr_other_city == "other") {
+    $show = "
+    <tr style='background-color:#dddddd'>
+            <td>Other city/area information?</td>
+            <td>" . $visitor_vr_other_city . "</td>
+        </tr>
+        ";
+}
+if ($visitor_vr_other_style == "other") {
+    $show = "
+<tr style='background-color:#dddddd'>
+<td>Other house style information?</td>
+<td>" . $visitor_vr_other_style . "</td>
+</tr>
+";
+}
+
+
+if ($visitor_vr_where_hear == "other") {
+    $show = "
+<tr>
+<td>Please fill where did you hear about us?</td>
+<td>" . $visitor_vr_where_hear . "</td>
+</tr>
+";
+}
 
 $mailbody = "
 <!DOCTYPE html>
@@ -362,18 +392,12 @@ $mailbody = "
             <td>What city/area are you intersted in?</td>
             <td>" . $visitor_city . "</td>
         </tr>
-        <tr style='background-color:#dddddd'>
-            <td>Other city/area information?</td>
-            <td>" . $visitor_vr_other_city . "</td>
-        </tr>
+        " . $show . "
         <tr>
             <td>What house style are you interested in?</td>
             <td>" . $visitor_style . "</td>
         </tr>
-        <tr style='background-color:#dddddd'>
-            <td>Other house style information?</td>
-            <td>" . $visitor_vr_other_style . "</td>
-        </tr>
+        " . $show . "
         <tr >
             <td>What is your total rental budget?</td>
             <td>" . $visitor_price . "</td>
@@ -406,10 +430,7 @@ $mailbody = "
             <td>How did you hear about us?</td>
             <td>" . $visitor_find_us . "</td>
         </tr>
-        <tr>
-            <td>Please fill where did you hear about us?</td>
-            <td>" . $visitor_vr_where_hear . "</td>
-        </tr>
+        " . $show . "
         <tr style='background-color:#dddddd'>
             <td>Any additional information you wish to share?</td>
             <td>" . $visitor_aditional_info . "</td>
@@ -442,10 +463,7 @@ $mailbody = "
             <td>" . $visitor_vr_heat_pool . "</td>
         </tr>
 
-        <tr >
-            <td>Other Services?</td>
-            <td>" . $visitor_vr_other_info . "</td>
-        </tr>
+
         
     </table>
 
@@ -528,7 +546,7 @@ if (isset($rental_type_vacatoin)) {
     $mail->Body = $mailbody;
     $mail->addCC($visitor_email);
 } elseif (isset($rental_type_event)) {
-    if($visitor_pets == "yes"){
+    if ($visitor_pets == "yes") {
         $show = "
     <tr>
         <td>No of pets:</td>
@@ -540,7 +558,7 @@ if (isset($rental_type_vacatoin)) {
     </tr>
     ";
     }
-    
+
     if ($visitor_serv == "Other") {
         $show1 = " 
         <tr>
@@ -571,7 +589,7 @@ if (isset($rental_type_vacatoin)) {
                 <th style='border: 2px solid grey;'>
     
                     <img src='https://flagcdn.com/16x12/" . $av . ".png' class='flag_img'>+" . $code . " " . $phoneNumber .
-                    "</td>
+        "</td>
             </tr>
             <tr>
                 <th style='border: 2px solid grey;'>Social Media Handle (example: Facebook, Instagram, LinkedIn)</td>
@@ -613,18 +631,12 @@ if (isset($rental_type_vacatoin)) {
                 <td>What city/area are you intersted in?</td>
                 <td>" . $visitor_city . "</td>
             </tr>
-            <tr>
-                <td>Other City Infomation?</td>
-                <td>" . $visitor_ev_info_city . "</td>
-            </tr>
+        
             <tr style='background-color:#dddddd'>
                 <td>What house style are you interested in?</td>
                 <td>" . $visitor_style . "</td>
             </tr>
-            <tr>
-                <td>Information about the house style?</td>
-                <td>" . $visitor_ev_info_house_style . "</td>
-            </tr>
+
             <tr style='background-color:#dddddd'>
                 <td>Will you be serving alcohol?</td>
                 <td>" . $visitor_ser_alco . "</td>
@@ -675,10 +687,7 @@ if (isset($rental_type_vacatoin)) {
                 <td>How did you hear about us?</td>
                 <td>" . $visitor_find_us . "</td>
             </tr>
-            <tr style='background-color:#dddddd'>
-                <td>Where did you hear about us?</td>
-                <td>" . $visitor_ev_where_hear . "</td>
-            </tr>
+
             <tr>
                 <td>Will you have any minors?</td>
                 <td>" . $visitor_minor . "</td>
@@ -711,7 +720,7 @@ if (isset($rental_type_vacatoin)) {
                 <td>Are you interested in any additonal services?</td>
                 <td>" . $visitor_serv . "</td>
             </tr>
-            ".$show1."
+            " . $show1 . "
             <tr>
                 <td>How will guests be arriving?</td>
                 <td>" . $visitor_guest_arr . "</td>
@@ -725,17 +734,29 @@ if (isset($rental_type_vacatoin)) {
                 <td>" . $visitor_park . "</td>
             </tr>
             <tr style='background-color:#dddddd'>
-                <td>Load in time?</td>
-                <td>" . $visitor_load_time . "</td>
+                <td>Load in time start</td>
+                <td>" . $visitor_load_time_start . "</td>
             </tr>
             <tr>
-                <td>wrap up time?</td>
-                <td>" . $visitor_load_out . "</td>
+                <td>load in time end</td>
+                <td>" . $visitor_load_time_end . "</td>
+            </tr>
+            <tr>
+                <td>wrap up time start</td>
+                <td>" . $visitor_load_out_start . "</td>
+            </tr>
+            <tr>
+            <td>wrap up time end</td>
+            <td>" . $visitor_load_out_end . "</td>
+        </tr>
+            <tr style='background-color:#dddddd'>
+                <td>Hours of event start</td>
+                <td>" . $visitor_event_hr_start  . "</td>
             </tr>
             <tr style='background-color:#dddddd'>
-                <td>Hours of event?</td>
-                <td>" . $visitor_event_hr . "</td>
-            </tr>
+            <td>Hours of event end</td>
+            <td>" . $visitor_event_hr_end . "</td>
+        </tr>
             <tr>
                 <td>Will this be a seated or standing event?</td>
                 <td>" . $visitor_seat . "</td>
@@ -760,10 +781,7 @@ if (isset($rental_type_vacatoin)) {
                 <td>Are you bringing any exotic animals:</td>
                 <td>" . $visitor_exocit_animals . "</td>
             </tr>
-            <tr>
-                <td>Please describe about exotic animals:</td>
-                <td>" . $visitor_exotic_info . "</td>
-            </tr>
+
     
             <tr style='background-color:#dddddd'>
                 <td>Will you be having any high voltage lighting equipment:</td>
@@ -787,7 +805,7 @@ if (isset($rental_type_vacatoin)) {
 ";
     $mail->addCC($visitor_email);
 } elseif (isset($rental_type_production)) {
-    if($visitor_pets == "yes"){
+    if ($visitor_pets == "yes") {
         $show = "
     <tr>
         <td>No of pets:</td>
@@ -799,6 +817,51 @@ if (isset($rental_type_vacatoin)) {
     </tr>
     ";
     }
+    if ($visitor_f_house_style == "other") {
+        $show = "
+    <tr style='background-color:#dddddd'>
+    <td>Information about other house style?</td>
+    <td>" . $visitor_f_house_style . "</td>
+</tr>
+";
+    }
+
+
+    if ($visitor_f_other_city == "other") {
+        $show = "
+    <tr style='background-color:#dddddd'>
+    <td>Information about the other city/area?</td>
+    <td>" . $visitor_f_other_city . "</td>
+</tr>
+";
+    }
+
+    if ($visitor_f_where_hear == "other") {
+        $show = "
+    <tr style='background-color:#dddddd'>
+    <td>Where did you hear about us</td>
+    <td>" . $visitor_f_where_hear . "</td>
+</tr>
+";}
+
+
+if ($visitor_exotic_info == "yes") {
+    $show = "
+<tr style='background-color:#dddddd'>
+<td>Please describe about exotic animals:</td>
+<td>" . $visitor_exotic_info . "</td>
+</tr>
+
+";}
+
+
+if ($visitor_f_info_production == "other") {
+    $show = "
+<tr>
+<td>Production type other information:</td>
+<td>" . $visitor_f_info_production . "</td>
+</tr>
+";}
     $mail->Body = "
   <!DOCTYPE html>
   <html>
@@ -862,18 +925,12 @@ if (isset($rental_type_vacatoin)) {
               <td>What city/area are you intersted in?</td>
               <td>" . $visitor_city . "</td>
           </tr>
-          <tr style='background-color:#dddddd'>
-              <td>Information about the other city/area?</td>
-              <td>" . $visitor_f_other_city . "</td>
-          </tr>
+            ".$show."
           <tr>
               <td>What house style are you interested in?</td>
               <td>" . $visitor_style . "</td>
           </tr>
-          <tr style='background-color:#dddddd'>
-              <td>Information about other house style?</td>
-              <td>" . $visitor_f_house_style . "</td>
-          </tr>
+            " . $show . "
           <tr>
               <td>What is your total rental budget?</td>
               <td>" . $visitor_option . "</td>
@@ -907,15 +964,12 @@ if (isset($rental_type_vacatoin)) {
               <td>Are you bringing any pets</td>
               <td>" . $visitor_pets . "</td>
           </tr>
-          ". $show ."
+          " . $show . "
           <tr>
               <td>How did you hear about us</td>
               <td>" . $visitor_find_us . "</td>
           </tr>
-          <tr style='background-color:#dddddd'>
-              <td>Where did you hear about us</td>
-              <td>" . $visitor_f_where_hear . "</td>
-          </tr>
+                ".$show."
           <tr>
               <td>Any additional information you wish to share?</td>
               <td>" . $visitor_aditional_info . "</td>
@@ -954,14 +1008,8 @@ if (isset($rental_type_vacatoin)) {
               <td>Are you bringing any exotic animals:</td>
               <td>" . $visitor_exocit_animals . "</td>
           </tr>
-          <tr style='background-color:#dddddd'>
-              <td>Please describe about exotic animals:</td>
-              <td>" . $visitor_exotic_info . "</td>
-          </tr>
-          <tr>
-            <td>Production type other information:</td>
-            <td>" . $visitor_f_info_production . "</td>
-          </tr>
+        ".$show."
+        ".$show."
       </table>
   
   </body>
@@ -1164,12 +1212,12 @@ if (isset($rental_type_vacatoin)) {
 
 </html>
     ";
-//   echo $rental_type_shortterm;
-//   print_r($mail);
+    //   echo $rental_type_shortterm;
+    //   print_r($mail);
     $mail->addCC($visitor_email);
 } elseif (isset($rental_type_Longterm)) {
-    
-    if($visitor_pets == "yes"){
+
+    if ($visitor_pets == "yes") {
         $show = "
     <tr >
         <td>No of pets:</td>
@@ -1181,6 +1229,29 @@ if (isset($rental_type_vacatoin)) {
     </tr>
     ";
     }
+
+    if ($visitor_lt_other_info == "other") {
+        $show = "
+    <tr>
+    <td>Are you interested in any additonal services</td>
+    <td>" . $visitor_lt_other_info . "</td>
+</tr>
+";
+}
+
+
+if ($visitor_lt_city_information == "other") {
+    $show = "
+<tr>
+<td>Information about other city/area</td>
+<td>" . $visitor_lt_city_information . "</td>
+</tr>
+";
+}
+
+
+
+
 
     $mail->Body = "
   <!DOCTYPE html>
@@ -1246,18 +1317,12 @@ if (isset($rental_type_vacatoin)) {
             <td>What city/area are you intersted in?</td>
             <td>" . $visitor_city . "</td>
         </tr>
-        <tr>
-            <td>Information about other city/area</td>
-            <td>" . $visitor_lt_city_information . "</td>
-        </tr>
+       ".$show."
         <tr style='background-color:#dddddd'>
             <td>What house style are you interested in?</td>
             <td>" . $visitor_style . "</td>
         </tr>
-        <tr>
-            <td>Information about other house style?</td>
-            <td>" . $visitor_lt_style_information . "</td>
-        </tr>
+        ".$show."
         <tr style='background-color:#dddddd'>
             <td>What is your total monthly rental budget?</td>
             <td>" . $visitor_budget . "</td>
@@ -1270,17 +1335,14 @@ if (isset($rental_type_vacatoin)) {
             <td>How did you hear about us</td>
             <td>" . $visitor_option . "</td>
         </tr>
-        <tr>
-            <td>Where did you hear about us</td>
-            <td>" . $visitor_lt_where_hear . "</td>
-        </tr>
+
         <tr style='background-color:#dddddd'>
             <td>Are you flexible with the check in/out date</td>
             <td>" . $visitor_flexible_date . "</td>
         </tr>
         <tr>
             <td>Are you flexible with the check in/out time</td>
-            <td>" . $visitor_flex_time. "</td>
+            <td>" . $visitor_flex_time . "</td>
         </tr>
         <tr style='background-color:#dddddd'>
             <td>Do you have any accessibility requirements:?</td>
@@ -1294,15 +1356,12 @@ if (isset($rental_type_vacatoin)) {
             <td>Are you interested in any additonal services</td>
             <td>" . $visitor_service . "</td>
         </tr>
-        <tr>
-            <td>Are you interested in any additonal services</td>
-            <td>" . $visitor_lt_other_info . "</td>
-        </tr>
+       ".$show."
         <tr style='background-color:#dddddd'>
             <td>Do you have any pets</td>
             <td>" . $visitor_pets . "</td> 
         </tr>
-        ".$show."
+        " . $show . "
         <tr>
             <td>Will this be a house to live in or a company house/content creation property:</td>
             <td>" . $visitor_lt_content_creat . "</td>
@@ -1332,9 +1391,10 @@ $mail->addAddress('developer559872@gmail.com');
 
 if ($mail->send()) {
     echo "Email Sent..!";
+    // die();
     setcookie("flag", "", time() - 3600);
 
-    // header('location:guest-form.php');
+    header('location:guest-form.php');
 } else {
     echo "Message could not be sent. Mailer Error: " . $mail->ErrorInfo;
 }
