@@ -1,7 +1,9 @@
 <?php
+error_reporting(E_ALL ^ E_WARNING);
 include('../config.php');
 if (isset($_SESSION['username'])) {
     header("location:index.php");
+
     // exit();
 }
 

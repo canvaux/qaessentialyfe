@@ -17,7 +17,7 @@
 
 // core PHP method
 session_start();
-$conn = mysqli_connect("localhost", "root", "", "properties");
+$conn = mysqli_connect("localhost", "root", "", "ybuhphmy_properties");
 // if($conn){
 //   echo "yes";
 // }else{

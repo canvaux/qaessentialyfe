@@ -8,59 +8,64 @@ if (!isset($_SESSION['username'])) {
 
 //fetching form data
 if (isset($_POST['submit'])) {
-    $name = $_POST['name'];
-    $address = $_POST['address'];
-    $area = $_POST['area'];
-    $price = $_POST['price'];
-    $bedroom = $_POST['bedroom'];
-    $bathroom = $_POST['bathroom'];
-    $guest = $_POST['guest'];
-    $sqft = $_POST['sqft'];
-    $description = $_POST['description'];
-    $vacation = $_POST['vacation'];
-    $vanue = $_POST['venue'];
-    $film = $_POST['film'];
-    $pool = $_POST['pool'];
-    $ltfr = $_POST['ltfr'];
-    $reg_date = $_POST['reg_date'];
-    $wedding = $_POST['wedding'];
-    $alttext = $_POST['alttext'];
+    $name = mysqli_real_escape_string($conn, $_POST['name']);
+    $address = mysqli_real_escape_string($conn, $_POST['address']);
+    $area = mysqli_real_escape_string($conn, $_POST['area']);
+    $price = mysqli_real_escape_string($conn, $_POST['price']);
+    $bedroom = mysqli_real_escape_string($conn, $_POST['bedroom']);
+    $bathroom = mysqli_real_escape_string($conn, $_POST['bathroom']);
+    $guest = mysqli_real_escape_string($conn, $_POST['guest']);
+    $sqft =  mysqli_real_escape_string($conn, $_POST['sqft']);
+    $description = mysqli_real_escape_string($conn, $_POST['description']);
+    $vacation = mysqli_real_escape_string($conn,  $_POST['vacation']);
+    $vanue = mysqli_real_escape_string($conn, $_POST['venue']);
+    $film = mysqli_real_escape_string($conn, $_POST['film']);
+    $pool = mysqli_real_escape_string($conn, $_POST['pool']);
+    $ltfr = mysqli_real_escape_string($conn,  $_POST['ltfr']);
+    $reg_date = mysqli_real_escape_string($conn,  $_POST['reg_date']);
+    $wedding = mysqli_real_escape_string($conn, $_POST['wedding']);
+    $alttext = mysqli_real_escape_string($conn, $_POST['alttext']);
     $file = $_FILES['file'];
     $file_name = $_FILES['file']['name'];
     $file_tmp = $_FILES['file']['tmp_name'];
     $file_error = $_FILES['file']['error'];
     move_uploaded_file($file_tmp, "../images/properties/" . "$file_name");
 
+    // update Query for updating card data 
+
     if (isset($_GET['update'])) {
         $id = $_GET['update'];
-     $name = $_POST['name'];
-    $address = $_POST['address'];
-    $area = $_POST['area'];
-    $price = $_POST['price'];
-    $bedroom = $_POST['bedroom'];
-    $bathroom = $_POST['bathroom'];
-    $guest = $_POST['guest'];
-    $sqft = $_POST['sqft'];
-    $description = $_POST['description'];
-    $vacation = $_POST['vacation'];
-    $vanue = $_POST['venue'];
-    $film = $_POST['film'];
-    $pool = $_POST['pool'];
-    $ltfr = $_POST['ltfr'];
-    $reg_date = $_POST['reg_date'];
-    $wedding = $_POST['wedding'];
-    $alttext = $_POST['alttext'];
-    $file = $_FILES['file'];
-    $file_name = $_FILES['file']['name'];
-    $file_tmp = $_FILES['file']['tmp_name'];
-    $file_error = $_FILES['file']['error'];
-    move_uploaded_file($file_tmp, "../images/properties/" . "$file_name");
+        $name = $_POST['name'];
+        $address = $_POST['address'];
+        $area = $_POST['area'];
+        $price = $_POST['price'];
+        $bedroom = $_POST['bedroom'];
+        $bathroom = $_POST['bathroom'];
+        $guest = $_POST['guest'];
+        $sqft = $_POST['sqft'];
+        $description = $_POST['description'];
+        $vacation = $_POST['vacation'];
+        $vanue = $_POST['venue'];
+        $film = $_POST['film'];
+        $pool = $_POST['pool'];
+        $ltfr = $_POST['ltfr'];
+        $reg_date = $_POST['reg_date'];
+        $wedding = $_POST['wedding'];
+        $alttext = $_POST['alttext'];
+        $file = $_FILES['file'];
+        $file_name = $_FILES['file']['name'];
+        $file_tmp = $_FILES['file']['tmp_name'];
+        $file_error = $_FILES['file']['error'];
+        move_uploaded_file($file_tmp, "../images/properties/" . "$file_name");
         $query = "UPDATE `properties` SET `name`='$name',`address`='$address',`area`='$area',`price`='$price',`bedroom`='$bedroom',`bathroom`='$bathroom',`guest`='$guest',`sqft`='$sqft',`description`='$description',`image`='$file',`alttext`='$alttext',`vacation`='$vacation',`venue`='$venue',`film`='$film',`ltfr`='$ltfr',`pool`='$pool',`reg_date`='$reg_date',`wedding`='$wedding' WHERE `id`='$id'";
         $result = mysqli_query($conn, $query);
     } else {
         $query = "INSERT INTO `properties`( `name`, `address`, `area`, `price`, `bedroom`, `bathroom`, `guest`, `sqft`, `description`, `image`,`alttext`, `vacation`, `venue`, `film`, `ltfr`, `pool`, `reg_date`,`wedding`) VALUES ('$name','$address','$area','$price','$bedroom','$bathroom','$guest','$sqft','$description','$file_name','$alttext','$vacation','$venue','$film','$pool','$ltfr','$reg_date','$wedding')";
         $result = mysqli_query($conn, $query);
     }
+
+    //checking data is saved or not
+
     if ($result) {
         echo "Data Saved";
         header('location:Add_card.php');
@@ -77,7 +82,7 @@ if (isset($_POST['submit'])) {
     }
 }
 
-
+//getting id for update 
 if (isset($_GET['update'])) {
     $id = $_GET['update'];
     $query = "SELECT * FROM `properties` WHERE `id`='$id'";
@@ -123,9 +128,9 @@ if (isset($_GET['update'])) {
     <!--wrapper-->
     <div class="wrapper">
         <!--sidebar wrapper -->
-        <?php 
-            include('./sidebar.php')
-            ?>
+        <?php
+        include('./sidebar.php')
+        ?>
         <!--start header -->
         <header>
             <div class="topbar d-flex align-items-center">
@@ -229,7 +234,7 @@ if (isset($_GET['update'])) {
                             <form action="" method="POST" enctype="multipart/form-data">
                                 <div class="form-group">
                                     <label for="name">Name</label>
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Type your name" required value="<?php echo $row['name'] ?>">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Type your name" required value="<?php $var =  isset($row['name']) ? $row['name'] : ''; echo $var; ?>" >
                                 </div>
                                 <div class="form-group">
                                     <label for="address">Address</label>
@@ -237,11 +242,11 @@ if (isset($_GET['update'])) {
                                 </div>
                                 <div class="form-group">
                                     <label for="area">Area</label>
-                                    <input type="text" class="form-control" name="area" id="area" placeholder="type your area" required value="<?php echo $row['area'] ?>">
+                                    <input type="text" class="form-control" name="area" id="area" placeholder="type your area" required value="<?php $var =  isset($row['area']) ? $row['area'] : ''; echo $var; ?>">
                                 </div>
                                 <div class="form-group">
                                     <label for="price">Price</label>
-                                    <input type="text" class="form-control" name="price" id="price" placeholder="type your price" value="<?php echo $row['price'] ?>">
+                                    <input type="text" class="form-control" name="price" id="price" placeholder="type your price" value="<?php $var =  isset($row['price']) ? $row['price'] : ''; echo $var; ?>">
                                 </div>
                                 <div class="row">
                                     <div class="col">
@@ -250,7 +255,7 @@ if (isset($_GET['update'])) {
                                             <select name="bedroom" id="bedroom" class="form-select">
                                                 <option value="<?php $var =  isset($row['bedroom']) ? $row['bedroom'] : 'Select Bedroom';
                                                                 echo $var; ?>"><?php $var =  isset($row['bedroom']) ? $row['bedroom'] : 'Select Bedroom';
-                                                                                                                                                            echo $var; ?></option>
+                                                                                echo $var; ?></option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -276,7 +281,7 @@ if (isset($_GET['update'])) {
                                             <select name="bathroom" id="bathroom" class="form-select">
                                                 <option value="<?php $var =  isset($row['bathroom']) ? $row['bathroom'] : 'Select Bathroom';
                                                                 echo $var; ?>"><?php $var =  isset($row['bathroom']) ? $row['bathroom'] : 'Select Bathroom';
-                                                                                                                                                            echo $var; ?></option>
+                                                                                echo $var; ?></option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -299,8 +304,7 @@ if (isset($_GET['update'])) {
                                             <label for="guest">Guest</label>
                                             <select name="guest" id="guest" class="form-select">
                                                 <option value="<?php $var =  isset($row['guest']) ? $row['guest'] : 'Select Guest';
-                                                                echo $var; ?>"><?php $var =  isset($row['guest']) ? $row['guest'] : 'Select Guest';
-                                                                                                                                                    echo $var; ?></option>
+                                                                echo $var; ?>"><?php $var =  isset($row['guest']) ? $row['guest'] : 'Select Guest'; echo $var; ?></option>
                                                 <option value="25">Up to 25 People</option>
                                                 <option value="25-50">25-50</option>
                                                 <option value="50-100">50-100</option>
@@ -314,7 +318,7 @@ if (isset($_GET['update'])) {
                                 </div>
                                 <div class="form-group">
                                     <label for="sqft">Square feet</label>
-                                    <input type="text" name="sqft" id="sqft" class="form-control" placeholder="type square feet" value="<?php echo $row['sqft'] ?>">
+                                    <input type="text" name="sqft" id="sqft" class="form-control" placeholder="type square feet" value="<?php $var =  isset($row['sqft']) ? $row['sqft'] : ''; echo $var; ?>">
                                 </div>
                                 <div class="form-group">
                                     <label for="description">Description</label>
@@ -341,7 +345,7 @@ if (isset($_GET['update'])) {
                                             <select name="vacation" id="vacation" class="form-select">
                                                 <option value="<?php $var =  isset($row['vacation']) ? $row['vacation'] : '';
                                                                 echo $var; ?>"><?php $var =  isset($row['vacation']) ? $row['vacation'] : 'Select Vacation';
-                                                                                                                                                echo $var; ?></option>
+                                                                                echo $var; ?></option>
                                                 <option value="off">off</option>
                                                 <option value="on">on</option>
                                             </select>
@@ -353,7 +357,7 @@ if (isset($_GET['update'])) {
                                             <select name="venue" id="venue" class="form-select">
                                                 <option value="<?php $var =  isset($row['venue']) ? $row['venue'] : 'Select venue';
                                                                 echo $var; ?>"><?php $var =  isset($row['venue']) ? $row['venue'] : 'Select venue';
-                                                                                                                                                    echo $var; ?></option>
+                                                                                echo $var; ?></option>
                                                 <option value="on">on</option>
                                                 <option value="off">off</option>
                                             </select>
@@ -367,7 +371,7 @@ if (isset($_GET['update'])) {
                                             <select name="film" id="film" class="form-select" value="">
                                                 <option value="<?php $var =  isset($row['film']) ? $row['film'] : 'Select Film';
                                                                 echo $var; ?>"><?php $var =  isset($row['film']) ? $row['film'] : 'Select Film';
-                                                                                                                                                echo $var; ?></option>
+                                                                                echo $var; ?></option>
                                                 <option value="off">on</option>
                                                 <option value="off">off</option>
                                             </select>
@@ -379,7 +383,7 @@ if (isset($_GET['update'])) {
                                             <select name="pool" id="pool" class="form-select" value="">
                                                 <option value="<?php $var =  isset($row['pool']) ? $row['pool'] : 'Select pool';
                                                                 echo $var; ?>"><?php $var =  isset($row['pool']) ? $row['pool'] : 'Select pool';
-                                                                                                                                                echo $var; ?></option>
+                                                                                echo $var; ?></option>
                                                 <option value="on">on</option>
                                                 <option value="off">off</option>
                                             </select>
@@ -435,6 +439,7 @@ if (isset($_GET['update'])) {
 			<p class="mb-0">Copyright © 2021. All right reserved.</p>
 		</footer> -->
     </div>
+
     <!--end wrapper-->
     <!--start switcher-->
     <div class="switcher-wrapper">

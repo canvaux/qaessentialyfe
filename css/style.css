@@ -26070,3 +26070,35 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     margin-left: -5px;
     margin-bottom: 10px !important;
 }
+
+.pading-cl {
+    padding: 0 9px;
+}
+
+@media (max-width: 780px) {
+    #subscribe_head {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .pading-cl {
+        padding: 0;
+    }
+    .form-input {
+        font-size: 12px;
+    }
+    .form-label {
+        font-size: 12px;
+    }
+    .form-wrap select {
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 560px) {
+    .footer-corporate .footer-contacts .unit>* {
+        text-align: center;
+    }
+    .unit {
+        justify-content: center;
+    }
+}
