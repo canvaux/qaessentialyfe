@@ -13,6 +13,7 @@ error_reporting(0);
 require 'bat/phpmailer/PHPMailer.php';
 require 'bat/phpmailer/SMTP.php';
 require 'bat/phpmailer/Exception.php';
+// require('./ccmail.php');
 //Define name spaces
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -58,6 +59,7 @@ if (isset($rental_type_vacatoin)) {
     $visitor_yes_guest = $_POST['vr-yes_guest'];
     $visitor_yes_service_home = $_POST['vr-yes_service_home'];
     $visitor_yes_service_lxr = $_POST['vr-yes_service_lxr'];
+    //   require('./a/m.php');
     $code = $_POST['txtPhone'];
     $phoneNumber = $_POST['txtPhone1'];
     $visitor_vr_no_pets = $_POST['vr-no_pets'];
@@ -68,6 +70,18 @@ if (isset($rental_type_vacatoin)) {
     $visitor_vr_where_hear = $_POST['vr-where_hear'];
     $visitor_vr_other_city = $_POST['vr-other_city'];
     $visitor_vr_other_style = $_POST['vr-other_style'];
+    $empty;
+    // if(!$visitor_city === "other"  ){
+    //     $empty;
+    // }else{
+    //     $empty ="<tr style='background-color:#dddddd'>
+    //     <td>Other house style information?</td>
+    //     <td>" . $visitor_vr_other_style . "</td>
+    //     </tr>
+    //           ";
+    // }
+    // print_r('No');
+    // die();
 
 } elseif (isset($rental_type_event)) {
     $av = $_POST['vacation1'];
@@ -134,13 +148,14 @@ if (isset($rental_type_vacatoin)) {
     $visitor_ev_info_city = $_POST['ev-info_city'];
     $visitor_ev_info_house_style = $_POST['ev-info_house_style'];
     $visitor_ev_event_ticketed = $_POST['ev-event_ticketed'];
-    $datacontidion ;
+    $visitor_exocit_info = $_POST['ev-exotic_info'];
+    $visitor_vr_other_city = $_POST['ev-info_city'];
+    $datacontidion;
 
-    if($visitor_exocit_animals === "no"){
-      $datacontidion ="no";  
-    }
-    else{
-        $datacontidion = $visitor_exotic_info; 
+    if ($visitor_exocit_animals === "no") {
+        $datacontidion = "no";
+    } else {
+        $datacontidion = $visitor_exotic_info;
     }
 
 
@@ -273,14 +288,14 @@ if (isset($rental_type_vacatoin)) {
     $visitor_lt_style_information = $_POST['lt-style_information'];
     $visitor_lt_content_creat = $_POST['lt-content_creat'];
     // $visitor_lt_other_info = $_POST['lt-other_info'];
- 
+
 }
 ?>
 
 
 
 
-    <?php
+<?php
 global $countarycode;
 $countarycode = '<script> document.write(iso); </script>';
 
@@ -305,160 +320,138 @@ $mailbody = "
 <body>
 
     <table>
-        <tr style='background-color:#dddddd'>
-            <th style='border: 2px solid grey;'>Firstname</th>
-            <th style='border: 2px solid grey;'>$visitor_name</th>
-        </tr>
-        <tr>
-            <th style='border: 2px solid grey;'>Email</td>
-            <th style='border: 2px solid grey;'>$visitor_email</td>
-        </tr>
-        <tr style='background-color:#dddddd'>
-            <th style='border: 2px solid grey;'>Phone</td>
-            <th style='border: 2px solid grey;'>
-            
-             <img src='https://flagcdn.com/16x12/" . $av . ".png' class='flag_img'>+" . $code . " " . $phoneNumber . "</td>
-        </tr>
-        <tr>
-            <th style='border: 2px solid grey;'>Social Media Handle (example: Facebook, Instagram, LinkedIn)</td>
-            <th style='border: 2px solid grey;'>$visitor_insta</td>
-        </tr>
-        <tr style='background-color:#000000'>
-            <th style='color: white;'>Question</th>
-            <th style='color: white;'>Answer</th>
-        </tr>
-        <tr>
-   <td>What city/area are you intersted in?</td>
-   <td>" . $visitor_city . "</td></tr>
-   <tr >
-    <td>What other city/area are you intersted in?</td>
-    <td>" . $visitor_vr_other_city . "</td>
-    </tr>
     <tr style='background-color:#dddddd'>
+    <th style='border: 2px solid grey;'>Firstname</th>
+    <th style='border: 2px solid grey;'>$visitor_name</th>
+</tr>
+<tr>
+    <th style='border: 2px solid grey;'>Email</td>
+        <th style='border: 2px solid grey;'>$visitor_email</td>
+</tr>
+<tr style='background-color:#dddddd'>
+    <th style='border: 2px solid grey;'>Phone</td>
+        <th style='border: 2px solid grey;'>
+
+            <img src='https://flagcdn.com/16x12/" . $av . ".png' class='flag_img'>+" . $code . " " . $phoneNumber . "
+            </td>
+</tr>
+<tr>
+    <th style='border: 2px solid grey;'>Social Media Handle (example: Facebook, Instagram, LinkedIn)</td>
+        <th style='border: 2px solid grey;'>$visitor_insta</td>
+</tr>
+<tr style='background-color:#000000'>
+    <th style='color: white;'>Question</th>
+    <th style='color: white;'>Answer</th>
+</tr>
+<tr>
+
+    <td>Rental Type</td>
+    <td>" . $rental_type_vacatoin . "</td>
+</tr>
+<tr style='background-color:#dddddd'>
+    <td>Are you bringing any pets?</td>
+    <td>" . $visitor_pets . "</td>
+</tr>
+<tr>
+    <td>Are you planning to host a party?</td>
+    <td>" . $visitor_pets . "</td>
+</tr>
+<tr style='background-color:#dddddd'>
+    <td>Check-In date</td>
+    <td>" . $visitor_start_date . "</td>
+</tr>
+<tr style='background-color:#dddddd'>
+    <td>Check-out date</td>
+    <td>" . $visitor_end_date . "</td>
+</tr>
+<tr style='background-color:#dddddd'>
+    <td>Check In Time</td>
+    <td>" . $visitor_start_time . "</td>
+</tr>
+<tr>
+    <td>Check Out Time</td>
+    <td>" . $visitor_end_time . "</td>
+</tr>
+<tr style='background-color:#dddddd'>
+    <td>Number of Bedrooms Needed?</td>
+    <td>" . $visitor_beds . "</td>
+</tr>
+<tr>
+    <td>Number of Bathrooms Needed?</td>
+    <td>" . $visitor_bath . "</td>
+</tr>
+<tr style='background-color:#dddddd'>
+    <td>Numeber of Guests Staying Over?</td>
+    <td>" . $visitor_stay . "</td>
+</tr>
+<tr>
+    <td>What city/area are you intersted in?</td>
+    <td>" . $visitor_city . "</td>
+</tr>
+<tr>
+    <td>What house style are you interested in?</td>
+    <td>" . $visitor_style . "</td>
+</tr>
+<tr>
+    <td>What is your total rental budget?</td>
+    <td>" . $visitor_price . "</td>
+</tr>
+<tr style='background-color:#dddddd'>
+    <td>Are you interested in any additonal services?</td>
+    <td>" . $visitor_services . "</td>
+</tr>
+<tr>
+    <td>Do you have any accessibility requirements?</td>
+    <td>" . $visitor_req . "</td>
+</tr>
+<tr style='background-color:#dddddd'>
+    <td>Number of parking spots needed?</td>
+    <td>" . $visitor_park . "</td>
+</tr>
+<tr>
+    <td>Are you flexible with the check in/out date?</td>
+    <td>" . $visitor_flexible_date . "</td>
+</tr>
+<tr style='background-color:#dddddd'>
+    <td>Are you flexible with the check in/out time?</td>
+    <td>" . $visitor_flexible_time . "</td>
+</tr>
+<tr>
+    <td>Are you expecting any visitors?</td>
+    <td>" . $visitor_visits . "</td>
+</tr>
+<tr style='background-color:#dddddd'>
     <td>How did you hear about us?</td>
     <td>" . $visitor_find_us . "</td>
 </tr>
-<tr>
-    <td>Please fill where did you hear about us?</td>
-    <td>" . $visitor_vr_where_hear . "</td>
+<tr style='background-color:#dddddd'>
+    <td>Any additional information you wish to share?</td>
+    <td>" . $visitor_aditional_info . "</td>
 </tr>
-        <tr>
-
-            <td>Rental Type</td>
-            <td>" . $rental_type_vacatoin . "</td>
-        </tr>
-        <tr style='background-color:#dddddd'>
-        <td>Check-In date</td>
-        <td>" . $visitor_start_date . "</td>
-        </tr>
-        <tr style='background-color:#dddddd'>
-        <td>Check-In date</td>
-        <td>" . $visitor_start_date . "</td>
-        </tr>
-        <tr style='background-color:#dddddd'>
-            <td>Are you bringing any pets?</td>
-            <td>" . $visitor_pets . "</td>
-        </tr>
-        <tr>
-            <td>Are you planning to host a party?</td>
-            <td>" . $visitor_pets . "</td>
-        </tr>
-        <tr>
-        <td>What house style are you interested in?</td>
-        <td>" . $visitor_style . "</td>
-    </tr>
-    <tr style='background-color:#dddddd'>
-    <td>Other house style information?</td>
-    <td>" . $visitor_vr_other_style . "</td>
-    </tr>
-     
-        <tr>
-        <tr style='background-color:#dddddd'>
-            <td>Check In Time</td>
-            <td>" . $visitor_start_time . "</td>
-        </tr>
-        <tr>
-            <td>Check Out Time</td>
-            <td>" . $visitor_end_time . "</td>
-        </tr>
-        <tr style='background-color:#dddddd'>
-            <td>Number of Bedrooms Needed?</td>
-            <td>" . $visitor_beds . "</td>
-        </tr>
-
-        <tr>
-            <td>Number of Bathrooms Needed?</td>
-            <td>" . $visitor_bath . "</td>
-        </tr>
-
-        <tr style='background-color:#dddddd'>
-            <td>Numeber of Guests Staying Over?</td>
-            <td>" . $visitor_stay . "</td>
-        </tr>
-       ".$tableData."
-       ".$tableData2."
-        
-        <tr >
-            <td>What is your total rental budget?</td>
-            <td>" . $visitor_price . "</td>
-        </tr>
-        <tr style='background-color:#dddddd'>
-            <td>Are you interested in any additonal services?</td>
-            <td>" . $visitor_services . "</td>
-        </tr>
-        <tr >
-            <td>Do you have any accessibility requirements?</td>
-            <td>" . $visitor_req . "</td>
-        </tr>
-        <tr style='background-color:#dddddd'>
-            <td>Number of parking spots needed?</td>
-            <td>" . $visitor_park . "</td>
-        </tr>
-        <tr >
-            <td>Are you flexible with the check in/out date?</td>
-            <td>" . $visitor_flexible_date . "</td>
-        </tr>
-        <tr style='background-color:#dddddd'>
-            <td>Are you flexible with the check in/out time?</td>
-            <td>" . $visitor_flexible_time . "</td>
-        </tr>
-        <tr >
-            <td>Are you expecting any visitors?</td>
-            <td>" . $visitor_visits . "</td>
-        </tr>
-        ".$tableData3."
-
-        <tr style='background-color:#dddddd'>
-            <td>Any additional information you wish to share?</td>
-            <td>" . $visitor_aditional_info . "</td>
-        </tr>
-        <tr>
-            <td>Number of pets?</td>
-            <td>" . $visitor_vr_no_pets . "</td>
-        </tr>
-        <tr style='background-color:#dddddd'>
-            <td>Weight of pets?</td>
-            <td>" . $visitor_yes_pets . "</td>
-        </tr>
-        <tr>
-            <td>Number of visitors?</td>
-            <td>" . $visitor_yes_guest . "</td>
-        </tr>
-
-        <tr style='background-color:#dddddd'>
-            <td>What is the main purpose of your trip?</td>
-            <td>" . $visitor_vr_trip_perpose . "</td>
-        </tr>
-
-        <tr>
-            <td>Will you be having music in the backyard?</td>
-            <td>" . $visitor_vr_music . "</td>
-        </tr>
-
-        <tr style='background-color:#dddddd'>
-            <td>Would you like to heat up the pool & Hot tub?</td>
-            <td>" . $visitor_vr_heat_pool . "</td>
-        </tr>
+<tr>
+    <td>Number of pets?</td>
+    <td>" . $visitor_vr_no_pets . "</td>
+</tr>
+<tr style='background-color:#dddddd'>
+    <td>Weight of pets?</td>
+    <td>" . $visitor_yes_pets . "</td>
+</tr>
+<tr>
+    <td>Number of visitors?</td>
+    <td>" . $visitor_yes_guest . "</td>
+</tr>
+<tr style='background-color:#dddddd'>
+    <td>What is the main purpose of your trip?</td>
+    <td>" . $visitor_vr_trip_perpose . "</td>
+</tr>
+<tr>
+    <td>Will you be having music in the backyard?</td>
+    <td>" . $visitor_vr_music . "</td>
+</tr>
+<tr style='background-color:#dddddd'>
+    <td>Would you like to heat up the pool & Hot tub?</td>
+    <td>" . $visitor_vr_heat_pool . "</td>
+</tr>
 
     </table>
 
@@ -467,11 +460,12 @@ $mailbody = "
 
 </html>
 ";
-print_r($mailbody);
-die();
+
+// print_r($mailbody);
+// die()
 ?>
 
-        <?php
+<?php
 
 // die();
 
@@ -529,7 +523,7 @@ $mail->isHTML(true);
 //Email body
 if (isset($rental_type_vacatoin)) {
     $mail->Body = $mailbody;
-    $mail->addCC($visitor_email);
+    // $mail->addCC($visitor_email);
 } elseif (isset($rental_type_event)) {
     if ($visitor_pets == "yes") {
         $show = "
@@ -545,14 +539,6 @@ if (isset($rental_type_vacatoin)) {
     ";
     }
 
-
-            
-
-
-
-           
-
-           
     $mail->Body = "
     <!DOCTYPE html>
     <html>
@@ -562,257 +548,246 @@ if (isset($rental_type_vacatoin)) {
     
     <body>
         <table>
-            <tr style='background-color:#dddddd'>
-                <th style='border: 2px solid grey;'>Firstname</th>
-                <th style='border: 2px solid grey;'>$visitor_name</th>
-            </tr>
-            <tr>
-                <th style='border: 2px solid grey;'>Email</td>
+        <tr style='background-color:#dddddd'>
+            <th style='border: 2px solid grey;'>Firstname</th>
+            <th style='border: 2px solid grey;'>$visitor_name</th>
+        </tr>
+        <tr>
+            <th style='border: 2px solid grey;'>Email</td>
                 <th style='border: 2px solid grey;'>$visitor_email</td>
-            </tr>
-            <tr style='background-color:#dddddd'>
-                <th style='border: 2px solid grey;'>Phone</td>
+        </tr>
+        <tr style='background-color:#dddddd'>
+            <th style='border: 2px solid grey;'>Phone</td>
                 <th style='border: 2px solid grey;'>
-    
-                    <img src='https://flagcdn.com/16x12/" . $av . ".png' class='flag_img'>+" . $code . " " . $phoneNumber .
-        "</td>
-            </tr>
-            <tr>
-                <th style='border: 2px solid grey;'>Social Media Handle (example: Facebook, Instagram, LinkedIn)</td>
+
+                    <img src='https://flagcdn.com/16x12/" . $av . ".png' class='flag_img'>+" . $code . " " . $phoneNumber . "
+                    </td>
+        </tr>
+        <tr>
+            <th style='border: 2px solid grey;'>Social Media Handle (example: Facebook, Instagram, LinkedIn)</td>
                 <th style='border: 2px solid grey;'>$visitor_insta</td>
-            </tr>
-            <tr style='background-color:#000000'>
-                <th style='color: white;'>Question</th>
-                <th style='color: white;'>Answer</th>
-            </tr>
-            
+        </tr>
+        <tr style='background-color:#000000'>
+            <th style='color: white;'>Question</th>
+            <th style='color: white;'>Answer</th>
+        </tr>
 
-            <tr>
-                <td>Rental Type</td>
-                <td>" . $rental_type_event . "</td>
-            </tr>
-            
 
-    <tr style='background-color:#dddddd'>
-    <td>Are you interested in any additonal services?</td>
-    <td>" . $visitor_serv . "</td>
-</tr>
-
-<tr>
-    <td>Please Fill your required services?</td>
-    <td>" . $requiredServices . "</td>
-</tr>
-
-<tr style='background-color:#dddddd'>
-    <td>What house style are you interested in?</td>
-    <td>" . $visitor_style . "</td>
-</tr>
-<tr style='background-color:#dddddd'>
-    <td>What other house style are you interested in?</td>
-    <td>" . $visitor_ev_info_house_style . "</td>
-</tr>
-<tr style='background-color:#dddddd'>
-    <td>What city/area are you intersted in?</td>
-    <td>" . $visitor_city . "</td>
-</tr>
-<tr style='background-color:#dddddd'>
-    <td>What other city/area are you intersted in?</td>
-    <td>" . $visitor_vr_other_city . "</td>
-</tr>
-
-<tr style='background-color:#dddddd'>
-        <td>Are you bringing any exotic animals:</td>
-        <td>" . $visitor_exocit_animals . "</td>
-    </tr>
-
-    <tr style='background-color:#dddddd'>
-    <td>Please describe exotic animals</td>
-    <td>" . $visitor_exocit_info. "</td>
-</tr>
-
-            <tr style='background-color:#dddddd'>
-                <td>Check-In date</td>
-                <td>" . $visitor_start_date . "</td>
-            </tr>
-            <tr>
-                <td>Check-out date</td>
-                <td>" . $visitor_end_date . "</td>
-            </tr>
-            <tr style='background-color:#dddddd'>
-                <td>Check In Time</td>
-                <td>" . $visitor_start_time . "</td>
-            </tr>
-            <tr>
-                <td>Check Out Time</td>
-                <td>" . $visitor_end_time . "</td>
-            </tr>
-            <tr style='background-color:#dddddd'>
-                <td>Number of Bedrooms Needed?</td>
-                <td>" . $visitor_beds . "</td>
-            </tr>
-            <tr>
-                <td># of Expected Attendees? (including staff)</td>
-                <td>" . $visitor_attendees . "</td>
-            </tr>
-            ".$other3."
-
-        
-            ".$other2."
-
-            <tr style='background-color:#dddddd'>
-                <td>Will you be serving alcohol?</td>
-                <td>" . $visitor_ser_alco . "</td>
-            </tr>
-            <tr>
-                <td>Will you be selling alcohol?</td>
-                <td>" . $visitor_sell_alco . "</td>
-            </tr>
-            <tr style='background-color:#dddddd'>
-                <td>Will you be having any proffesional filming?</td>
-                <td>" . $visitor_filiming . "</td>
-            </tr>
-            <tr>
-                <td>Will you have any bodyguards during your rental?</td>
-                <td>" . $visitor_bguard . "</td>
-            </tr>
-            <tr style='background-color:#dddddd'>
-                <td>Will you need to move any of the furniture?</td>
-                <td>" . $visitor_furn . "</td>
-            </tr>
-            <tr >
-                <td>Will you be adding any decorations?</td>
-                <td>" . $visitor_deco . "</td>
-            </tr>
-            <tr style='background-color:#dddddd'>
-                <td>Parts of the house to be used?</td>
-                <td>" . $visitor_part . "</td>
-            </tr>
-            <tr>
-                <td>Do you need additional parking space?</td>
-                <td>" . $visitor_park_sp . "</td>
-            </tr>
-    
-            <tr style='background-color:#dddddd'>
-                <td>Are you flexible with the check in/out date?</td>
-                <td>" . $visitor_flexible_date . "</td>
-            </tr>
-            <tr>
-                <td>Are you flexible with the check in/out time?</td>
-                <td>" . $visitor_flexible_time . "</td>
-            </tr>
-            <tr style='background-color:#dddddd'>
-                <td>Are you bringing any pets?</td>
-                <td>" . $visitor_pets . "</td>
-            </tr>
-            " . $show . "
-            <tr>
-                <td>How did you hear about us?</td>
-                <td>" . $visitor_find_us . "</td>
-            </tr>
-
-            <tr>
-                <td>Will you have any minors?</td>
-                <td>" . $visitor_minor . "</td>
-            </tr>
-            <tr style='background-color:#dddddd'>
-                <td>Any additional information you wish to share?</td>
-                <td>" . $visitor_info . "</td>
-            </tr>
-            <tr>
-                <td>Will you be selling tickets to your event?</td>
-                <td>" . $visitor_ticket . "</td>
-            </tr>
-            <tr style='background-color:#dddddd'>
-                <td>Event Type?</td>
-                <td>" . $visitor_event_type . "</td>
-            </tr>
-            <tr>
-                <td>How many vehicles do you anticipate will park on the street?</td>
-                <td>" . $visitor_veh . "</td>
-            </tr>
-            <tr style='background-color:#dddddd'>
-                <td>How many vendors do you anticipate will service the event?</td>
-                <td>" . $visitor_ven . "</td>
-            </tr>
-            <tr>
-                <td>What is your total rental budget?</td>
-                <td>" . $visitor_price . "</td>
-            </tr>
-            
-            <tr>
-                <td>How will guests be arriving?</td>
-                <td>" . $visitor_guest_arr . "</td>
-            </tr>
-            <tr style='background-color:#dddddd'>
-                <td>Do you have any accessibility requirements?</td>
-                <td>" . $visitor_acc . "</td>
-    
-            <tr>
-                <td>Number of parking spots needed?</td>
-                <td>" . $visitor_park . "</td>
-            </tr>
-            ".$other."
-            <tr style='background-color:#dddddd'>
-                <td>Load in time start</td>
-                <td>" . $visitor_load_time_start . "</td>
-            </tr>
-            <tr>
-                <td>load in time end</td>
-                <td>" . $visitor_load_time_end . "</td>
-            </tr>
-            <tr>
-                <td>wrap up time start</td>
-                <td>" . $visitor_load_out_start . "</td>
-            </tr>
-            <tr>
+        <tr>
+            <td>Rental Type</td>
+            <td>" . $rental_type_event . "</td>
+        </tr>
+        <tr style='background-color:#dddddd'>
+            <td>Check-In date</td>
+            <td>" . $visitor_start_date . "</td>
+        </tr>
+        <tr>
+            <td>Check-out date</td>
+            <td>" . $visitor_end_date . "</td>
+        </tr>
+        <tr style='background-color:#dddddd'>
+            <td>Check In Time</td>
+            <td>" . $visitor_start_time . "</td>
+        </tr>
+        <tr>
+            <td>Check Out Time</td>
+            <td>" . $visitor_end_time . "</td>
+        </tr>
+        <tr style='background-color:#dddddd'>
+            <td>Number of Bedrooms Needed?</td>
+            <td>" . $visitor_beds . "</td>
+        </tr>
+        <tr>
+            <td># of Expected Attendees? (including staff)</td>
+            <td>" . $visitor_attendees . "</td>
+        </tr>
+        <tr style='background-color:#dddddd'>
+            <td>What city/area are you intersted in?</td>
+            <td>" . $visitor_city . "</td>
+        </tr>
+        <tr style='background-color:#dddddd'>
+            <td>What house style are you interested in?</td>
+            <td>" . $visitor_style . "</td>
+        </tr>
+        <tr style='background-color:#dddddd'>
+            <td>Will you be serving alcohol?</td>
+            <td>" . $visitor_ser_alco . "</td>
+        </tr>
+        <tr>
+            <td>Will you be selling alcohol?</td>
+            <td>" . $visitor_sell_alco . "</td>
+        </tr>
+        <tr style='background-color:#dddddd'>
+            <td>Will you be having any proffesional filming?</td>
+            <td>" . $visitor_filiming . "</td>
+        </tr>
+        <tr>
+            <td>Will you have any bodyguards during your rental?</td>
+            <td>" . $visitor_bguard . "</td>
+        </tr>
+        <tr style='background-color:#dddddd'>
+            <td>Will you need to move any of the furniture?</td>
+            <td>" . $visitor_furn . "</td>
+        </tr>
+        <tr>
+            <td>Will you be adding any decorations?</td>
+            <td>" . $visitor_deco . "</td>
+        </tr>
+        <tr style='background-color:#dddddd'>
+            <td>Parts of the house to be used?</td>
+            <td>" . $visitor_part . "</td>
+        </tr>
+        <tr>
+            <td>Do you need additional parking space?</td>
+            <td>" . $visitor_park_sp . "</td>
+        </tr>
+        <tr style='background-color:#dddddd'>
+            <td>Are you flexible with the check in/out date?</td>
+            <td>" . $visitor_flexible_date . "</td>
+        </tr>
+        <tr>
+            <td>Are you flexible with the check in/out time?</td>
+            <td>" . $visitor_flexible_time . "</td>
+        </tr>
+        <tr style='background-color:#dddddd'>
+            <td>Are you bringing any pets?</td>
+            <td>" . $visitor_pets . "</td>
+        </tr>
+        <tr>
+            <td>How did you hear about us?</td>
+            <td>" . $visitor_find_us . "</td>
+        </tr>
+        <tr>
+            <td>Will you have any minors?</td>
+            <td>" . $visitor_minor . "</td>
+        </tr>
+        <tr style='background-color:#dddddd'>
+            <td>Any additional information you wish to share?</td>
+            <td>" . $visitor_info . "</td>
+        </tr>
+        <tr>
+            <td>Will you be selling tickets to your event?</td>
+            <td>" . $visitor_ticket . "</td>
+        </tr>
+        <tr style='background-color:#dddddd'>
+            <td>Event Type?</td>
+            <td>" . $visitor_event_type . "</td>
+        </tr>
+        <tr>
+            <td>How many vehicles do you anticipate will park on the street?</td>
+            <td>" . $visitor_veh . "</td>
+        </tr>
+        <tr style='background-color:#dddddd'>
+            <td>How many vendors do you anticipate will service the event?</td>
+            <td>" . $visitor_ven . "</td>
+        </tr>
+        <tr>
+            <td>What is your total rental budget?</td>
+            <td>" . $visitor_price . "</td>
+        </tr>
+        <tr style='background-color:#dddddd'>
+            <td>Are you interested in any additonal services?</td>
+            <td>" . $visitor_serv . "</td>
+        </tr>
+        <tr>
+            <td>How will guests be arriving?</td>
+            <td>" . $visitor_guest_arr . "</td>
+        </tr>
+        <tr style='background-color:#dddddd'>
+            <td>Do you have any accessibility requirements?</td>
+            <td>" . $visitor_acc . "</td>
+        </tr>
+        <tr>
+            <td>Number of parking spots needed?</td>
+            <td>" . $visitor_park . "</td>
+        </tr>
+        <tr style='background-color:#dddddd'>
+            <td>Load in time start</td>
+            <td>" . $visitor_load_time_start . "</td>
+        </tr>
+        <tr>
+            <td>load in time end</td>
+            <td>" . $visitor_load_time_end . "</td>
+        </tr>
+        <tr>
+            <td>wrap up time start</td>
+            <td>" . $visitor_load_out_start . "</td>
+        </tr>
+        <tr>
             <td>wrap up time end</td>
             <td>" . $visitor_load_out_end . "</td>
         </tr>
-            <tr style='background-color:#dddddd'>
-                <td>Hours of event start</td>
-                <td>" . $visitor_event_hr_start  . "</td>
-            </tr>
-            <tr style='background-color:#dddddd'>
+        <tr style='background-color:#dddddd'>
+            <td>Hours of event start</td>
+            <td>" . $visitor_event_hr_start . "</td>
+        </tr>
+        <tr style='background-color:#dddddd'>
             <td>Hours of event end</td>
             <td>" . $visitor_event_hr_end . "</td>
         </tr>
-            <tr>
-                <td>Will this be a seated or standing event?</td>
-                <td>" . $visitor_seat . "</td>
-            </tr>
-            <tr style='background-color:#dddddd'>
-                <td># of Bathrooms Needed</td>
-                <td>" . $visitor_bath . "</td>
-            </tr>
-            <tr>
-                <td>Are you applying on behalf of your self?</td>
-                <td>" . $visitor_event_behalf . "</td>
-            </tr>
-            <tr style='background-color:#dddddd'>
-                <td>Please describe the average gear load-in?</td>
-                <td>" . $visitor_gear_load . "</td>
-            </tr>
-            <tr>
-                <td>Please describe the event</td>
-                <td>" . $visitor_event_plan . "</td>
-            </tr>
-            
-            ".$animal."
+        <tr>
+            <td>Will this be a seated or standing event?</td>
+            <td>" . $visitor_seat . "</td>
+        </tr>
+        <tr style='background-color:#dddddd'>
+            <td># of Bathrooms Needed</td>
+            <td>" . $visitor_bath . "</td>
+        </tr>
+        <tr>
+            <td>Are you applying on behalf of your self?</td>
+            <td>" . $visitor_event_behalf . "</td>
+        </tr>
 
-                ".$datacontidion."
-            <tr style='background-color:#dddddd'>
-                <td>Will you be having any high voltage lighting equipment:</td>
-                <td>" . $visitor_high_volt . "</td>
-            </tr>
-    
-            <tr>
-                <td>Do you need lodging services/ stay over night:</td>
-                <td>" . $visitor_load_serv . "</td>
-            </tr>
-            <tr style='background-color:#dddddd'>
-                <td>Will this be a ticketed event:</td>
-                <td>" . $visitor_ev_event_ticketed . "</td>
-            </tr>
+        <tr style='background-color:#dddddd'>
+            <td>Please describe the average gear load-in?</td>
+            <td>" . $visitor_gear_load . "</td>
+        </tr>
+        <tr>
+            <td>Please describe the event</td>
+            <td>" . $visitor_event_plan . "</td>
+        </tr>
+        <tr>
+            <td>Please Fill your required services?</td>
+            <td>" . $requiredServices . "</td>
+        </tr>
+
+
+        <tr style='background-color:#dddddd'>
+            <td>What other house style are you interested in?</td>
+            <td>" . $visitor_ev_info_house_style . "</td>
+        </tr>
+
+        <tr style='background-color:#dddddd'>
+            <td>What other city/area are you intersted in?</td>
+            <td>" . $visitor_vr_other_city . "</td>
+        </tr>
+
+        <tr style='background-color:#dddddd'>
+            <td>Are you bringing any exotic animals:</td>
+            <td>" . $visitor_exocit_animals . "</td>
+        </tr>
+
+        <tr style='background-color:#dddddd'>
+            <td>Please describe exotic animals</td>
+            <td>" . $visitor_exocit_info . "</td>
+        </tr>
+        <tr>
+            <td>What is your total rental budget?</td>
+            <td>" . $visitor_price . "</td>
+        </tr>
+        <tr style='background-color:#dddddd'>
+            <td>Will you be having any high voltage lighting equipment:</td>
+            <td>" . $visitor_high_volt . "</td>
+        </tr>
+
+        <tr>
+            <td>Do you need lodging services/ stay over night:</td>
+            <td>" . $visitor_load_serv . "</td>
+        </tr>
+        <tr style='background-color:#dddddd'>
+            <td>Will this be a ticketed event:</td>
+            <td>" . $visitor_ev_event_ticketed . "</td>
+        </tr>
     
         </table>
     
@@ -820,10 +795,9 @@ if (isset($rental_type_vacatoin)) {
     
     </html>
 ";
-print_r($mail);
-die();
 
-    $mail->addCC($visitor_email);
+
+    // $mail->addCC($visitor_email);
 } elseif (isset($rental_type_production)) {
     if ($visitor_pets == "yes") {
         $show = "
@@ -837,8 +811,6 @@ die();
     </tr>
     ";
     }
-
-
 
     $mail->Body = "
   <!DOCTYPE html>
@@ -875,7 +847,7 @@ die();
               <td>Rental Type</td>
               <td>" . $rental_type_production . "</td>
           </tr>
-            ".$city."
+            " . $city . "
 
 
             <tr>
@@ -937,12 +909,12 @@ die();
               <td>" . $visitor_stay . "</td>
           </tr>
           
-            ".$show."
+            " . $show . "
           <tr>
               <td>What house style are you interested in?</td>
               <td>" . $visitor_style . "</td>
           </tr>
-          ".$exotic_animal."
+          " . $exotic_animal . "
           <tr>
               <td>What is your total rental budget?</td>
               <td>" . $visitor_option . "</td>
@@ -960,7 +932,7 @@ die();
               <td>" . $visitor_parking_sp . "</td>
           </tr>
     
-          ".$production_type."
+          " . $production_type . "
           <tr>
               <td>Will you have any bodyguards during your rental?</td>
               <td>" . $visitor_Guards . "</td>
@@ -979,7 +951,7 @@ die();
               <td>" . $visitor_pets . "</td>
           </tr>
           " . $show . "
-          ".$hear."
+          " . $hear . "
           <tr>
               <td>Any additional information you wish to share?</td>
               <td>" . $visitor_aditional_info . "</td>
@@ -1012,8 +984,8 @@ die();
               <td>" . $visitor_house_part . "</td>
           </tr>
           
-        ".$show."
-        ".$show."
+        " . $show . "
+        " . $show . "
       </table>
   
   </body>
@@ -1022,7 +994,7 @@ die();
 ";
 
 
-    $mail->addCC($visitor_email);
+    // $mail->addCC($visitor_email);
 } elseif (isset($rental_type_shortterm)) {
     $mail->Body = "
     <!DOCTYPE html>
@@ -1220,7 +1192,7 @@ die();
     ";
     //   echo $rental_type_shortterm;
     //   print_r($mail);
-    $mail->addCC($visitor_email);
+    // $mail->addCC($visitor_email);
 } elseif (isset($rental_type_Longterm)) {
 
     if ($visitor_pets == "yes") {
@@ -1239,7 +1211,7 @@ die();
 
 
 
-        
+
     $mail->Body = "
   <!DOCTYPE html>
 <html>
@@ -1354,32 +1326,23 @@ die();
     </table>
 </body>
 
-</html>
-  ";
+</html>";
 
-    $mail->addCC($visitor_email);
 }
 
-
-
-// 
-// print_r(implode("\n", $headerFields));
+echo "first";
 //Add recipient
 $mail->addAddress('developer559872@gmail.com');
-// $mail->addCC("nikita.jeena@bonamisoftware.com");
+echo "last";
+
 //Finally send email
-// if ($mail->send()) {
-//   echo "Email Sent..!";
-// } else {
-//   echo "Message could not be sent. Mailer Error: " . $mail->ErrorInfo;
-// }
-// die();
+
 if ($mail->send()) {
     echo "Email Sent..!";
     // die();
     setcookie("flag", "", time() - 3600);
-
-    header('location:guest-form.php');
+    // mailer($visitor_email);
+    header("location: ccmail.php/?email=$visitor_email");
 } else {
     echo "Message could not be sent. Mailer Error: " . $mail->ErrorInfo;
 }
@@ -1387,29 +1350,3 @@ if ($mail->send()) {
 
 //Closing smtp connection
 $mail->smtpClose();
-
-// die();
-  // $visitor_name = $_POST['vr-name'];
-  // $visitor_email = $_POST['vr-email'];
-  // $visitor_phone = $_POST['vr-phone'];
-  // $visitor_message = $_POST['vr-message'];
-  
- 
-  //   $headerFields = array(
-  //   "From: $visitor_email",
-  //   "Name: $visitor_name",
-  //   "Number: $visitor_phone",
-  //   "Message: $visitor_message"
-  //   );
-  //   print_r($headerFields);
-
-	// $email_body = "You have received";
-	
-	
-	// $to = "parker@essentialyfe.com";
-
-  // $headers = "From: $visitor_email\r\n";
-
-  // $headers .= "-- New Website Contact -- \r\n";
-
-  // $a = mail($to,$header, implode("\r\n", $headerFields),$headers);

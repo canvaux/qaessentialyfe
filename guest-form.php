@@ -245,7 +245,7 @@
         <div class="container-xxl">
           <div class="row" style="flex-wrap: inherit;">
             <!-- <div class="col-sm-10"> -->
-            <section name="vacation-rental" id="vacation-rental" style="display:none; width:100%;"> 
+            <section name="vacation-rental" id="vacation-rental" style="display:none; width:100%;">
               <form name="myemailform" class="rd-form rd-form-variant-2 rd-mailform" method="post" action="form-to-email.php">
                 <!-- <input type="text" class="form-control" id="date"/> -->
 
@@ -255,13 +255,13 @@
                 <div class="row mt-0 mx-0">
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <input class="form-input" id="vr-name" type="text" name="vr-name" style="background:#0E0C0D; color:white; height:30px;"  required>
+                      <input class="form-input" id="vr-name" type="text" name="vr-name" style="background:#0E0C0D; color:white; height:30px;" required>
                       <label class="form-label" for="vr-name" style="color:white;">Full Name:</label>
                     </div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto; padding:10px;">
                     <div class="form-wrap">
-                      <input class="form-input" id="vr-mail" type="mail" name="vr-mail"  style="background:#0E0C0D; color:white; height:30px;" required>
+                      <input class="form-input" id="vr-mail" type="mail" name="vr-mail" style="background:#0E0C0D; color:white; height:30px;" required>
                       <label class="form-label" for="vr-mail" style="color:white;">Email Address:</label>
                     </div>
                   </div>
@@ -270,17 +270,17 @@
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap" style="display: grid;">
                       <div style="max-width:75px;" onclick="enable_disable1()" class="form-grab">
-                        <input class="form-input" id='txtPhone' type="tel" style="background:#0E0C0D;  color:white;" name="txtPhone"  required/>
+                        <input class="form-input" id='txtPhone' type="tel" style="background:#0E0C0D;  color:white;" name="txtPhone" />
                       </div>
                       <div style="margin-top: -60px;margin-left: 75px;">
-                        <input class="form-input" id='txtPhone1' type='tel' name="txtPhone1"  style="background:#0E0C0D; color:white; height:30px;" disabled required />
+                        <input class="form-input" id='txtPhone1' type='tel' name="txtPhone1" style="background:#0E0C0D; color:white; height:30px;" disabled required />
                         <label class="form-label" for="txtPhone1" style="margin-left: 75px; color:white;">Phone Number:</label>
                       </div>
                     </div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
-                      <input class="form-input" id="vr-insta" type="text" name="vr-insta" style="background:#0E0C0D; color:white; height:30px;"  required>
+                      <input class="form-input" id="vr-insta" type="text" name="vr-insta" style="background:#0E0C0D; color:white; height:30px;" required>
                       <label class="form-label" for="vr-insta" style="color:white;">Social Media Handle (example: Facebook, Instagram, LinkedIn)</label>
                     </div>
                   </div>
@@ -288,14 +288,14 @@
                 <div class="row mt-0 mx-0">
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap">
-                      <input class="form-input chkdt datepicker" id="vr-start-date" type="text" name="vr-start-date" style="background:#0E0C0D; color:white; " placeholder="Requested Check In Date:"  required>
+                      <input class="form-input chkdt datepicker" id="vr-start-date" type="text" name="vr-start-date" style="background:#0E0C0D; color:white; " placeholder="Requested Check In Date:" required>
                       <!-- <label class="form-label" for="vr-start-date" style="color:white;">Requested Check In Date:</label> -->
                     </div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap ">
                       <!-- <input class="form-input" type="text" id="vr-end-date" name="vr-end-date" style="background:#0E0C0D; color:white;" > -->
-                      <input class="form-input datepicker" id="vr-end-date" type="text" name="vr-end-date" style="background:#0E0C0D; color:white;" placeholder="Requested Check Out Date:"  required>
+                      <input class="form-input datepicker" id="vr-end-date" type="text" name="vr-end-date" style="background:#0E0C0D; color:white;" placeholder="Requested Check Out Date:" required>
                       <!-- <label class="form-label" for="vr-end-date" style="color:white;">Requested Check Out Date:</label> -->
                     </div>
                   </div>
@@ -307,7 +307,7 @@
                                  style="background:#0E0C0D; color:white;" required>
                              <p class="reqest_para1">Requested check In time</p> -->
                       <!-- <label class="form-label" for="vr-start-time" style="color:white;">Requested Check In Time:</label> -->
-                      <select name="vr-start-time" id="vr-start-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="vr-start-time" id="vr-start-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Requested Check In Time:</option>
                         <?php require("time_dropdown.php"); ?>
                     </div>
@@ -318,7 +318,7 @@
                                  style="background:#0E0C0D; color:white;" required>
                              <p class="reqest_para">Requested check Out time</p> -->
                       <!-- <label class="form-label" for="vr-end-time" style="color:white;">Requested Check Out Time:</label> -->
-                      <select name="vr-end-time" id="vr-end-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="vr-end-time" id="vr-end-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Requested Check Out Time:</option>
                         <?php require("time_dropdown.php"); ?>
                     </div>
@@ -327,7 +327,7 @@
                 <div class="row mt-0 mx-0">
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <select name="vr-flex-date" id="vr-flex-date" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="vr-flex-date" id="vr-flex-date" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Are you flexible with the check in/out date:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -336,7 +336,7 @@
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px; margin-bottom:10px;">
                     <div class="form-wrap">
-                      <select name="vr-flex-time" id="vr-flex-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="vr-flex-time" id="vr-flex-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Are you flexible with the check in/out time:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -347,8 +347,8 @@
                 <div class="row mt-0 mx-0">
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap has-error">
-                      <select name="vr-bed" id="vr-bed" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
-                        <option value="" ># of Bedrooms Needed:</option>
+                      <select name="vr-bed" id="vr-bed" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
+                        <option value=""># of Bedrooms Needed:</option>
                         <option value="1-2">1-2</option>
                         <option value="3-4">3-4</option>
                         <option value="5-6">5-6</option>
@@ -360,8 +360,8 @@
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <select name="vr-bath" id="vr-bath" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
-                        <option value="" ># of Bathrooms Needed:</option>
+                      <select name="vr-bath" id="vr-bath" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
+                        <option value=""># of Bathrooms Needed:</option>
                         <option value="1-2">1-2</option>
                         <option value="3-4">3-4</option>
                         <option value="5-6">5-6</option>
@@ -375,17 +375,17 @@
                 <div class="row mt-0 mx-0">
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap has-error">
-                      <select name="vr-pets" id="vr-pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  onchange="ShowHideDiv1()"  required>
-                        <option value="" >Are you bringing any pets:</option>
+                      <select name="vr-pets" id="vr-pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv1()" required>
+                        <option value="">Are you bringing any pets:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                       </select>
-                      <select name="vr-no_pets" id="vr-no_pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px; display:none"  required>
+                      <select name="vr-no_pets" id="vr-no_pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px; display:none" required>
                         <option value="1" selected>No of pets:</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                       </select>
-                      <select name="vr-yes_pets" id="vr-yes_pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px; display:none"  required>
+                      <select name="vr-yes_pets" id="vr-yes_pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px; display:none" required>
                         <option value="0" selected>Pet Size:</option>
                         <option value="Up to 20 Pounds">Up to 20 pounds</option>
                         <option value="20-50 pounds">20-50 pounds</option>
@@ -394,8 +394,8 @@
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <select name="vr-party" id="vr-party" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
-                        <option value="" >Are you planning on hosting a party or a large gathering:</option>
+                      <select name="vr-party" id="vr-party" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
+                        <option value="">Are you planning on hosting a party or a large gathering:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                       </select>
@@ -405,7 +405,7 @@
                 <div class="row mt-0 mx-0">
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <select name="vr-city" id="vr-city" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv19()"  required>
+                      <select name="vr-city" id="vr-city" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv19()" required>
                         <option value="">What city/area are you intersted in:
                         </option>
                         <option value='Beverly Hills'>Beverly Hills</option>
@@ -431,15 +431,15 @@
                     <div class="col-md-12" id="vr-other_city" style="padding:10px;display:none;">
                       <div class="form-wrap">
                         <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                        <textarea class="form-control" rows="2" id="vr-other_city" name="vr-other_city" style="background:#0E0C0D; color:white;" placeholder="Please enter the information about the city: " required></textarea>
+                        <textarea class="form-control" rows="2" id="vr-other_city" name="vr-other_city" style="background:#0E0C0D; color:white;" placeholder="Please enter the information about the city: " ></textarea>
                         <!-- <label class="form-label" for="vr-other_city" style="color:white;">Please fill where did you hear about us:</label> -->
                       </div>
                     </div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
-                      <select name="vr-style" id="vr-style" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv20()"  required>
-                        <option value="" >What house style are you interested in:
+                      <select name="vr-style" id="vr-style" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv20()" required>
+                        <option value="">What house style are you interested in:
                         </option>
                         <option value='Asian'>Asian</option>
                         <option value='Desert'>Desert</option>
@@ -459,7 +459,7 @@
                     <div class="col-md-12" id="vr-other_style" style="padding:10px;display:none;">
                       <div class="form-wrap">
                         <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                        <textarea class="form-control" rows="2" id="vr-other_style" name="vr-other_style" style="background:#0E0C0D; color:white;" placeholder="Please enter the information about the house style: " required></textarea>
+                        <textarea class="form-control" rows="2" id="vr-other_style" name="vr-other_style" style="background:#0E0C0D; color:white;" placeholder="Please enter the information about the house style: " ></textarea>
                         <!-- <label class="form-label" for="vr-other_style" style="color:white;">Please fill where did you hear about us:</label> -->
                       </div>
                     </div>
@@ -469,8 +469,8 @@
                 <div class="row mt-0 mx-0">
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <select name="vr-hear" id="vr-hear" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
-                        <option value="" >What is your total rental budget:
+                      <select name="vr-hear" id="vr-hear" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
+                        <option value="">What is your total rental budget:
                         </option>
                         <option value="5000">Up to $5,000</option>
                         <option value="5,000-10,000">$5,000-$10,000</option>
@@ -484,7 +484,7 @@
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto; padding:10px;">
                     <div class="form-wrap">
                       <!-- <select name="vr-serv" id="vr-serv" class="form-input" style="background:#0E0C0D; color:white;" onchange="ShowHideDiv2()"> -->
-                      <select name="vr-serv" id="vr-serv" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv4()"  required>
+                      <select name="vr-serv" id="vr-serv" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv4()" required>
                         <option value="">Are you interested in any additonal services:</option>
                         <option value="House Cleaner">House Cleaner</option>
                         <option value="Mobile Spray Tax">Mobile Spray Tax</option>
@@ -528,20 +528,20 @@
                 <div class="col-md-12" id="vr-other" style="padding:10px;display:none;">
                   <div class="form-wrap">
                     <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                    <textarea class="form-control" rows="3" id="vr-other_info" name="vr-other_info" style="background:#0E0C0D; color:white;" required></textarea>
+                    <textarea class="form-control" rows="3" id="vr-other_info" name="vr-other_info" style="background:#0E0C0D; color:white;" ></textarea>
                     <label class="form-label" for="vr-other_info" style="color:white;">Please fill your required services:</label>
                   </div>
                 </div>
                 <div class="row mt-0 mx-0">
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <input class="form-input" id="vr-req" type="text" style="background:#0E0C0D; color:white;" name="vr-req"  required>
+                      <input class="form-input" id="vr-req" type="text" style="background:#0E0C0D; color:white;" name="vr-req" required>
                       <label class="form-label" for="vr-req" style="color:white;">Do you have any special accessibility requirements:</label>
                     </div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
-                      <input class="form-input" id="vr-park" type="text" style="background:#0E0C0D; color:white;" name="vr-park"  required>
+                      <input class="form-input" id="vr-park" type="text" style="background:#0E0C0D; color:white;" name="vr-park" required>
                       <label class="form-label" for="vr-park" style="color:white;">Number of parking spots needed:</label>
                     </div>
                   </div>
@@ -549,7 +549,7 @@
                 <div class="row mt-0 mx-0">
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <select name="vr-stay" id="vr-stay" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="vr-stay" id="vr-stay" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value=""># of Guests Staying Over:</option>
                         <option value="1-2">1-2</option>
                         <option value="3-4">3-4</option>
@@ -564,7 +564,7 @@
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
-                      <input class="form-input" id="vr-trip_perpose" type="text" style="background:#0E0C0D; color:white;" name="vr-trip_perpose"  required>
+                      <input class="form-input" id="vr-trip_perpose" type="text" style="background:#0E0C0D; color:white;" name="vr-trip_perpose" required>
                       <label class="form-label" for="vr-trip_perpose" style="color:white;">What is the main purpose of your trip:</label>
                     </div>
                   </div>
@@ -573,7 +573,7 @@
                 <div class="row mt-0 mx-0">
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <select name="vr-music" id="vr-music" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="vr-music" id="vr-music" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value=""> Will you be having music in the backyard:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -583,7 +583,7 @@
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px; margin-bottom:10px;">
                     <div class="form-wrap">
-                      <select name="vr-heat_pool" id="vr-heat_pool" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="vr-heat_pool" id="vr-heat_pool" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Would you like to heat up the pool & Hot tub:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -614,8 +614,8 @@
                </div> -->
                 <div class="row mt-0 mx-0" style="padding:10px; display: flex;">
                   <div class="col-12 col-sm-12 col-md-4 p-0" style="width: 33%;">
-                    <select name="vr-visits" id="vr-visits" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  onchange="ShowHideDiv()" required>
-                      <option value="no">Are you expecting any visitors:</option>
+                    <select name="vr-visits" id="vr-visits" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv()" required>
+                      <option value="no" data-constraints="@required" required>Are you expecting any visitors:</option>
                       <option value="yes">Yes</option>
                       <option value="no">No</option>
                     </select>
@@ -631,8 +631,8 @@
                   </div>
 
                   <div class="col-12 col-sm-12 col-md-4 pading-cl my-4 mt-md-0" style="margin: auto;width: 33%; margin-block: inherit;">
-                    <select name="vr-hear-us" id="vr-hear-us" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv18()"  required>
-                      <option value=""  required>How did you hear about us:</option>
+                    <select name="vr-hear-us" id="vr-hear-us" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv18()" required>
+                      <option value="" required>How did you hear about us:</option>
                       <option value="Social Media">Social Media</option>
                       <option value="Google">Google</option>
                       <option value="Yelp">Yelp</option>
@@ -643,7 +643,7 @@
                   </div>
                   <div class="col-12 col-sm-12 col-md-4 p-0" style="width: 33%;">
                     <select name="vr-pro_film" id="vr-pro_film" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
-                      <option value="" > Will you be having any professional filming:
+                      <option value=""> Will you be having any professional filming:
                       </option>
                       <option value="Yes">Yes</option>
                       <option value="No">No</option>
@@ -653,20 +653,20 @@
                 <div class="col-12" id="vr-where_hear" style="padding:10px;display:none;">
                   <div class="form-wrap">
                     <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                    <textarea class="form-control" rows="3" id="vr-where_hear" name="vr-where_hear" style="background:#0E0C0D; color:white;" placeholder="Please fill where did you hear about us:" required></textarea>
+                    <textarea class="form-control" rows="3" id="vr-where_hear" name="vr-where_hear" style="background:#0E0C0D; color:white;" placeholder="Please fill where did you hear about us:" ></textarea>
                     <!-- <label class="form-label" for="vr-where_hear" style="color:white;">Please fill where did you hear about us:</label> -->
                   </div>
                 </div>
                 <div class="col-12" style="padding:10px;">
                   <div class="form-wrap">
-                    <input class="form-input" id="vr-info" type="text" name="vr-info" style="background:#0E0C0D; color:white;"  required>
+                    <input class="form-input" id="vr-info" type="text" name="vr-info" style="background:#0E0C0D; color:white;" required>
                     <label class="form-label" for="vr-info" style="color:white;">Any additional information you wish to share:</label>
                   </div>
                 </div>
                 <br>
                 <article class="title-classic">
                   <div class="title-classic" style="margin-left:15px;">
-                    <input class="form-input" id="initials" type="text" value="" placeholder="Initials" style="background:#0E0C0D; color:white; height:-20px; width:100px;"  required>
+                    <input class="form-input" id="initials" type="text" value="" placeholder="Initials" style="background:#0E0C0D; color:white; height:-20px; width:100px;" required>
                     <label for="confirm" style="margin-left:5px; color:white;">I certify that all of the
                       information here is correct</label>
                   </div>
@@ -689,7 +689,7 @@
                 <div class="row mt-0 mx-0">
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <input class="form-input" id="ev-name" type="text" name="ev-name" style="background:#0E0C0D; color:white; height:30px;"  required>
+                      <input class="form-input" id="ev-name" type="text" name="ev-name" style="background:#0E0C0D; color:white; height:30px;" required>
                       <label class="form-label" for="ev-name" style="color:white;">Full Name:</label>
                     </div>
                   </div>
@@ -705,7 +705,7 @@
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap" style="display: grid;">
                       <div style="max-width:75px;" onclick="enable_disable2()" class="form-grab">
-                        <input class="form-input txtPhone" id='1txtPhone' type="tel" style="background:#0E0C0D;  color:white;" name="txtPhone"/>
+                        <input class="form-input txtPhone" id='1txtPhone' type="tel" style="background:#0E0C0D;  color:white;" name="txtPhone" />
                       </div>
                       <div style="margin-top: -60px;margin-left: 75px;">
                         <input class="form-input" id='txtPhone2' type='tel' name="txtPhone2" style="background:#0E0C0D; color:white; height:30px;" disabled required />
@@ -715,7 +715,7 @@
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
-                      <input class="form-input" id="ev-insta" type="text" name="ev-insta" style="background:#0E0C0D; color:white; height:30px;"  required>
+                      <input class="form-input" id="ev-insta" type="text" name="ev-insta" style="background:#0E0C0D; color:white; height:30px;" required>
                       <label class="form-label" for="ev-insta" style="color:white;">Social Media Handle
                         (example: Facebook, Instagram, LinkedIn)</label>
                     </div>
@@ -737,7 +737,7 @@
                 <div class="row mt-0 mx-0">
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto;  padding:10px;">
                     <div class="form-wrap">
-                      <input class="form-input chkdt datepicker" id="ev-start-date" type="text" name="ev-start-date" style="background:#0E0C0D; color:white; " placeholder="Requested Check In Date:"  required>
+                      <input class="form-input chkdt datepicker" id="ev-start-date" type="text" name="ev-start-date" style="background:#0E0C0D; color:white; " placeholder="Requested Check In Date:" required>
                       <!-- <label class="form-label" for="ev-start-date" style="color:white;">Requested Check In Date:</label> -->
 
                     </div>
@@ -755,7 +755,7 @@
                     <div class="form-wrap input_wrapper_div1">
                       <!-- <input class="form-input" type="time" id="ev-start-time" name="ev-start-time" style="background:#0E0C0D; color:white;">
                           <p class="reqest_para1">Request check In time</p> -->
-                      <select name="ev-start-time" id="ev-start-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="ev-start-time" id="ev-start-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Requested Check In Time:</option>
                         <?php require("time_dropdown.php"); ?>
                         <!-- <input class="form-input" type="time" id="ev-start-time" name="ev-start-time"
@@ -774,7 +774,7 @@
                                 <label class="form-label" for="ev-end-time"
                                     style="margin-left: 47px;color:white;">Requested Check Out Time:</label> -->
                       <!-- <label class="form-label" for="ev-end-time" style="color:white;">Requested Check Out Time:</label> -->
-                      <select name="ev-end-time" id="ev-end-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="ev-end-time" id="ev-end-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Requested Check Out Time:</option>
                         <?php require("time_dropdown.php"); ?>
                     </div>
@@ -796,7 +796,7 @@
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="ev-flex-date" id="ev-flex-date" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
-                        <option value="" >Are you flexible with the check in/out
+                        <option value="">Are you flexible with the check in/out
                           date:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -806,7 +806,7 @@
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="ev-flex-time" id="ev-flex-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
-                        <option value="" >Are you flexible with the check in/out
+                        <option value="">Are you flexible with the check in/out
                           time:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -823,7 +823,7 @@
                     <!-- <input class="form-input" id="ev-vendors-pickup" type="text" name="ev-vendors-pickup" style="background:#0E0C0D; color:white;">
                         <label class="form-label" for="ev-vendors-pickup" style="color:white;margin-top: 9px;">Will you need next day vendors pickup:</label> -->
                     <select name="ev-bed" id="ev-bed" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
-                      <option value="" ># of Bedrooms Needed:</option>
+                      <option value=""># of Bedrooms Needed:</option>
                       <option value="1-2">1-2</option>
                       <option value="3-4">3-4</option>
                       <option value="5-6">5-6</option>
@@ -837,7 +837,7 @@
                     <!-- <input class="form-input" id="ev-bathroom" type="text" name="ev-bathroom" style="background:#0E0C0D; color:white;">
                     <label class="form-label" for="ev-bathroom" style="color:white;margin-top: 9px;margin-left: 35%;"># of Bathrooms Needed:</label> -->
                     <select name="ev-bathroom" id="ev-bathroom" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
-                      <option value="" ># of Bathrooms Needed:</option>
+                      <option value=""># of Bathrooms Needed:</option>
                       <option value="1-2">1-2</option>
                       <option value="3-4">3-4</option>
                       <option value="5-6">5-6</option>
@@ -848,8 +848,8 @@
                   </div>
 
                   <div class="" style="width: 33%;">
-                    <select name="ev-attendees" id="ev-attendees" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
-                      <option selected># of Expected attendees (including staff):</option>
+                    <select name="ev-attendees" id="ev-attendees" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
+                      <option value=""># of Expected attendees (including staff):</option>
                       <option value='0-30'>0-30</option>
                       <option value='30-60'>30-60</option>
                       <option value='60-90'>60-90</option>
@@ -873,7 +873,7 @@
                       <!-- <input class="form-input" id="ev-city-2" type="text" style="background:#0E0C0D; color:white;" name="ev-city-2"  required>
                           <label class="form-label" for="ev-city-2" style="color:white;">What city/area are you intersted in:</label> -->
                       <select name="ev-city-2" id="ev-city-2" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv22()" required>
-                        <option value="" >What city/area are you intersted in:</option>
+                        <option value="">What city/area are you intersted in:</option>
                         <option value='Beverly Hills'>Beverly Hills</option>
                         <option value='Bel Air'>Bellair</option>
                         <option value='Brentwood'>Brentwood</option>
@@ -897,7 +897,7 @@
                     <div class="col-md-12" id="ev-info_city" style="padding:10px;display:none;">
                       <div class="form-wrap">
                         <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                        <textarea class="form-control" rows="2" id="ev-info_city" name="ev-info_city" style="background:#0E0C0D; color:white;" placeholder="Please enter the information about the city:"></textarea>
+                        <textarea class="form-control" rows="2" id="ev-info_city" name="ev-info_city" style="background:#0E0C0D; color:white;" placeholder="Please enter the information about the city:" ></textarea>
                         <!-- <label class="form-label" for="ev-info_city" style="color:white;">Please describe:</label> -->
                       </div>
                     </div>
@@ -907,7 +907,7 @@
                       <!-- <input class="form-input" id="ev-style-2" type="text" style="background:#0E0C0D; color:white;" name="ev-style-2"  required>
                           <label class="form-label" for="ev-style-2" style="color:white;">What house style are you interested in:</label> -->
                       <select name="ev-style-2" id="ev-style-2" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv23()" required>
-                        <option value=""  required>What house style are you interested in:</option>
+                        <option value="" required>What house style are you interested in:</option>
                         <option value='Asian'>Asian</option>
                         <option value='Desert'>Desert</option>
                         <option value='French'>French</option>
@@ -926,7 +926,7 @@
                     <div class="col-md-12" id="ev-info_house_style" style="padding:10px;display:none;">
                       <div class="form-wrap">
                         <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                        <textarea class="form-control" rows="2" id="ev-info_house_style" name="ev-info_house_style" style="background:#0E0C0D; color:white;" placeholder="Please enter the information about the house style:"></textarea>
+                        <textarea class="form-control" rows="2" id="ev-info_house_style" name="ev-info_house_style" style="background:#0E0C0D; color:white;" placeholder="Please enter the information about the house style:" ></textarea>
                         <!-- <label class="form-label" for="ev-info_house_style" style="color:white;">Please describe:</label> -->
                       </div>
                     </div>
@@ -935,7 +935,7 @@
                 <div class="row mt-0 mx-0">
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <select name="ev-serve-alco" id="ev-serve-alco" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="ev-serve-alco" id="ev-serve-alco" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Will you be serving alcohol:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -944,7 +944,7 @@
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px; margin-bottom:10px;">
                     <div class="form-wrap">
-                      <select name="ev-sell-alco" id="ev-sell-alco" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="ev-sell-alco" id="ev-sell-alco" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Will you be selling alcohol:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -955,7 +955,7 @@
                 <div class="row mt-0 mx-0">
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <select name="ev-visits" id="ev-visits" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="ev-visits" id="ev-visits" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Will you be having any professional filming:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -964,7 +964,7 @@
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <select name="ev-app_behalf" id="ev-app_behalf" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="ev-app_behalf" id="ev-app_behalf" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Are you applying on behalf of your self:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -975,7 +975,7 @@
                 <div class="col-md-12" style="padding:10px;">
                   <div class="form-wrap">
                     <select name="ev-hear" id="ev-hear" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
-                      <option value="" >Will you have any bodyguards during your rental:</option>
+                      <option value="">Will you have any bodyguards during your rental:</option>
                       <option value="yes">Yes</option>
                       <option value="no">No</option>
                     </select>
@@ -1001,7 +1001,7 @@
                 <div class="col-md-12" style="padding:10px;">
                   <div class="form-wrap">
                     <select name="ev-furn" id="ev-furn" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
-                      <option value="" >Will you need to move any of the furniture:</option>
+                      <option value="">Will you need to move any of the furniture:</option>
                       <option value="yes">Yes</option>
                       <option value="no">No</option>
                       <option value="maybe">Maybe</option>
@@ -1012,7 +1012,7 @@
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="ev-deco" id="ev-deco" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
-                        <option value="" >Will you be adding any decorations:</option>
+                        <option value="">Will you be adding any decorations:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                         <option value="maybe">Maybe</option>
@@ -1024,7 +1024,7 @@
                       <!-- <input class="form-input" id="ev-parts" type="text" style="background:#0E0C0D; color:white;" name="ev-parts"  required>
                       <label class="form-label" for="ev-parts" style="color:white;">Parts of the house to be used:</label> -->
                       <select name="ev-parts" id="ev-parts" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
-                        <option value="" >Parts of the house to be used:</option>
+                        <option value="">Parts of the house to be used:</option>
                         <option value="Indoor">Indoor</option>
                         <option value="Outdoor">Outdoor</option>
                         <option value="Both">Both</option>
@@ -1037,7 +1037,7 @@
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="ev-park-sp" id="ev-park-sp" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
-                        <option value="" >Do you need additional parking space:</option>
+                        <option value="">Do you need additional parking space:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                       </select>
@@ -1046,7 +1046,7 @@
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <select name="ev-high_volt" id="ev-high_volt" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
-                        <option value="" >Will you be having any high voltage lighting equipment:</option>
+                        <option value="">Will you be having any high voltage lighting equipment:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                         <option value="maybe">Maybe</option>
@@ -1085,7 +1085,7 @@
                         </div> -->
 
                     <div class="form-wrap">
-                      <select name="ev-pets" id="ev-pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  onchange="ShowHideDiv5()" required>
+                      <select name="ev-pets" id="ev-pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv5()" required>
                         <option value="">Are you bringing any pets:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -1106,7 +1106,7 @@
                     <div class="form-wrap">
                       <!-- <input class="form-input" id="ev-exocit_animals" type="text" style="background:#0E0C0D; color:white;" name="ev-exocit_animals"  required>
                       <label class="form-label" for="ev-exocit_animals" style="color:white;">Are you bring any exotic animals:</label> -->
-                      <select name="ev-exocit_animals" id="ev-exocit_animals" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  onchange="ShowHideDiv16()" required>
+                      <select name="ev-exocit_animals" id="ev-exocit_animals" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv16()" required>
                         <option value="">Are you bring any exotic animals:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -1117,7 +1117,7 @@
                 <div class="col-md-12" id="ev-exotic_info" style="padding:10px;display:none;">
                   <div class="form-wrap">
                     <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                    <textarea class="form-control" rows="3" id="ev-exotic_info" name="ev-exotic_info" style="background:#0E0C0D; color:white;" placeholder="Please describe:"></textarea>
+                    <textarea class="form-control" rows="3" id="ev-exotic_info" name="ev-exotic_info" style="background:#0E0C0D; color:white;" placeholder="Please describe:" ></textarea>
                     <!-- <label class="form-label" for="ev-exotic_info" style="color:white;">Please describe:</label> -->
                   </div>
                 </div>
@@ -1125,7 +1125,7 @@
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="ev-hear" id="ev-hear" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
-                        <option value="" >Will you have any minors:</option>
+                        <option value="">Will you have any minors:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                       </select>
@@ -1143,7 +1143,7 @@
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="ev-tickets" id="ev-tickets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
-                        <option value="" >Will you be selling tickets to your
+                        <option value="">Will you be selling tickets to your
                           event:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -1152,7 +1152,7 @@
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto; padding:10px;">
                     <div class="form-wrap">
-                      <select name="ev-event_type" id="ev-event_type" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="ev-event_type" id="ev-event_type" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Event type:</option>
                         <option value="Private">Private</option>
                         <option value="Corporate">Corporate</option>
@@ -1172,7 +1172,7 @@
                     <div class="form-wrap">
                       <!-- <input class="form-input" type="text" id="ev-seated" name="ev-seated" style="background:#0E0C0D; color:white;">
                       <label class="form-label" for="ev-seated" style="color:white;">Will this be a seated or standing event:</label> -->
-                      <select name="ev-seated" id="ev-seated" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="ev-seated" id="ev-seated" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Will this be a seated or standing event:</option>
                         <option value="Seated">Seated</option>
                         <option value="Standing">Standing</option>
@@ -1185,25 +1185,25 @@
                 <div class="row times">
                   <div class="col-12 col-sm-12 col-md-3">
                     <div class="form-wrap">
-                      <input class="form-input" type="time" id="ev-load-time-start" name="ev-load-time-start" style="background:#0E0C0D; color:white;">
+                      <input class="form-input" type="time" id="ev-load-time-start" name="ev-load-time-start" style="background:#0E0C0D; color:white;" required>
                       <label class="form-label" for="ev-load-time-end" style="margin-left: 47px;color:white;">Load in time start:</label>
                     </div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-3 mt-3 mt-md-0">
                     <div class="form-wrap">
-                      <input class="form-input" type="time" id="ev-load-time-end" name="ev-load-time-end" style="background:#0E0C0D; color:white;">
+                      <input class="form-input" type="time" id="ev-load-time-end" name="ev-load-time-end" style="background:#0E0C0D; color:white;" required>
                       <label class="form-label" for="ev-load-time-end" style="margin-left: 47px;color:white;">Load in time end:</label>
                     </div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-3 mt-3 mt-md-0">
                     <div class="form-wrap">
-                      <input class="form-input" type="time" id="ev-load-out-start" name="ev-load-out-start" style="background:#0E0C0D; color:white;">
+                      <input class="form-input" type="time" id="ev-load-out-start" name="ev-load-out-start" style="background:#0E0C0D; color:white;" required>
                       <label class="form-label" for="ev-load-out-start" style="margin-left: 47px;color:white;">Wrap Up time start:</label>
                     </div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-3 mt-3 mt-md-0 mb-2 mb-md-0">
                     <div class="form-wrap">
-                      <input class="form-input" type="time" id="ev-load-out-end" name="ev-load-out-end" style="background:#0E0C0D; color:white;">
+                      <input class="form-input" type="time" id="ev-load-out-end" name="ev-load-out-end" style="background:#0E0C0D; color:white;" required>
                       <label class="form-label" for="ev-load-out-end" style="margin-left: 47px;color:white;">Wrap Up time end:</label>
                     </div>
                   </div>
@@ -1232,17 +1232,17 @@
                   </div>
                 </div> -->
 
-                
+
                 <div class="row times">
-                <div class="col-12 col-sm-12 col-md-6 mb-3 mb-md-0">
+                  <div class="col-12 col-sm-12 col-md-6 mb-3 mb-md-0">
                     <div class="form-wrap">
-                      <input class="form-input" type="text" id="ev-hour-start" name="ev-hour-start" style="background:#0E0C0D; color:white;">
+                      <input class="form-input" type="text" id="ev-hour-start" name="ev-hour-start" style="background:#0E0C0D; color:white;" required>
                       <label class="form-label" for="ev-hour-start" style="color:white;">Hours of event start:</label>
                     </div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-6">
                     <div class="form-wrap">
-                      <input class="form-input" type="text" id="ev-hour-end" name="ev-hour-end" style="background:#0E0C0D; color:white;">
+                      <input class="form-input" type="text" id="ev-hour-end" name="ev-hour-end" style="background:#0E0C0D; color:white;" required>
                       <label class="form-label" for="ev-hour-end" style="color:white;">Hours of event end:</label>
                     </div>
                   </div>
@@ -1262,7 +1262,7 @@
                         you anticipate will park on the street:</label>
                     </div>
                   </div>
-                  
+
                 </div>
                 <div class="col-md-12" style="padding:10px;">
                   <div class="form-wrap">
@@ -1300,7 +1300,7 @@
                 <div class="row mt-0 mx-0">
                   <div class="col-12 col-sm-12 col-md-6" style="padding:10px;">
                     <div class="form-wrap">
-                      <select name="ev-load_serv" id="ev-load_serv" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="ev-load_serv" id="ev-load_serv" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Do you need lodging services/ stay over night:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -1323,7 +1323,7 @@
                 <div class="col-md-12" id="ev-other" style="padding:10px;display:none;">
                   <div class="form-wrap">
                     <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                    <textarea class="form-control" rows="3" id="ev-other_info" name="ev-other_info" style="background:#0E0C0D; color:white;"></textarea>
+                    <textarea class="form-control" rows="3" id="ev-other_info" name="ev-other_info" style="background:#0E0C0D; color:white;" ></textarea>
                     <label class="form-label" for="ev-other_info" style="color:white;">Please fill your required services:</label>
                   </div>
                 </div>
@@ -1333,7 +1333,7 @@
                   <div class="col-12 col-sm-12 col-md-4 p-0">
                     <!-- <input class="form-input" id="ev-vendors-pickup" type="text" name="ev-vendors-pickup" style="background:#0E0C0D; color:white;">
                     <label class="form-label" for="ev-vendors-pickup" style="color:white;margin-top: 9px;">Will you need next day vendors pickup:</label> -->
-                    <select name="ev-vendors-pickup" id="ev-vendors-pickup" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                    <select name="ev-vendors-pickup" id="ev-vendors-pickup" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                       <option value="">Will you need next day vendors pickup:</option>
                       <option value="yes">Yes</option>
                       <option value="no">No</option>
@@ -1343,7 +1343,7 @@
 
                   <div class="col-12 col-sm-12 col-md-4 pading-cl my-4 mt-md-0" style="margin: auto;width: 33%; margin-block: inherit;">
                     <select name="ev-rent" id="ev-rent" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
-                      <option value=""  required>What is your total rental budget:
+                      <option value="" required>What is your total rental budget:
                       </option>
                       <option value="5000">Up to $5,000</option>
                       <option value="5,000-10,000">$5,000-$10,000</option>
@@ -1357,7 +1357,7 @@
 
                   <div class="col-12 col-sm-12 col-md-4 p-0">
                     <select name="ev-hear-2" id="ev-hear-2" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv21()" required>
-                      <option value="" >How did you hear about us:</option>
+                      <option value="">How did you hear about us:</option>
                       <option value="Social Media">Social Media</option>
                       <option value="Google">Google</option>
                       <option value="Yelp">Yelp</option>
@@ -1370,7 +1370,7 @@
                 <div class="col-md-12" id="ev-where_hear" style="padding:10px;display:none;">
                   <div class="form-wrap">
                     <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                    <textarea class="form-control" rows="3" id="ev-where_hear" name="ev-where_hear" style="background:#0E0C0D; color:white;" placeholder="Please fill where did you hear about us"></textarea>
+                    <textarea class="form-control" rows="3" id="ev-where_hear" name="ev-where_hear" style="background:#0E0C0D; color:white;" placeholder="Please fill where did you hear about us" ></textarea>
                     <!-- <label class="form-label" for="ev-where_hear" style="color:white;">Please fill your required services:</label> -->
                   </div>
                 </div>
@@ -1400,13 +1400,13 @@
                 <div class="row mt-0 mx-0">
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <input class="form-input" id="f-name" type="text" name="f-name" style="background:#0E0C0D; color:white; height:30px;"  required>
+                      <input class="form-input" id="f-name" type="text" name="f-name" style="background:#0E0C0D; color:white; height:30px;" required>
                       <label class="form-label" for="f-name" style="color:white;">Full Name:</label>
                     </div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto; padding:10px;">
                     <div class="form-wrap">
-                      <input class="form-input" id="f-mail" type="mail" name="f-mail"  style="background:#0E0C0D; color:white; height:30px;" required>
+                      <input class="form-input" id="f-mail" type="mail" name="f-mail" style="background:#0E0C0D; color:white; height:30px;" required>
                       <label class="form-label" for="f-mail" style="color:white;">Email Address:</label>
                     </div>
                   </div>
@@ -1432,7 +1432,7 @@
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
-                      <input class="form-input" id="f-insta" type="text" name="f-insta" style="background:#0E0C0D; color:white; height:30px;"  required>
+                      <input class="form-input" id="f-insta" type="text" name="f-insta" style="background:#0E0C0D; color:white; height:30px;" required>
                       <label class="form-label" for="f-insta" style="color:white;">Social Media Handle (example: Facebook, Instagram, LinkedIn)</label>
                     </div>
                   </div>
@@ -1488,7 +1488,7 @@
                                 <label class="form-label" for="f-start-time"
                                     style="margin-left: 47px;color:white;">Requested Check In Time:</label> -->
                       <!-- <label class="form-label" for="f-start-time" style="color:white;">Requested Check In Time:</label> -->
-                      <select name="f-start-time" id="f-start-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="f-start-time" id="f-start-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Requested Check In Time:</option>
                         <?php require("time_dropdown.php"); ?>
                     </div>
@@ -1504,7 +1504,7 @@
                                     style="margin-left: 47px;color:white;">Requested Check Out Time:</label> -->
                       <!-- <label class="form-label" for="vr-start-time" style="color:white;">Requested Check In Time:</label> -->
                       <!-- <label class="form-label" for="vr-end-time" style="color:white;">Requested Check Out Time:</label> -->
-                      <select name="f-end-time" id="f-end-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="f-end-time" id="f-end-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Requested Check Out Time:</option>
                         <?php require("time_dropdown.php"); ?>
                     </div>
@@ -1513,7 +1513,7 @@
                 <div class="row mt-0 mx-0">
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <select name="f-flex-date" id="f-flex-date" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="f-flex-date" id="f-flex-date" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Are you flexible with the check in/out date:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -1522,7 +1522,7 @@
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;padding:10px;">
                     <div class="form-wrap">
-                      <select name="f-flex-time" id="f-flex-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="f-flex-time" id="f-flex-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Are you flexible with the check in/out time:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -1536,7 +1536,7 @@
                       <!-- <input class="form-input" id="f-bed" type="text" name="f-bed" style="background:#0E0C0D; color:white;"  required>
                           <label class="form-label" for="f-bed" style="color:white;"># of Bedrooms Needed:</label> -->
                       <select name="f-bed" id="f-bed" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
-                        <option value=""  required># of Bedrooms Needed:
+                        <option value="" required># of Bedrooms Needed:
                         </option>
                         <option value="1-2">1-2</option>
                         <option value="3-4">3-4</option>
@@ -1549,7 +1549,7 @@
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
-                      <input class="form-input" id="f-stay" type="text" name="f-stay" style="background:#0E0C0D; color:white;"  required>
+                      <input class="form-input" id="f-stay" type="text" name="f-stay" style="background:#0E0C0D; color:white;" required>
                       <label class="form-label" for="f-stay" style="color:white;"># of expected staff +
                         Talent:</label>
                     </div>
@@ -1561,7 +1561,7 @@
                       <!-- <input class="form-input" id="f-city" type="text" style="background:#0E0C0D; color:white;" name="f-city"  required>
                           <label class="form-label" for="f-city" style="color:white;">What city/area are you intersted in:</label> -->
                       <select name="f-city" id="f-city" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv25()" required>
-                        <option value="" >What city/area are you intersted in:</option>
+                        <option value="">What city/area are you intersted in:</option>
                         <option value='Beverly Hills'>Beverly Hills</option>
                         <option value='Bel Air'>Bellair</option>
                         <option value='Brentwood'>Brentwood</option>
@@ -1585,7 +1585,7 @@
                     <div class="col-md-12" id="f-other_city" style="padding:10px;display:none;">
                       <div class="form-wrap">
                         <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                        <textarea class="form-control" rows="3" id="f-other_city" name="f-other_city" style="background:#0E0C0D; color:white;" placeholder="Please fill the information about the city/area:"></textarea>
+                        <textarea class="form-control" rows="3" id="f-other_city" name="f-other_city" style="background:#0E0C0D; color:white;" placeholder="Please fill the information about the city/area:" ></textarea>
                         <!-- <label class="form-label" for="f-other_city" style="color:white;">Please describe:</label> -->
                       </div>
                     </div>
@@ -1595,7 +1595,7 @@
                       <!-- <input class="form-input" id="f-style" type="text" style="background:#0E0C0D; color:white;" name="f-style"  required>
                           <label class="form-label" for="f-style" style="color:white;">What house style are you interested in:</label> -->
                       <select name="f-style" id="f-style" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv26()" required>
-                        <option value="" >What house style are you interested in:</option>
+                        <option value="">What house style are you interested in:</option>
                         <option value='Asian'>Asian</option>
                         <option value='Desert'>Desert</option>
                         <option value='French'>French</option>
@@ -1614,7 +1614,7 @@
                     <div class="col-md-12" id="f-house_style" style="padding:10px;display:none;">
                       <div class="form-wrap">
                         <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                        <textarea class="form-control" rows="3" id="f-house_style" name="f-house_style" style="background:#0E0C0D; color:white;" placeholder="Please fill information about house style:"></textarea>
+                        <textarea class="form-control" rows="3" id="f-house_style" name="f-house_style" style="background:#0E0C0D; color:white;" placeholder="Please fill information about house style:" ></textarea>
                         <!-- <label class="form-label" for="f-house_style" style="color:white;">Please describe:</label> -->
                       </div>
                     </div>
@@ -1623,7 +1623,7 @@
                 <div class="row mt-0 mx-0">
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <select name="f-high_volt" id="f-high_volt" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="f-high_volt" id="f-high_volt" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Will you be having any high voltage lighting equipment? </option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -1633,7 +1633,7 @@
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <select name="f-load_serv" id="f-load_serv" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="f-load_serv" id="f-load_serv" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value=""> Do you need lodging services/ stay over night:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -1645,7 +1645,7 @@
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="f-hear" id="f-hear" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
-                        <option value=""  required>What is your total rental
+                        <option value="" required>What is your total rental
                           budget:</option>
                         <option value="5000">Up to $5,000</option>
                         <option value="5,000-10,000">$5,000-$10,000</option>
@@ -1659,7 +1659,7 @@
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px; margin-bottom:10px;">
                     <div class="form-wrap">
-                      <select name="f-flex-pr" id="f-flex-pr" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="f-flex-pr" id="f-flex-pr" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Will you be applying for a permit:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -1671,7 +1671,7 @@
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="f-production" id="f-production" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv27()" required>
-                        <option value=""  required>Production Type:</option>
+                        <option value="" required>Production Type:</option>
                         <option value="Adult Content">Adult Content</option>
                         <option value="Commercial">Commercial</option>
                         <option value="Film">Film</option>
@@ -1689,14 +1689,14 @@
                     <div class="col-md-12" id="f-info_production" style="padding:10px;display:none;">
                       <div class="form-wrap">
                         <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                        <textarea class="form-control" rows="3" id="f-info_production" name="f-info_production" style="background:#0E0C0D; color:white;" placeholder="Please fill information about production type:"></textarea>
+                        <textarea class="form-control" rows="3" id="f-info_production" name="f-info_production" style="background:#0E0C0D; color:white;" placeholder="Please fill information about production type:" ></textarea>
                         <!-- <label class="form-label" for="f-info_production" style="color:white;">Please describe:</label> -->
                       </div>
                     </div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px; margin-bottom:10px;">
                     <div class="form-wrap">
-                      <select name="f-house_part" id="f-house_part" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="f-house_part" id="f-house_part" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Parts of the house needed to be used:</option>
                         <option value="Indoores">Indoor</option>
                         <option value="Outdoor">Outdoor</option>
@@ -1709,13 +1709,13 @@
                 <div class="row mt-0 mx-0">
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <input class="form-input" id="f-company" type="text" style="background:#0E0C0D; color:white;" name="f-company"  required>
+                      <input class="form-input" id="f-company" type="text" style="background:#0E0C0D; color:white;" name="f-company" required>
                       <label class="form-label" for="f-company" style="color:white;">Company Name:</label>
                     </div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <select name="f-parking-space" id="f-parking-space" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="f-parking-space" id="f-parking-space" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Do you need additional parking space:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -1760,17 +1760,17 @@
                 <div class="row mt-0 mx-0">
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <select name="f-pets" id="f-pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  onchange="ShowHideDiv6()" required>
+                      <select name="f-pets" id="f-pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv6()" required>
                         <option value="">Are you bringing any pets:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                       </select>
-                      <select name="f-no_pets" id="f-no_pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px; display:none;">
+                      <select name="f-no_pets" id="f-no_pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px; display:none;" required>
                         <option value="1" selected>No of pets:</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                       </select>
-                      <select name="f-yes_pets" id="f-yes_pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px; display:none;">
+                      <select name="f-yes_pets" id="f-yes_pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px; display:none;" required>
                         <option value="0" selected>Pet Size:</option>
                         <option value="Up to 20 Pounds">Up to 20 pounds</option>
                         <option value="20-50 pounds">20-50 pounds</option>
@@ -1780,7 +1780,7 @@
                   <div class="col-12 col-sm-12 col-md-6" style="padding:10px;">
                     <div class="form-wrap">
                       <select name="f-hear_us" id="f-hear_us" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv24()" required>
-                        <option value="" >How did you hear about us:</option>a
+                        <option value="">How did you hear about us:</option>a
                         <option value="Social Media">Social Media</option>
                         <option value="Google">Google</option>
                         <option value="Yelp">Yelp</option>
@@ -1794,7 +1794,8 @@
                 <div class="col-md-12" id="f-where_hear" style="padding:10px;display:none;">
                   <div class="form-wrap">
                     <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                    <textarea class="form-control" rows="3" id="f-where_hear" name="f-where_hear" style="background:#0E0C0D; color:white;" placeholder="Please fill where did you hear about us:"></textarea>
+                    <textarea class="form-control" rows="3" id="f-where_hear" name="f-where_hear" style="background:#0E0C0D; color:white;" placeholder="Please fill where did you hear about us:" 
+                    ></textarea>
                     <!-- <label class="form-label" for="f-where_hear" style="color:white;">Please describe:</label> -->
                   </div>
                 </div>
@@ -1809,7 +1810,7 @@
                         </div> -->
 
                     <div class="form-wrap">
-                      <select name="f-house_part" id="f-house_part" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="f-house_part" id="f-house_part" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Parts of the house needed to be used</option>
                         <option value="Indoor">Indoor</option>
                         <option value="Outdoor">Outdoor</option>
@@ -1822,7 +1823,7 @@
                     <div class="form-wrap">
                       <!-- <input class="form-input" id="ev-exocit_animals" type="text" style="background:#0E0C0D; color:white;" name="ev-exocit_animals"  required>
                       <label class="form-label" for="ev-exocit_animals" style="color:white;">Are you bring any exotic animals:</label> -->
-                      <select name="f-exocit_animals" id="f-exocit_animals" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  onchange="ShowHideDiv17()" required>
+                      <select name="f-exocit_animals" id="f-exocit_animals" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv17()" required>
                         <option value="">Are you bring any exotic animals:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -1833,7 +1834,7 @@
                 <div class="col-md-12" id="f-exotic_info" style="padding:10px;display:none;">
                   <div class="form-wrap">
                     <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                    <textarea class="form-control" rows="3" id="f-exotic_info" name="f-exotic_info" style="background:#0E0C0D; color:white;" placeholder="Please describe:"></textarea>
+                    <textarea class="form-control" rows="3" id="f-exotic_info" name="f-exotic_info" style="background:#0E0C0D; color:white;" placeholder="Please describe:" ></textarea>
                     <!-- <label class="form-label" for="f-exotic_info" style="color:white;">Please describe:</label> -->
                   </div>
                 </div>
@@ -1880,7 +1881,7 @@
                 <div class="row times">
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <select name="ev-app_behalf" id="ev-app_behalf" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="ev-app_behalf" id="ev-app_behalf" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Are you applying on behalf of your self:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -1889,7 +1890,7 @@
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="padding:10px;">
                     <div class="form-wrap">
-                      <select name="f-guards" id="f-guards" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="f-guards" id="f-guards" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Will you have any bodyguards during your rental:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -1933,13 +1934,13 @@
                 <div class="row mt-0 mx-0">
                   <div class="col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <input class="form-input" id="st-name" type="text" name="st-name" style="background:#0E0C0D; color:white; height:30px;"  required>
+                      <input class="form-input" id="st-name" type="text" name="st-name" style="background:#0E0C0D; color:white; height:30px;" required>
                       <label class="form-label" for="st-name" style="color:white;">Full Name:</label>
                     </div>
                   </div>
                   <div class="col-md-6" style="margin-right: auto; padding:10px;">
                     <div class="form-wrap">
-                      <input class="form-input" id="st-mail" type="mail" name="st-mail"  style="background:#0E0C0D; color:white; height:30px;" required>
+                      <input class="form-input" id="st-mail" type="mail" name="st-mail" style="background:#0E0C0D; color:white; height:30px;" required>
                       <label class="form-label" for="st-mail" style="color:white;">Email Address:</label>
                     </div>
                   </div>
@@ -1974,7 +1975,7 @@
                   </div>
                   <div class="col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
-                      <input class="form-input" id="st-insta" type="text" name="st-insta" style="background:#0E0C0D; color:white; height:30px;"  required>
+                      <input class="form-input" id="st-insta" type="text" name="st-insta" style="background:#0E0C0D; color:white; height:30px;" required>
                       <label class="form-label" for="st-insta" style="color:white;">Social Media Handle (example: Facebook, Instagram, LinkedIn)</label>
                     </div>
                   </div>
@@ -2043,7 +2044,7 @@
                   <div class="col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="st-flex-date" id="st-flex-date" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
-                        <option value=""  required>Are you flexible with the check in/out date:</option>
+                        <option value="" required>Are you flexible with the check in/out date:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                       </select>
@@ -2052,7 +2053,7 @@
                   <div class="col-md-6" style="margin-right: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="st-flex-time" id="st-flex-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
-                        <option value=""  required>Are you flexible with the check in/out time:</option>
+                        <option value="" required>Are you flexible with the check in/out time:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                       </select>
@@ -2066,7 +2067,7 @@
                       <!-- <input class="form-input" id="st-bed" type="text" name="st-bed" style="background:#0E0C0D; color:white;"  required>
                           <label class="form-label" for="st-bed" style="color:white;"># of Bedrooms Needed:</label> -->
                       <select name="st-bed" id="st-bed" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
-                        <option value=""  required># of Bedrooms Needed:</option>
+                        <option value="" required># of Bedrooms Needed:</option>
                         <option value="1-2">1-2</option>
                         <option value="3-4">3-4</option>
                         <option value="5-6">5-6</option>
@@ -2078,7 +2079,7 @@
                   </div>
                   <div class="col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
-                      <select name="st-attendees" id="st-attendees" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="st-attendees" id="st-attendees" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option selected># of attendees:</option>
                         <option value='0-30'>0-30</option>
                         <option value='30-60'>30-60</option>
@@ -2103,7 +2104,7 @@
                       <!-- <input class="form-input" id="st-guest" type="text" name="st-guest" style="background:#0E0C0D; color:white;"  required>
                           <label class="form-label" for="st-guest" style="color:white;"># of Guests Staying Over:</label> -->
                       <select name="st-guest" id="st-guest" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
-                        <option value=""  required># of Guests Staying Over:</option>
+                        <option value="" required># of Guests Staying Over:</option>
                         <option value="1-2">1-2</option>
                         <option value="3-4">3-4</option>
                         <option value="5-6">5-6</option>
@@ -2119,7 +2120,7 @@
                     <div class="form-wrap">
                       <!-- <input class="form-input" id="st-minrs" type="text" name="st-minrs" style="background:#0E0C0D; color:white;"  required>
                           <label class="form-label" for="st-minrs" style="color:white;">Will you have any minors:</label> -->
-                      <select name="st-minrs" id="st-minrs" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="st-minrs" id="st-minrs" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Will you have any minors:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -2134,7 +2135,7 @@
                       <!-- <input class="form-input" id="st-city-2" type="text" style="background:#0E0C0D; color:white;" name="st-city-2"  required>
                           <label class="form-label" for="st-city-2" style="color:white;">What city/area are you intersted in:</label> -->
                       <select name="st-city" id="st-city" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
-                        <option value=""  required>What city/area are you intersted in:</option>
+                        <option value="" required>What city/area are you intersted in:</option>
                         <option value='Beverly Hills'>Beverly Hills</option>
                         <option value='Bel Air'>Bellair</option>
                         <option value='Brentwood'>Brentwood</option>
@@ -2159,7 +2160,7 @@
                       <!-- <input class="form-input" id="st-style-2" type="text" style="background:#0E0C0D; color:white;" name="st-style-2"  required>
                           <label class="form-label" for="st-style-2" style="color:white;">What house style are you interested in:</label> -->
                       <select name="st-style-2" id="st-style-2" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
-                        <option value=""  required>What house style are you interested in:</option>
+                        <option value="" required>What house style are you interested in:</option>
                         <option value='Modern'>Modern</option>
                         <option value='Vintage'>Vintage</option>
                         <option value='Traditional'>Traditional</option>
@@ -2177,7 +2178,7 @@
                 <div class="" style="display: flex;">
                   <div class="col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <select name="st-alchohol" id="st-alchohol" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="st-alchohol" id="st-alchohol" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Will you be serving alcohol:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -2186,7 +2187,7 @@
                   </div>
                   <div class="col-md-6" style="margin-right: auto;  padding:10px; margin-bottom:10px;">
                     <div class="form-wrap">
-                      <select name="st-selling" id="st-selling" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="st-selling" id="st-selling" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Will you be selling alcohol:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -2196,7 +2197,7 @@
                 </div>
                 <div class="col-md-12" style="padding:10px;">
                   <div class="form-wrap">
-                    <select name="st-visits" id="st-visits" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                    <select name="st-visits" id="st-visits" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                       <option value="">Will you be having any professional filming:</option>
                       <option value="yes">Yes</option>
                       <option value="no">No</option>
@@ -2206,7 +2207,7 @@
                 <div class="col-md-12" style="padding:10px;">
                   <div class="form-wrap">
                     <select name="st-hear" id="st-hear" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
-                      <option value=""  required>Will you have any bodyguards during your rental:</option>
+                      <option value="" required>Will you have any bodyguards during your rental:</option>
                       <option value="yes">Yes</option>
                       <option value="no">No</option>
                     </select>
@@ -2215,7 +2216,7 @@
                 <div class="col-md-12" style="padding:10px;">
                   <div class="form-wrap">
                     <select name="st-hear-7" id="st-hear-7" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
-                      <option value=""  required>Are you working with an Event Planner:</option>
+                      <option value="" required>Are you working with an Event Planner:</option>
                       <option value="yes">Yes</option>
                       <option value="no">No</option>
                     </select>
@@ -2225,7 +2226,7 @@
                   <div class="col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="st-hear-2" id="st-hear-2" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
-                        <option value=""  required>Will you need to move any of the furniture:</option>
+                        <option value="" required>Will you need to move any of the furniture:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                       </select>
@@ -2234,7 +2235,7 @@
                   <div class="col-md-6" style="margin-right: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="st-hear-3" id="st-hear-3" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
-                        <option value=""  required>Will you be adding any decorations:</option>
+                        <option value="" required>Will you be adding any decorations:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                       </select>
@@ -2245,7 +2246,7 @@
                   <div class="col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="st-hear-8" id="st-hear-8" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
-                        <option value=""  required>Do you need additional parking space:</option>
+                        <option value="" required>Do you need additional parking space:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                       </select>
@@ -2253,7 +2254,7 @@
                   </div>
                   <div class="col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
-                      <input class="form-input" id="st-company" type="text" style="background:#0E0C0D; color:white;" name="st-company"  required>
+                      <input class="form-input" id="st-company" type="text" style="background:#0E0C0D; color:white;" name="st-company" required>
                       <label class="form-label" for="st-company" style="color:white;">Company Name:</label>
                     </div>
                   </div>
@@ -2262,7 +2263,7 @@
                 <div class="" style="display: flex;">
                   <div class="col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <select name="st-pets" id="st-pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  onchange="ShowHideDiv9()" required>
+                      <select name="st-pets" id="st-pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv9()" required>
                         <option value="no">Are you bringing any pets:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -2293,7 +2294,7 @@
                           <option>
                         </select> -->
                       <select name="st-hear-6" id="st-hear-6" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
-                        <option value=""  required>How did you hear about us:</option>
+                        <option value="" required>How did you hear about us:</option>
                         <option value="Social Media">Social Media</option>
                         <option value="Google">Google</option>
                         <option value="Yelp">Yelp</option>
@@ -2316,7 +2317,7 @@
                   <div class="col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="st-tickets" id="st-tickets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
-                        <option value=""  required>Will you be selling tickets to your event:</option>
+                        <option value="" required>Will you be selling tickets to your event:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                       </select>
@@ -2326,7 +2327,7 @@
                     <div class="form-wrap">
                       <!-- <input class="form-input" id="st-event-type" type="text" name="st-event-type" style="background:#0E0C0D; color:white;">
                           <label class="form-label" for="st-event-type" style="color:white;">Event Type:</label> -->
-                      <select name="st-event-type" id="st-event-type" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="st-event-type" id="st-event-type" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Event type:</option>
                         <option value="Private">Private</option>
                         <option value="Corporate">Corporate</option>
@@ -2350,7 +2351,7 @@
                   <div class="form-wrap">
                     <!-- <input class="form-input" id="st-party" type="text" name="st-party" style="background:#0E0C0D; color:white;">
                         <label class="form-label" for="st-party" style="color:white;">Are you plannning to host a party:</label> -->
-                    <select name="st-party" id="st-party" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                    <select name="st-party" id="st-party" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                       <option value="">Are you planning on hosting a party or a large gathering:</option>
                       <option value="yes">Yes</option>
                       <option value="no">No</option>
@@ -2361,7 +2362,7 @@
                   <div class="form-wrap">
                     <!-- <input class="form-input" id="st-visitor" type="text" name="st-visitor" style="background:#0E0C0D; color:white;">
                         <label class="form-label" for="st-visitor" style="color:white;">Are you expecting any visitors:</label> -->
-                    <select name="st-visitss" id="st-visitss" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  onchange="ShowHideDiv8()" required>
+                    <select name="st-visitss" id="st-visitss" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv8()" required>
                       <option value="no">Are you expecting any visitors:</option>
                       <option value="yes">Yes</option>
                       <option value="no">No</option>
@@ -2458,7 +2459,7 @@
                 <div class="col-md-12" style="padding:10px;">
                   <div class="form-wrap">
                     <select name="st-hear-4" id="st-hear-4" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
-                      <option value=""  required>Are you interested in any other services:</option>
+                      <option value="" required>Are you interested in any other services:</option>
 
                       <option value="Customer-Identification">Customer Identification</option>
                       <option value="Signed-Contract">Signed Contract</option>
@@ -2495,7 +2496,7 @@
                   <div class="col-md-12" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="st-budget" id="st-budget" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;">
-                        <option value=""  required>What is your total rental budget:</option>
+                        <option value="" required>What is your total rental budget:</option>
                         <option value="5000">Up to $5,000</option>
                         <option value="5,000-10,000">$5,000-$10,000</option>
                         <option value="10,000-25,000">$10,000-$25,000</option>
@@ -2532,13 +2533,13 @@
                 <div class="row mt-0 mx-0">
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <input class="form-input" id="lt-name" type="text" name="lt-name" style="background:#0E0C0D; color:white; height:30px;"  required>
+                      <input class="form-input" id="lt-name" type="text" name="lt-name" style="background:#0E0C0D; color:white; height:30px;" required>
                       <label class="form-label" for="lt-name" style="color:white;">Full Name:</label>
                     </div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto; padding:10px;">
                     <div class="form-wrap">
-                      <input class="form-input" id="lt-mail" type="mail" name="lt-mail"  style="background:#0E0C0D; color:white; height:30px;" required>
+                      <input class="form-input" id="lt-mail" type="mail" name="lt-mail" style="background:#0E0C0D; color:white; height:30px;" required>
                       <label class="form-label" for="lt-mail" style="color:white;">Email Address:</label>
                     </div>
                   </div>
@@ -2572,7 +2573,7 @@
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
-                      <input class="form-input" id="lt-insta" type="text" name="lt-insta" style="background:#0E0C0D; color:white; height:30px;"  required>
+                      <input class="form-input" id="lt-insta" type="text" name="lt-insta" style="background:#0E0C0D; color:white; height:30px;" required>
                       <label class="form-label" for="lt-insta" style="color:white;">Social Media Handle
                         (example: Facebook, Instagram, LinkedIn)</label>
                     </div>
@@ -2629,7 +2630,7 @@
                                 <label class="form-label" for="lt-start-time"
                                     style="margin-left: 47px;color:white;">Requested Check In Time:</label> -->
                       <!-- <label class="form-label" for="vr-start-time" style="color:white;">Requested Check In Time:</label> -->
-                      <select name="lt-start-time" id="lt-start-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="lt-start-time" id="lt-start-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Requested Check In Time:</option>
                         <?php require("time_dropdown.php"); ?>
                     </div>
@@ -2643,7 +2644,7 @@
                                 <label class="form-label" for="lt-end-time"
                                     style="margin-left: 47px;color:white;">Requested Check Out Time:</label> -->
                       <!-- <label class="form-label" for="vr-end-time" style="color:white;">Requested Check Out Time:</label> -->
-                      <select name="lt-end-time" id="lt-end-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="lt-end-time" id="lt-end-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Requested Check Out Time:</option>
                         <?php require("time_dropdown.php"); ?>
                     </div>
@@ -2652,7 +2653,7 @@
                 <div class="row mt-0 mx-0">
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <select name="lt-flex-date" id="lt-flex-date" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="lt-flex-date" id="lt-flex-date" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Are you flexible with the check in/out date:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -2661,7 +2662,7 @@
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px; margin-bottom:10px;">
                     <div class="form-wrap">
-                      <select name="lt-flex-time" id="lt-flex-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
+                      <select name="lt-flex-time" id="lt-flex-time" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Are you flexible with the check in/out time:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -2676,7 +2677,7 @@
                       <!-- <input class="form-input" id="lt-bed" type="text" name="lt-bed" style="background:#0E0C0D; color:white;"  required>
                           <label class="form-label" for="lt-bed" style="color:white;"># of Bedrooms Needed:</label> -->
                       <select name="lt-bed" id="lt-bed" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
-                        <option value="" ># of Bedrooms Needed:</option>
+                        <option value=""># of Bedrooms Needed:</option>
                         <option value="1-2">1-2</option>
                         <option value="3-4">3-4</option>
                         <option value="5-6">5-6</option>
@@ -2691,15 +2692,15 @@
                       <!-- <input class="form-input" id="lt-bathroom" type="text" name="lt-bathroom" style="background:#0E0C0D; color:white;"  required>
                       <label class="form-label" for="lt-bathroom" style="color:white;"># of Bathrooms
                         Needed:</label> -->
-                        <select name="lt-bathroom" id="lt-bathroom"class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  required>
-                        <option value="" ># of Bathrooms Needed:</option>
+                      <select name="lt-bathroom" id="lt-bathroom" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
+                        <option value=""># of Bathrooms Needed:</option>
                         <option value="1-2">1-2</option>
                         <option value="3-4">3-4</option>
                         <option value="5-6">5-6</option>
                         <option value="7-8">7-8</option>
                         <option value="9-10">9-10</option>
                         <option value="10+">10+</option>
-                        </select>
+                      </select>
                     </div>
                   </div>
                 </div>
@@ -2708,7 +2709,7 @@
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
                       <select name="lt-city-2" id="lt-city-2" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv29()" required>
-                        <option value=""  required>What city/area are you intersted in:</option>
+                        <option value="" required>What city/area are you intersted in:</option>
                         <option value='Beverly Hills'>Beverly Hills</option>
                         <option value='Bel Air'>Bellair</option>
                         <option value='Brentwood'>Brentwood</option>
@@ -2732,7 +2733,7 @@
                     <div class="col-md-12" id="lt-city_information" style="padding:10px;display:none;">
                       <div class="form-wrap">
                         <!-- <intextareaput class="form-input" id="lt-other_info" type="textarea" name="lt-other_info" style="background:#0E0C0D; color:white;"> -->
-                        <textarea class="form-control" rows="3" id="lt-city_information" name="lt-city_information" style="background:#0E0C0D; color:white;" placeholder="Please fill city/area are you intrested in:"></textarea>
+                        <textarea class="form-control" rows="3" id="lt-city_information" name="lt-city_information" style="background:#0E0C0D; color:white;" placeholder="Please fill city/area are you intrested in:" ></textarea>
                         <!-- <label class="form-label" for="lt-city_information" style="color:white;">Please fill city/area are you intrested in:</label> -->
                       </div>
                     </div>
@@ -2740,7 +2741,7 @@
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
                     <div class="form-wrap">
                       <select name="lt-style-2" id="lt-style-2" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv30()" required>
-                        <option value=""  required>What house style are you interested in:</option>
+                        <option value="" required>What house style are you interested in:</option>
                         <option value='Asian'>Asian</option>
                         <option value='Desert'>Desert</option>
                         <option value='French'>French</option>
@@ -2759,7 +2760,8 @@
                     <div class="col-md-12" id="lt-style_information" style="padding:10px;display:none;">
                       <div class="form-wrap">
                         <!-- <intextareaput class="form-input" id="lt-other_info" type="textarea" name="lt-other_info" style="background:#0E0C0D; color:white;"> -->
-                        <textarea class="form-control" rows="3" id="lt-style_information" name="lt-style_information" style="background:#0E0C0D; color:white;" placeholder="Please fill house style are you intrested in:"></textarea>
+                        <textarea class="form-control" rows="3" id="lt-style_information" name="lt-style_information" style="background:#0E0C0D; color:white;" placeholder="Please fill house style are you intrested in:" 
+                        ></textarea>
                         <!-- <label class="form-label" for="lt-style_information" style="color:white;">Please fill city/area are you intrested in:</label> -->
                       </div>
                     </div>
@@ -2787,7 +2789,7 @@
                       <!-- <input class="form-input" id="lt-hear-2" type="text" style="background:#0E0C0D; color:white;" name="lt-hear-2"  required>
                           <label class="form-label" for="lt-hear-2" style="color:white;">How did you hear about us:</label> -->
                       <select name="lt-hear-2" id="lt-hear-2" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv28()" required>
-                        <option value="" >How did you hear about us:</option>
+                        <option value="">How did you hear about us:</option>
                         <option value="Social Media">Social Media</option>
                         <option value="Google">Google</option>
                         <option value="Yelp">Yelp</option>
@@ -2805,7 +2807,7 @@
                       <!-- <input class="form-input" id="lt-vendors" type="text" name="lt-vendors" style="background:#0E0C0D; color:white;">
                         <label class="form-label" for="lt-vendors" style="color:white;"># of Guests Staying Over:</label> -->
                       <select name="lt-vendors" id="lt-vendors" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
-                        <option value="" ># of Guests Staying Over:</option>
+                        <option value=""># of Guests Staying Over:</option>
                         <option value="1-2">1-2</option>
                         <option value="3-4">3-4</option>
                         <option value="5-6">5-6</option>
@@ -2822,7 +2824,7 @@
                 <div class="col-md-12" id="lt-where_hear_us" style="padding:10px;display:none;">
                   <div class="form-wrap">
                     <!-- <intextareaput class="form-input" id="lt-other_info" type="textarea" name="lt-other_info" style="background:#0E0C0D; color:white;"> -->
-                    <textarea class="form-control" rows="3" id="lt-where_hear_us" name="lt-where_hear_us" style="background:#0E0C0D; color:white;" placeholder="Please fill where did you hear about us:"></textarea>
+                    <textarea class="form-control" rows="3" id="lt-where_hear_us" name="lt-where_hear_us" style="background:#0E0C0D; color:white;" placeholder="Please fill where did you hear about us:" ></textarea>
                     <!-- <label class="form-label" for="lt-where_hear_us" style="color:white;">Please fill where did you hear about us:</label> -->
                   </div>
                 </div>
@@ -2872,18 +2874,18 @@
                     <div class="form-wrap">
                       <!-- <input class="form-input" id="lt-pets" type="text" name="lt-pets" style="background:#0E0C0D; color:white;">
                         <label class="form-label" for="lt-pets" style="color:white;">Do you have any pets</label> -->
-                      <select name="lt-pets" id="lt-pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;"  onchange="ShowHideDiv12()" required>
+                      <select name="lt-pets" id="lt-pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" onchange="ShowHideDiv12()" required>
                         <option value="no">Do you have any pets:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                       </select>
-                      <select name="lt-no_pets" id="lt-no_pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px; display:none;">
+                      <select name="lt-no_pets" id="lt-no_pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px; display:none;" required>
                         <option value="1" selected>No of pets:</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                       </select>
-                      <select name="lt-yes_pets" id="lt-yes_pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px; display:none; ">
-                        <option value="0" selected>Pet Size:</option>
+                      <select name="lt-yes_pets" id="lt-yes_pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px; display:none; " required>
+                        <option value="0">Pet Size:</option>
                         <option value="Up to 20 Pounds">Up to 20 pounds</option>
                         <option value="20-50 pounds">20-50 pounds</option>
                       </select>
@@ -2898,20 +2900,12 @@
                 </div>
 
 
-                <div class="col-md-12" id="lt-other" style="padding:10px;display:none;">
-                  <div class="form-wrap">
-                    <!-- <intextareaput class="form-input" id="lt-other_info" type="textarea" name="lt-other_info" style="background:#0E0C0D; color:white;"> -->
-                    <textarea class="form-control" rows="3" id="lt-other_info" name="lt-other_info" style="background:#0E0C0D; color:white;"></textarea>
-                    <label class="form-label" for="lt-other_info" style="color:white;">Please fill your required
-                      services:</label>
-                  </div>
-                
-                </div>
+
                 <div class="row times">
                   <div class="col-12 col-sm-12 col-md-6" style="padding:10px;">
                     <div class="form-wrap">
                       <select name="lt-hear-5" id="lt-hear-5" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
-                        <option value="" >What is your total monthly rental budget:</option>
+                        <option value="">What is your total monthly rental budget:</option>
 
                         <option value="$5,000-$10,000">$5,000-$10,000</option>
                         <option value="$10,000-$25,000">$10,000-$25,000</option>
@@ -2955,6 +2949,15 @@
                         <option value="No">No</option>
                       </select>
                     </div>
+                  </div>
+                  <div class="col-md-12" id="lt-other" style="padding:10px;display:none;">
+                    <div class="form-wrap">
+                      <!-- <intextareaput class="form-input" id="lt-other_info" type="textarea" name="lt-other_info" style="background:#0E0C0D; color:white;"> -->
+                      <textarea class="form-control" rows="3" id="lt-other_info" name="lt-other_info" style="background:#0E0C0D; color:white;" ></textarea>
+                      <label class="form-label" for="lt-other_info" style="color:white;">Please fill your required
+                        services:</label>
+                    </div>
+
                   </div>
 
                 </div>
@@ -3120,6 +3123,9 @@
       var ddlPassport = document.getElementById("vr-visits");
       var dvPassport = document.getElementById("vr-yes_guest");
       dvPassport.style.display = ddlPassport.value == "yes" ? "block" : "none";
+      if (ddlPassport) {
+        ddlPassport.setAttribute("required");
+      }
     }
 
 
@@ -3352,11 +3358,19 @@
   <!-- <script src=
 "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script> -->
-
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/css/intlTelInput.css" /> -->
   <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/js/intlTelInput-jquery.min.js"></script>
   <script type="text/javascript">
+    const grabElem = function(elem, options) {
+      if (options === 'many') {
+        return document.querySelectorAll(elem)
+      } else {
+        return document.querySelector(elem)
+      }
+    }
+    const txtPhone1 = grabElem('#txtPhone1');
+
     $(function() {
       var code = ""; // Assigning value from model.
       $('#txtPhone').val(code);
@@ -3372,1514 +3386,1523 @@
         preferredCountries: ['US'],
         separateDialCode: true
       });
-      $('#btnSubmit').on('click', function() {
-        var code = $("#txtPhone").intlTelInput("getSelectedCountryData").dialCode;
-        var phoneNumber = $('#txtPhone').val();
-        var name = $("#txtPhone").intlTelInput("getSelectedCountryData").name;
-        document.getElementById("txtPhone").value = code;
-
-
-        console.log('Country Code : ' + code + '\nPhone Number : ' + phoneNumber + '\nCountry Name : ' + name);
-
-
-        let iso;
-        let str;
-
-        let arr = [{
-            "name": "Afghanistan",
-            "dialCode": "+93",
-            "isoCode": "AF",
-            "flag": "https://www.countryflags.io/AF/flat/64.png"
-          },
-          {
-            "name": "Aland Islands",
-            "dialCode": "+358",
-            "isoCode": "AX",
-            "flag": "https://www.countryflags.io/AX/flat/64.png"
-          },
-          {
-            "name": "Albania",
-            "dialCode": "+355",
-            "isoCode": "AL",
-            "flag": "https://www.countryflags.io/AL/flat/64.png"
-          },
-          {
-            "name": "Algeria",
-            "dialCode": "+213",
-            "isoCode": "DZ",
-            "flag": "https://www.countryflags.io/DZ/flat/64.png"
-          },
-          {
-            "name": "AmericanSamoa",
-            "dialCode": "+1684",
-            "isoCode": "AS",
-            "flag": "https://www.countryflags.io/AS/flat/64.png"
-          },
-          {
-            "name": "Andorra",
-            "dialCode": "+376",
-            "isoCode": "AD",
-            "flag": "https://www.countryflags.io/AD/flat/64.png"
-          },
-          {
-            "name": "Angola",
-            "dialCode": "+244",
-            "isoCode": "AO",
-            "flag": "https://www.countryflags.io/AO/flat/64.png"
-          },
-          {
-            "name": "Anguilla",
-            "dialCode": "+1264",
-            "isoCode": "AI",
-            "flag": "https://www.countryflags.io/AI/flat/64.png"
-          },
-          {
-            "name": "Antarctica",
-            "dialCode": "+672",
-            "isoCode": "AQ",
-            "flag": "https://www.countryflags.io/AQ/flat/64.png"
-          },
-          {
-            "name": "Antigua and Barbuda",
-            "dialCode": "+1268",
-            "isoCode": "AG",
-            "flag": "https://www.countryflags.io/AG/flat/64.png"
-          },
-          {
-            "name": "Argentina",
-            "dialCode": "+54",
-            "isoCode": "AR",
-            "flag": "https://www.countryflags.io/AR/flat/64.png"
-          },
-          {
-            "name": "Armenia",
-            "dialCode": "+374",
-            "isoCode": "AM",
-            "flag": "https://www.countryflags.io/AM/flat/64.png"
-          },
-          {
-            "name": "Aruba",
-            "dialCode": "+297",
-            "isoCode": "AW",
-            "flag": "https://www.countryflags.io/AW/flat/64.png"
-          },
-          {
-            "name": "Ascension Island",
-            "dialCode": "+247",
-            "isoCode": "AC",
-            "flag": "https://www.countryflags.io/AC/flat/64.png"
-          },
-          {
-            "name": "Australia",
-            "dialCode": "+61",
-            "isoCode": "AU",
-            "flag": "https://www.countryflags.io/AU/flat/64.png"
-          },
-          {
-            "name": "Austria",
-            "dialCode": "+43",
-            "isoCode": "AT",
-            "flag": "https://www.countryflags.io/AT/flat/64.png"
-          },
-          {
-            "name": "Azerbaijan",
-            "dialCode": "+994",
-            "isoCode": "AZ",
-            "flag": "https://www.countryflags.io/AZ/flat/64.png"
-          },
-          {
-            "name": "Bahamas",
-            "dialCode": "+1242",
-            "isoCode": "BS",
-            "flag": "https://www.countryflags.io/BS/flat/64.png"
-          },
-          {
-            "name": "Bahrain",
-            "dialCode": "+973",
-            "isoCode": "BH",
-            "flag": "https://www.countryflags.io/BH/flat/64.png"
-          },
-          {
-            "name": "Bangladesh",
-            "dialCode": "+880",
-            "isoCode": "BD",
-            "flag": "https://www.countryflags.io/BD/flat/64.png"
-          },
-          {
-            "name": "Barbados",
-            "dialCode": "+1246",
-            "isoCode": "BB",
-            "flag": "https://www.countryflags.io/BB/flat/64.png"
-          },
-          {
-            "name": "Belarus",
-            "dialCode": "+375",
-            "isoCode": "BY",
-            "flag": "https://www.countryflags.io/BY/flat/64.png"
-          },
-          {
-            "name": "Belgium",
-            "dialCode": "+32",
-            "isoCode": "BE",
-            "flag": "https://www.countryflags.io/BE/flat/64.png"
-          },
-          {
-            "name": "Belize",
-            "dialCode": "+501",
-            "isoCode": "BZ",
-            "flag": "https://www.countryflags.io/BZ/flat/64.png"
-          },
-          {
-            "name": "Benin",
-            "dialCode": "+229",
-            "isoCode": "BJ",
-            "flag": "https://www.countryflags.io/BJ/flat/64.png"
-          },
-          {
-            "name": "Bermuda",
-            "dialCode": "+1441",
-            "isoCode": "BM",
-            "flag": "https://www.countryflags.io/BM/flat/64.png"
-          },
-          {
-            "name": "Bhutan",
-            "dialCode": "+975",
-            "isoCode": "BT",
-            "flag": "https://www.countryflags.io/BT/flat/64.png"
-          },
-          {
-            "name": "Bolivia",
-            "dialCode": "+591",
-            "isoCode": "BO",
-            "flag": "https://www.countryflags.io/BO/flat/64.png"
-          },
-          {
-            "name": "Bosnia and Herzegovina",
-            "dialCode": "+387",
-            "isoCode": "BA",
-            "flag": "https://www.countryflags.io/BA/flat/64.png"
-          },
-          {
-            "name": "Botswana",
-            "dialCode": "+267",
-            "isoCode": "BW",
-            "flag": "https://www.countryflags.io/BW/flat/64.png"
-          },
-          {
-            "name": "Brazil",
-            "dialCode": "+55",
-            "isoCode": "BR",
-            "flag": "https://www.countryflags.io/BR/flat/64.png"
-          },
-          {
-            "name": "British Indian Ocean Territory",
-            "dialCode": "+246",
-            "isoCode": "IO",
-            "flag": "https://www.countryflags.io/IO/flat/64.png"
-          },
-          {
-            "name": "Brunei Darussalam",
-            "dialCode": "+673",
-            "isoCode": "BN",
-            "flag": "https://www.countryflags.io/BN/flat/64.png"
-          },
-          {
-            "name": "Bulgaria",
-            "dialCode": "+359",
-            "isoCode": "BG",
-            "flag": "https://www.countryflags.io/BG/flat/64.png"
-          },
-          {
-            "name": "Burkina Faso",
-            "dialCode": "+226",
-            "isoCode": "BF",
-            "flag": "https://www.countryflags.io/BF/flat/64.png"
-          },
-          {
-            "name": "Burundi",
-            "dialCode": "+257",
-            "isoCode": "BI",
-            "flag": "https://www.countryflags.io/BI/flat/64.png"
-          },
-          {
-            "name": "Cambodia",
-            "dialCode": "+855",
-            "isoCode": "KH",
-            "flag": "https://www.countryflags.io/KH/flat/64.png"
-          },
-          {
-            "name": "Cameroon",
-            "dialCode": "+237",
-            "isoCode": "CM",
-            "flag": "https://www.countryflags.io/CM/flat/64.png"
-          },
-          {
-            "name": "Canada",
-            "dialCode": "+1",
-            "isoCode": "CA",
-            "flag": "https://www.countryflags.io/CA/flat/64.png"
-          },
-          {
-            "name": "Cape Verde",
-            "dialCode": "+238",
-            "isoCode": "CV",
-            "flag": "https://www.countryflags.io/CV/flat/64.png"
-          },
-          {
-            "name": "Cayman Islands",
-            "dialCode": "+1345",
-            "isoCode": "KY",
-            "flag": "https://www.countryflags.io/KY/flat/64.png"
-          },
-          {
-            "name": "Central African Republic",
-            "dialCode": "+236",
-            "isoCode": "CF",
-            "flag": "https://www.countryflags.io/CF/flat/64.png"
-          },
-          {
-            "name": "Chad",
-            "dialCode": "+235",
-            "isoCode": "TD",
-            "flag": "https://www.countryflags.io/TD/flat/64.png"
-          },
-          {
-            "name": "Chile",
-            "dialCode": "+56",
-            "isoCode": "CL",
-            "flag": "https://www.countryflags.io/CL/flat/64.png"
-          },
-          {
-            "name": "China",
-            "dialCode": "+86",
-            "isoCode": "CN",
-            "flag": "https://www.countryflags.io/CN/flat/64.png"
-          },
-          {
-            "name": "Christmas Island",
-            "dialCode": "+61",
-            "isoCode": "CX",
-            "flag": "https://www.countryflags.io/CX/flat/64.png"
-          },
-          {
-            "name": "Cocos (Keeling) Islands",
-            "dialCode": "+61",
-            "isoCode": "CC",
-            "flag": "https://www.countryflags.io/CC/flat/64.png"
-          },
-          {
-            "name": "Colombia",
-            "dialCode": "+57",
-            "isoCode": "CO",
-            "flag": "https://www.countryflags.io/CO/flat/64.png"
-          },
-          {
-            "name": "Comoros",
-            "dialCode": "+269",
-            "isoCode": "KM",
-            "flag": "https://www.countryflags.io/KM/flat/64.png"
-          },
-          {
-            "name": "Congo",
-            "dialCode": "+242",
-            "isoCode": "CG",
-            "flag": "https://www.countryflags.io/CG/flat/64.png"
-          },
-          {
-            "name": "Cook Islands",
-            "dialCode": "+682",
-            "isoCode": "CK",
-            "flag": "https://www.countryflags.io/CK/flat/64.png"
-          },
-          {
-            "name": "Costa Rica",
-            "dialCode": "+506",
-            "isoCode": "CR",
-            "flag": "https://www.countryflags.io/CR/flat/64.png"
-          },
-          {
-            "name": "Croatia",
-            "dialCode": "+385",
-            "isoCode": "HR",
-            "flag": "https://www.countryflags.io/HR/flat/64.png"
-          },
-          {
-            "name": "Cuba",
-            "dialCode": "+53",
-            "isoCode": "CU",
-            "flag": "https://www.countryflags.io/CU/flat/64.png"
-          },
-          {
-            "name": "Cyprus",
-            "dialCode": "+357",
-            "isoCode": "CY",
-            "flag": "https://www.countryflags.io/CY/flat/64.png"
-          },
-          {
-            "name": "Czech Republic",
-            "dialCode": "+420",
-            "isoCode": "CZ",
-            "flag": "https://www.countryflags.io/CZ/flat/64.png"
-          },
-          {
-            "name": "Democratic Republic of the Congo",
-            "dialCode": "+243",
-            "isoCode": "CD",
-            "flag": "https://www.countryflags.io/CD/flat/64.png"
-          },
-          {
-            "name": "Denmark",
-            "dialCode": "+45",
-            "isoCode": "DK",
-            "flag": "https://www.countryflags.io/DK/flat/64.png"
-          },
-          {
-            "name": "Djibouti",
-            "dialCode": "+253",
-            "isoCode": "DJ",
-            "flag": "https://www.countryflags.io/DJ/flat/64.png"
-          },
-          {
-            "name": "Dominica",
-            "dialCode": "+1767",
-            "isoCode": "DM",
-            "flag": "https://www.countryflags.io/DM/flat/64.png"
-          },
-          {
-            "name": "Dominican Republic",
-            "dialCode": "+1849",
-            "isoCode": "DO",
-            "flag": "https://www.countryflags.io/DO/flat/64.png"
-          },
-          {
-            "name": "Ecuador",
-            "dialCode": "+593",
-            "isoCode": "EC",
-            "flag": "https://www.countryflags.io/EC/flat/64.png"
-          },
-          {
-            "name": "Egypt",
-            "dialCode": "+20",
-            "isoCode": "EG",
-            "flag": "https://www.countryflags.io/EG/flat/64.png"
-          },
-          {
-            "name": "El Salvador",
-            "dialCode": "+503",
-            "isoCode": "SV",
-            "flag": "https://www.countryflags.io/SV/flat/64.png"
-          },
-          {
-            "name": "Equatorial Guinea",
-            "dialCode": "+240",
-            "isoCode": "GQ",
-            "flag": "https://www.countryflags.io/GQ/flat/64.png"
-          },
-          {
-            "name": "Eritrea",
-            "dialCode": "+291",
-            "isoCode": "ER",
-            "flag": "https://www.countryflags.io/ER/flat/64.png"
-          },
-          {
-            "name": "Estonia",
-            "dialCode": "+372",
-            "isoCode": "EE",
-            "flag": "https://www.countryflags.io/EE/flat/64.png"
-          },
-          {
-            "name": "Eswatini",
-            "dialCode": "+268",
-            "isoCode": "SZ",
-            "flag": "https://www.countryflags.io/SZ/flat/64.png"
-          },
-          {
-            "name": "Ethiopia",
-            "dialCode": "+251",
-            "isoCode": "ET",
-            "flag": "https://www.countryflags.io/ET/flat/64.png"
-          },
-          {
-            "name": "Falkland Islands (Malvinas)",
-            "dialCode": "+500",
-            "isoCode": "FK",
-            "flag": "https://www.countryflags.io/FK/flat/64.png"
-          },
-          {
-            "name": "Faroe Islands",
-            "dialCode": "+298",
-            "isoCode": "FO",
-            "flag": "https://www.countryflags.io/FO/flat/64.png"
-          },
-          {
-            "name": "Fiji",
-            "dialCode": "+679",
-            "isoCode": "FJ",
-            "flag": "https://www.countryflags.io/FJ/flat/64.png"
-          },
-          {
-            "name": "Finland",
-            "dialCode": "+358",
-            "isoCode": "FI",
-            "flag": "https://www.countryflags.io/FI/flat/64.png"
-          },
-          {
-            "name": "France",
-            "dialCode": "+33",
-            "isoCode": "FR",
-            "flag": "https://www.countryflags.io/FR/flat/64.png"
-          },
-          {
-            "name": "French Guiana",
-            "dialCode": "+594",
-            "isoCode": "GF",
-            "flag": "https://www.countryflags.io/GF/flat/64.png"
-          },
-          {
-            "name": "French Polynesia",
-            "dialCode": "+689",
-            "isoCode": "PF",
-            "flag": "https://www.countryflags.io/PF/flat/64.png"
-          },
-          {
-            "name": "Gabon",
-            "dialCode": "+241",
-            "isoCode": "GA",
-            "flag": "https://www.countryflags.io/GA/flat/64.png"
-          },
-          {
-            "name": "Gambia",
-            "dialCode": "+220",
-            "isoCode": "GM",
-            "flag": "https://www.countryflags.io/GM/flat/64.png"
-          },
-          {
-            "name": "Georgia",
-            "dialCode": "+995",
-            "isoCode": "GE",
-            "flag": "https://www.countryflags.io/GE/flat/64.png"
-          },
-          {
-            "name": "Germany",
-            "dialCode": "+49",
-            "isoCode": "DE",
-            "flag": "https://www.countryflags.io/DE/flat/64.png"
-          },
-          {
-            "name": "Ghana",
-            "dialCode": "+233",
-            "isoCode": "GH",
-            "flag": "https://www.countryflags.io/GH/flat/64.png"
-          },
-          {
-            "name": "Gibraltar",
-            "dialCode": "+350",
-            "isoCode": "GI",
-            "flag": "https://www.countryflags.io/GI/flat/64.png"
-          },
-          {
-            "name": "Greece",
-            "dialCode": "+30",
-            "isoCode": "GR",
-            "flag": "https://www.countryflags.io/GR/flat/64.png"
-          },
-          {
-            "name": "Greenland",
-            "dialCode": "+299",
-            "isoCode": "GL",
-            "flag": "https://www.countryflags.io/GL/flat/64.png"
-          },
-          {
-            "name": "Grenada",
-            "dialCode": "+1473",
-            "isoCode": "GD",
-            "flag": "https://www.countryflags.io/GD/flat/64.png"
-          },
-          {
-            "name": "Guadeloupe",
-            "dialCode": "+590",
-            "isoCode": "GP",
-            "flag": "https://www.countryflags.io/GP/flat/64.png"
-          },
-          {
-            "name": "Guam",
-            "dialCode": "+1671",
-            "isoCode": "GU",
-            "flag": "https://www.countryflags.io/GU/flat/64.png"
-          },
-          {
-            "name": "Guatemala",
-            "dialCode": "+502",
-            "isoCode": "GT",
-            "flag": "https://www.countryflags.io/GT/flat/64.png"
-          },
-          {
-            "name": "Guernsey",
-            "dialCode": "+44",
-            "isoCode": "GG",
-            "flag": "https://www.countryflags.io/GG/flat/64.png"
-          },
-          {
-            "name": "Guinea",
-            "dialCode": "+224",
-            "isoCode": "GN",
-            "flag": "https://www.countryflags.io/GN/flat/64.png"
-          },
-          {
-            "name": "Guinea-Bissau",
-            "dialCode": "+245",
-            "isoCode": "GW",
-            "flag": "https://www.countryflags.io/GW/flat/64.png"
-          },
-          {
-            "name": "Guyana",
-            "dialCode": "+592",
-            "isoCode": "GY",
-            "flag": "https://www.countryflags.io/GY/flat/64.png"
-          },
-          {
-            "name": "Haiti",
-            "dialCode": "+509",
-            "isoCode": "HT",
-            "flag": "https://www.countryflags.io/HT/flat/64.png"
-          },
-          {
-            "name": "Holy See (Vatican City State)",
-            "dialCode": "+379",
-            "isoCode": "VA",
-            "flag": "https://www.countryflags.io/VA/flat/64.png"
-          },
-          {
-            "name": "Honduras",
-            "dialCode": "+504",
-            "isoCode": "HN",
-            "flag": "https://www.countryflags.io/HN/flat/64.png"
-          },
-          {
-            "name": "Hong Kong",
-            "dialCode": "+852",
-            "isoCode": "HK",
-            "flag": "https://www.countryflags.io/HK/flat/64.png"
-          },
-          {
-            "name": "Hungary",
-            "dialCode": "+36",
-            "isoCode": "HU",
-            "flag": "https://www.countryflags.io/HU/flat/64.png"
-          },
-          {
-            "name": "Iceland",
-            "dialCode": "+354",
-            "isoCode": "IS",
-            "flag": "https://www.countryflags.io/IS/flat/64.png"
-          },
-          {
-            "name": "India",
-            "dialCode": "+91",
-            "isoCode": "IN",
-            "flag": "https://www.countryflags.io/IN/flat/64.png"
-          },
-          {
-            "name": "Indonesia",
-            "dialCode": "+62",
-            "isoCode": "ID",
-            "flag": "https://www.countryflags.io/ID/flat/64.png"
-          },
-          {
-            "name": "Iran",
-            "dialCode": "+98",
-            "isoCode": "IR",
-            "flag": "https://www.countryflags.io/IR/flat/64.png"
-          },
-          {
-            "name": "Iraq",
-            "dialCode": "+964",
-            "isoCode": "IQ",
-            "flag": "https://www.countryflags.io/IQ/flat/64.png"
-          },
-          {
-            "name": "Ireland",
-            "dialCode": "+353",
-            "isoCode": "IE",
-            "flag": "https://www.countryflags.io/IE/flat/64.png"
-          },
-          {
-            "name": "Isle of Man",
-            "dialCode": "+44",
-            "isoCode": "IM",
-            "flag": "https://www.countryflags.io/IM/flat/64.png"
-          },
-          {
-            "name": "Italy",
-            "dialCode": "+39",
-            "isoCode": "IT",
-            "flag": "https://www.countryflags.io/IT/flat/64.png"
-          },
-          {
-            "name": "Ivory Coast / Cote d'Ivoire",
-            "dialCode": "+225",
-            "isoCode": "CI",
-            "flag": "https://www.countryflags.io/CI/flat/64.png"
-          },
-          {
-            "name": "Jamaica",
-            "dialCode": "+1876",
-            "isoCode": "JM",
-            "flag": "https://www.countryflags.io/JM/flat/64.png"
-          },
-          {
-            "name": "Japan",
-            "dialCode": "+81",
-            "isoCode": "JP",
-            "flag": "https://www.countryflags.io/JP/flat/64.png"
-          },
-          {
-            "name": "Jersey",
-            "dialCode": "+44",
-            "isoCode": "JE",
-            "flag": "https://www.countryflags.io/JE/flat/64.png"
-          },
-          {
-            "name": "Jordan",
-            "dialCode": "+962",
-            "isoCode": "JO",
-            "flag": "https://www.countryflags.io/JO/flat/64.png"
-          },
-          {
-            "name": "Kazakhstan",
-            "dialCode": "+77",
-            "isoCode": "KZ",
-            "flag": "https://www.countryflags.io/KZ/flat/64.png"
-          },
-          {
-            "name": "Kenya",
-            "dialCode": "+254",
-            "isoCode": "KE",
-            "flag": "https://www.countryflags.io/KE/flat/64.png"
-          },
-          {
-            "name": "Kiribati",
-            "dialCode": "+686",
-            "isoCode": "KI",
-            "flag": "https://www.countryflags.io/KI/flat/64.png"
-          },
-          {
-            "name": "Korea, Democratic People's Republic of Korea",
-            "dialCode": "+850",
-            "isoCode": "KP",
-            "flag": "https://www.countryflags.io/KP/flat/64.png"
-          },
-          {
-            "name": "Korea, Republic of South Korea",
-            "dialCode": "+82",
-            "isoCode": "KR",
-            "flag": "https://www.countryflags.io/KR/flat/64.png"
-          },
-          {
-            "name": "Kosovo",
-            "dialCode": "+383",
-            "isoCode": "XK",
-            "flag": "https://www.countryflags.io/XK/flat/64.png"
-          },
-          {
-            "name": "Kuwait",
-            "dialCode": "+965",
-            "isoCode": "KW",
-            "flag": "https://www.countryflags.io/KW/flat/64.png"
-          },
-          {
-            "name": "Kyrgyzstan",
-            "dialCode": "+996",
-            "isoCode": "KG",
-            "flag": "https://www.countryflags.io/KG/flat/64.png"
-          },
-          {
-            "name": "Laos",
-            "dialCode": "+856",
-            "isoCode": "LA",
-            "flag": "https://www.countryflags.io/LA/flat/64.png"
-          },
-          {
-            "name": "Latvia",
-            "dialCode": "+371",
-            "isoCode": "LV",
-            "flag": "https://www.countryflags.io/LV/flat/64.png"
-          },
-          {
-            "name": "Lebanon",
-            "dialCode": "+961",
-            "isoCode": "LB",
-            "flag": "https://www.countryflags.io/LB/flat/64.png"
-          },
-          {
-            "name": "Lesotho",
-            "dialCode": "+266",
-            "isoCode": "LS",
-            "flag": "https://www.countryflags.io/LS/flat/64.png"
-          },
-          {
-            "name": "Liberia",
-            "dialCode": "+231",
-            "isoCode": "LR",
-            "flag": "https://www.countryflags.io/LR/flat/64.png"
-          },
-          {
-            "name": "Libya",
-            "dialCode": "+218",
-            "isoCode": "LY",
-            "flag": "https://www.countryflags.io/LY/flat/64.png"
-          },
-          {
-            "name": "Liechtenstein",
-            "dialCode": "+423",
-            "isoCode": "LI",
-            "flag": "https://www.countryflags.io/LI/flat/64.png"
-          },
-          {
-            "name": "Lithuania",
-            "dialCode": "+370",
-            "isoCode": "LT",
-            "flag": "https://www.countryflags.io/LT/flat/64.png"
-          },
-          {
-            "name": "Luxembourg",
-            "dialCode": "+352",
-            "isoCode": "LU",
-            "flag": "https://www.countryflags.io/LU/flat/64.png"
-          },
-          {
-            "name": "Macau",
-            "dialCode": "+853",
-            "isoCode": "MO",
-            "flag": "https://www.countryflags.io/MO/flat/64.png"
-          },
-          {
-            "name": "Madagascar",
-            "dialCode": "+261",
-            "isoCode": "MG",
-            "flag": "https://www.countryflags.io/MG/flat/64.png"
-          },
-          {
-            "name": "Malawi",
-            "dialCode": "+265",
-            "isoCode": "MW",
-            "flag": "https://www.countryflags.io/MW/flat/64.png"
-          },
-          {
-            "name": "Malaysia",
-            "dialCode": "+60",
-            "isoCode": "MY",
-            "flag": "https://www.countryflags.io/MY/flat/64.png"
-          },
-          {
-            "name": "Maldives",
-            "dialCode": "+960",
-            "isoCode": "MV",
-            "flag": "https://www.countryflags.io/MV/flat/64.png"
-          },
-          {
-            "name": "Mali",
-            "dialCode": "+223",
-            "isoCode": "ML",
-            "flag": "https://www.countryflags.io/ML/flat/64.png"
-          },
-          {
-            "name": "Malta",
-            "dialCode": "+356",
-            "isoCode": "MT",
-            "flag": "https://www.countryflags.io/MT/flat/64.png"
-          },
-          {
-            "name": "Marshall Islands",
-            "dialCode": "+692",
-            "isoCode": "MH",
-            "flag": "https://www.countryflags.io/MH/flat/64.png"
-          },
-          {
-            "name": "Martinique",
-            "dialCode": "+596",
-            "isoCode": "MQ",
-            "flag": "https://www.countryflags.io/MQ/flat/64.png"
-          },
-          {
-            "name": "Mauritania",
-            "dialCode": "+222",
-            "isoCode": "MR",
-            "flag": "https://www.countryflags.io/MR/flat/64.png"
-          },
-          {
-            "name": "Mauritius",
-            "dialCode": "+230",
-            "isoCode": "MU",
-            "flag": "https://www.countryflags.io/MU/flat/64.png"
-          },
-          {
-            "name": "Mayotte",
-            "dialCode": "+262",
-            "isoCode": "YT",
-            "flag": "https://www.countryflags.io/YT/flat/64.png"
-          },
-          {
-            "name": "Mexico",
-            "dialCode": "+52",
-            "isoCode": "MX",
-            "flag": "https://www.countryflags.io/MX/flat/64.png"
-          },
-          {
-            "name": "Micronesia, Federated States of Micronesia",
-            "dialCode": "+691",
-            "isoCode": "FM",
-            "flag": "https://www.countryflags.io/FM/flat/64.png"
-          },
-          {
-            "name": "Moldova",
-            "dialCode": "+373",
-            "isoCode": "MD",
-            "flag": "https://www.countryflags.io/MD/flat/64.png"
-          },
-          {
-            "name": "Monaco",
-            "dialCode": "+377",
-            "isoCode": "MC",
-            "flag": "https://www.countryflags.io/MC/flat/64.png"
-          },
-          {
-            "name": "Mongolia",
-            "dialCode": "+976",
-            "isoCode": "MN",
-            "flag": "https://www.countryflags.io/MN/flat/64.png"
-          },
-          {
-            "name": "Montenegro",
-            "dialCode": "+382",
-            "isoCode": "ME",
-            "flag": "https://www.countryflags.io/ME/flat/64.png"
-          },
-          {
-            "name": "Montserrat",
-            "dialCode": "+1664",
-            "isoCode": "MS",
-            "flag": "https://www.countryflags.io/MS/flat/64.png"
-          },
-          {
-            "name": "Morocco",
-            "dialCode": "+212",
-            "isoCode": "MA",
-            "flag": "https://www.countryflags.io/MA/flat/64.png"
-          },
-          {
-            "name": "Mozambique",
-            "dialCode": "+258",
-            "isoCode": "MZ",
-            "flag": "https://www.countryflags.io/MZ/flat/64.png"
-          },
-          {
-            "name": "Myanmar",
-            "dialCode": "+95",
-            "isoCode": "MM",
-            "flag": "https://www.countryflags.io/MM/flat/64.png"
-          },
-          {
-            "name": "Namibia",
-            "dialCode": "+264",
-            "isoCode": "NA",
-            "flag": "https://www.countryflags.io/NA/flat/64.png"
-          },
-          {
-            "name": "Nauru",
-            "dialCode": "+674",
-            "isoCode": "NR",
-            "flag": "https://www.countryflags.io/NR/flat/64.png"
-          },
-          {
-            "name": "Nepal",
-            "dialCode": "+977",
-            "isoCode": "NP",
-            "flag": "https://www.countryflags.io/NP/flat/64.png"
-          },
-          {
-            "name": "Netherlands",
-            "dialCode": "+31",
-            "isoCode": "NL",
-            "flag": "https://www.countryflags.io/NL/flat/64.png"
-          },
-          {
-            "name": "Netherlands Antilles",
-            "dialCode": "+599",
-            "isoCode": "AN",
-            "flag": "https://www.countryflags.io/AN/flat/64.png"
-          },
-          {
-            "name": "New Caledonia",
-            "dialCode": "+687",
-            "isoCode": "NC",
-            "flag": "https://www.countryflags.io/NC/flat/64.png"
-          },
-          {
-            "name": "New Zealand",
-            "dialCode": "+64",
-            "isoCode": "NZ",
-            "flag": "https://www.countryflags.io/NZ/flat/64.png"
-          },
-          {
-            "name": "Nicaragua",
-            "dialCode": "+505",
-            "isoCode": "NI",
-            "flag": "https://www.countryflags.io/NI/flat/64.png"
-          },
-          {
-            "name": "Niger",
-            "dialCode": "+227",
-            "isoCode": "NE",
-            "flag": "https://www.countryflags.io/NE/flat/64.png"
-          },
-          {
-            "name": "Nigeria",
-            "dialCode": "+234",
-            "isoCode": "NG",
-            "flag": "https://www.countryflags.io/NG/flat/64.png"
-          },
-          {
-            "name": "Niue",
-            "dialCode": "+683",
-            "isoCode": "NU",
-            "flag": "https://www.countryflags.io/NU/flat/64.png"
-          },
-          {
-            "name": "Norfolk Island",
-            "dialCode": "+672",
-            "isoCode": "NF",
-            "flag": "https://www.countryflags.io/NF/flat/64.png"
-          },
-          {
-            "name": "North Macedonia",
-            "dialCode": "+389",
-            "isoCode": "MK",
-            "flag": "https://www.countryflags.io/MK/flat/64.png"
-          },
-          {
-            "name": "Northern Mariana Islands",
-            "dialCode": "+1670",
-            "isoCode": "MP",
-            "flag": "https://www.countryflags.io/MP/flat/64.png"
-          },
-          {
-            "name": "Norway",
-            "dialCode": "+47",
-            "isoCode": "NO",
-            "flag": "https://www.countryflags.io/NO/flat/64.png"
-          },
-          {
-            "name": "Oman",
-            "dialCode": "+968",
-            "isoCode": "OM",
-            "flag": "https://www.countryflags.io/OM/flat/64.png"
-          },
-          {
-            "name": "Pakistan",
-            "dialCode": "+92",
-            "isoCode": "PK",
-            "flag": "https://www.countryflags.io/PK/flat/64.png"
-          },
-          {
-            "name": "Palau",
-            "dialCode": "+680",
-            "isoCode": "PW",
-            "flag": "https://www.countryflags.io/PW/flat/64.png"
-          },
-          {
-            "name": "Palestine",
-            "dialCode": "+970",
-            "isoCode": "PS",
-            "flag": "https://www.countryflags.io/PS/flat/64.png"
-          },
-          {
-            "name": "Panama",
-            "dialCode": "+507",
-            "isoCode": "PA",
-            "flag": "https://www.countryflags.io/PA/flat/64.png"
-          },
-          {
-            "name": "Papua New Guinea",
-            "dialCode": "+675",
-            "isoCode": "PG",
-            "flag": "https://www.countryflags.io/PG/flat/64.png"
-          },
-          {
-            "name": "Paraguay",
-            "dialCode": "+595",
-            "isoCode": "PY",
-            "flag": "https://www.countryflags.io/PY/flat/64.png"
-          },
-          {
-            "name": "Peru",
-            "dialCode": "+51",
-            "isoCode": "PE",
-            "flag": "https://www.countryflags.io/PE/flat/64.png"
-          },
-          {
-            "name": "Philippines",
-            "dialCode": "+63",
-            "isoCode": "PH",
-            "flag": "https://www.countryflags.io/PH/flat/64.png"
-          },
-          {
-            "name": "Pitcairn",
-            "dialCode": "+872",
-            "isoCode": "PN",
-            "flag": "https://www.countryflags.io/PN/flat/64.png"
-          },
-          {
-            "name": "Poland",
-            "dialCode": "+48",
-            "isoCode": "PL",
-            "flag": "https://www.countryflags.io/PL/flat/64.png"
-          },
-          {
-            "name": "Portugal",
-            "dialCode": "+351",
-            "isoCode": "PT",
-            "flag": "https://www.countryflags.io/PT/flat/64.png"
-          },
-          {
-            "name": "Puerto Rico",
-            "dialCode": "+1939",
-            "isoCode": "PR",
-            "flag": "https://www.countryflags.io/PR/flat/64.png"
-          },
-          {
-            "name": "Qatar",
-            "dialCode": "+974",
-            "isoCode": "QA",
-            "flag": "https://www.countryflags.io/QA/flat/64.png"
-          },
-          {
-            "name": "Reunion",
-            "dialCode": "+262",
-            "isoCode": "RE",
-            "flag": "https://www.countryflags.io/RE/flat/64.png"
-          },
-          {
-            "name": "Romania",
-            "dialCode": "+40",
-            "isoCode": "RO",
-            "flag": "https://www.countryflags.io/RO/flat/64.png"
-          },
-          {
-            "name": "Russia",
-            "dialCode": "+7",
-            "isoCode": "RU",
-            "flag": "https://www.countryflags.io/RU/flat/64.png"
-          },
-          {
-            "name": "Rwanda",
-            "dialCode": "+250",
-            "isoCode": "RW",
-            "flag": "https://www.countryflags.io/RW/flat/64.png"
-          },
-          {
-            "name": "Saint Barthelemy",
-            "dialCode": "+590",
-            "isoCode": "BL",
-            "flag": "https://www.countryflags.io/BL/flat/64.png"
-          },
-          {
-            "name": "Saint Helena, Ascension and Tristan Da Cunha",
-            "dialCode": "+290",
-            "isoCode": "SH",
-            "flag": "https://www.countryflags.io/SH/flat/64.png"
-          },
-          {
-            "name": "Saint Kitts and Nevis",
-            "dialCode": "+1869",
-            "isoCode": "KN",
-            "flag": "https://www.countryflags.io/KN/flat/64.png"
-          },
-          {
-            "name": "Saint Lucia",
-            "dialCode": "+1758",
-            "isoCode": "LC",
-            "flag": "https://www.countryflags.io/LC/flat/64.png"
-          },
-          {
-            "name": "Saint Martin",
-            "dialCode": "+590",
-            "isoCode": "MF",
-            "flag": "https://www.countryflags.io/MF/flat/64.png"
-          },
-          {
-            "name": "Saint Pierre and Miquelon",
-            "dialCode": "+508",
-            "isoCode": "PM",
-            "flag": "https://www.countryflags.io/PM/flat/64.png"
-          },
-          {
-            "name": "Saint Vincent and the Grenadines",
-            "dialCode": "+1784",
-            "isoCode": "VC",
-            "flag": "https://www.countryflags.io/VC/flat/64.png"
-          },
-          {
-            "name": "Samoa",
-            "dialCode": "+685",
-            "isoCode": "WS",
-            "flag": "https://www.countryflags.io/WS/flat/64.png"
-          },
-          {
-            "name": "San Marino",
-            "dialCode": "+378",
-            "isoCode": "SM",
-            "flag": "https://www.countryflags.io/SM/flat/64.png"
-          },
-          {
-            "name": "Sao Tome and Principe",
-            "dialCode": "+239",
-            "isoCode": "ST",
-            "flag": "https://www.countryflags.io/ST/flat/64.png"
-          },
-          {
-            "name": "Saudi Arabia",
-            "dialCode": "+966",
-            "isoCode": "SA",
-            "flag": "https://www.countryflags.io/SA/flat/64.png"
-          },
-          {
-            "name": "Senegal",
-            "dialCode": "+221",
-            "isoCode": "SN",
-            "flag": "https://www.countryflags.io/SN/flat/64.png"
-          },
-          {
-            "name": "Serbia",
-            "dialCode": "+381",
-            "isoCode": "RS",
-            "flag": "https://www.countryflags.io/RS/flat/64.png"
-          },
-          {
-            "name": "Seychelles",
-            "dialCode": "+248",
-            "isoCode": "SC",
-            "flag": "https://www.countryflags.io/SC/flat/64.png"
-          },
-          {
-            "name": "Sierra Leone",
-            "dialCode": "+232",
-            "isoCode": "SL",
-            "flag": "https://www.countryflags.io/SL/flat/64.png"
-          },
-          {
-            "name": "Singapore",
-            "dialCode": "+65",
-            "isoCode": "SG",
-            "flag": "https://www.countryflags.io/SG/flat/64.png"
-          },
-          {
-            "name": "Sint Maarten",
-            "dialCode": "+1721",
-            "isoCode": "SX",
-            "flag": "https://www.countryflags.io/SX/flat/64.png"
-          },
-          {
-            "name": "Slovakia",
-            "dialCode": "+421",
-            "isoCode": "SK",
-            "flag": "https://www.countryflags.io/SK/flat/64.png"
-          },
-          {
-            "name": "Slovenia",
-            "dialCode": "+386",
-            "isoCode": "SI",
-            "flag": "https://www.countryflags.io/SI/flat/64.png"
-          },
-          {
-            "name": "Solomon Islands",
-            "dialCode": "+677",
-            "isoCode": "SB",
-            "flag": "https://www.countryflags.io/SB/flat/64.png"
-          },
-          {
-            "name": "Somalia",
-            "dialCode": "+252",
-            "isoCode": "SO",
-            "flag": "https://www.countryflags.io/SO/flat/64.png"
-          },
-          {
-            "name": "South Africa",
-            "dialCode": "+27",
-            "isoCode": "ZA",
-            "flag": "https://www.countryflags.io/ZA/flat/64.png"
-          },
-          {
-            "name": "South Georgia and the South Sandwich Islands",
-            "dialCode": "+500",
-            "isoCode": "GS",
-            "flag": "https://www.countryflags.io/GS/flat/64.png"
-          },
-          {
-            "name": "South Sudan",
-            "dialCode": "+211",
-            "isoCode": "SS",
-            "flag": "https://www.countryflags.io/SS/flat/64.png"
-          },
-          {
-            "name": "Spain",
-            "dialCode": "+34",
-            "isoCode": "ES",
-            "flag": "https://www.countryflags.io/ES/flat/64.png"
-          },
-          {
-            "name": "Sri Lanka",
-            "dialCode": "+94",
-            "isoCode": "LK",
-            "flag": "https://www.countryflags.io/LK/flat/64.png"
-          },
-          {
-            "name": "Sudan",
-            "dialCode": "+249",
-            "isoCode": "SD",
-            "flag": "https://www.countryflags.io/SD/flat/64.png"
-          },
-          {
-            "name": "Suriname",
-            "dialCode": "+597",
-            "isoCode": "SR",
-            "flag": "https://www.countryflags.io/SR/flat/64.png"
-          },
-          {
-            "name": "Svalbard and Jan Mayen",
-            "dialCode": "+47",
-            "isoCode": "SJ",
-            "flag": "https://www.countryflags.io/SJ/flat/64.png"
-          },
-          {
-            "name": "Sweden",
-            "dialCode": "+46",
-            "isoCode": "SE",
-            "flag": "https://www.countryflags.io/SE/flat/64.png"
-          },
-          {
-            "name": "Switzerland",
-            "dialCode": "+41",
-            "isoCode": "CH",
-            "flag": "https://www.countryflags.io/CH/flat/64.png"
-          },
-          {
-            "name": "Syrian Arab Republic",
-            "dialCode": "+963",
-            "isoCode": "SY",
-            "flag": "https://www.countryflags.io/SY/flat/64.png"
-          },
-          {
-            "name": "Taiwan",
-            "dialCode": "+886",
-            "isoCode": "TW",
-            "flag": "https://www.countryflags.io/TW/flat/64.png"
-          },
-          {
-            "name": "Tajikistan",
-            "dialCode": "+992",
-            "isoCode": "TJ",
-            "flag": "https://www.countryflags.io/TJ/flat/64.png"
-          },
-          {
-            "name": "Tanzania, United Republic of Tanzania",
-            "dialCode": "+255",
-            "isoCode": "TZ",
-            "flag": "https://www.countryflags.io/TZ/flat/64.png"
-          },
-          {
-            "name": "Thailand",
-            "dialCode": "+66",
-            "isoCode": "TH",
-            "flag": "https://www.countryflags.io/TH/flat/64.png"
-          },
-          {
-            "name": "Timor-Leste",
-            "dialCode": "+670",
-            "isoCode": "TL",
-            "flag": "https://www.countryflags.io/TL/flat/64.png"
-          },
-          {
-            "name": "Togo",
-            "dialCode": "+228",
-            "isoCode": "TG",
-            "flag": "https://www.countryflags.io/TG/flat/64.png"
-          },
-          {
-            "name": "Tokelau",
-            "dialCode": "+690",
-            "isoCode": "TK",
-            "flag": "https://www.countryflags.io/TK/flat/64.png"
-          },
-          {
-            "name": "Tonga",
-            "dialCode": "+676",
-            "isoCode": "TO",
-            "flag": "https://www.countryflags.io/TO/flat/64.png"
-          },
-          {
-            "name": "Trinidad and Tobago",
-            "dialCode": "+1868",
-            "isoCode": "TT",
-            "flag": "https://www.countryflags.io/TT/flat/64.png"
-          },
-          {
-            "name": "Tunisia",
-            "dialCode": "+216",
-            "isoCode": "TN",
-            "flag": "https://www.countryflags.io/TN/flat/64.png"
-          },
-          {
-            "name": "Turkey",
-            "dialCode": "+90",
-            "isoCode": "TR",
-            "flag": "https://www.countryflags.io/TR/flat/64.png"
-          },
-          {
-            "name": "Turkmenistan",
-            "dialCode": "+993",
-            "isoCode": "TM",
-            "flag": "https://www.countryflags.io/TM/flat/64.png"
-          },
-          {
-            "name": "Turks and Caicos Islands",
-            "dialCode": "+1649",
-            "isoCode": "TC",
-            "flag": "https://www.countryflags.io/TC/flat/64.png"
-          },
-          {
-            "name": "Tuvalu",
-            "dialCode": "+688",
-            "isoCode": "TV",
-            "flag": "https://www.countryflags.io/TV/flat/64.png"
-          },
-          {
-            "name": "Uganda",
-            "dialCode": "+256",
-            "isoCode": "UG",
-            "flag": "https://www.countryflags.io/UG/flat/64.png"
-          },
-          {
-            "name": "Ukraine",
-            "dialCode": "+380",
-            "isoCode": "UA",
-            "flag": "https://www.countryflags.io/UA/flat/64.png"
-          },
-          {
-            "name": "United Arab Emirates",
-            "dialCode": "+971",
-            "isoCode": "AE",
-            "flag": "https://www.countryflags.io/AE/flat/64.png"
-          },
-          {
-            "name": "United Kingdom",
-            "dialCode": "+44",
-            "isoCode": "GB",
-            "flag": "https://www.countryflags.io/GB/flat/64.png"
-          },
-          {
-            "name": "United States",
-            "dialCode": "+1",
-            "isoCode": "US",
-            "flag": "https://www.countryflags.io/US/flat/64.png"
-          },
-          {
-            "name": "Uruguay",
-            "dialCode": "+598",
-            "isoCode": "UY",
-            "flag": "https://www.countryflags.io/UY/flat/64.png"
-          },
-          {
-            "name": "Uzbekistan",
-            "dialCode": "+998",
-            "isoCode": "UZ",
-            "flag": "https://www.countryflags.io/UZ/flat/64.png"
-          },
-          {
-            "name": "Vanuatu",
-            "dialCode": "+678",
-            "isoCode": "VU",
-            "flag": "https://www.countryflags.io/VU/flat/64.png"
-          },
-          {
-            "name": "Venezuela, Bolivarian Republic of Venezuela",
-            "dialCode": "+58",
-            "isoCode": "VE",
-            "flag": "https://www.countryflags.io/VE/flat/64.png"
-          },
-          {
-            "name": "Vietnam",
-            "dialCode": "+84",
-            "isoCode": "VN",
-            "flag": "https://www.countryflags.io/VN/flat/64.png"
-          },
-          {
-            "name": "Virgin Islands, British",
-            "dialCode": "+1284",
-            "isoCode": "VG",
-            "flag": "https://www.countryflags.io/VG/flat/64.png"
-          },
-          {
-            "name": "Virgin Islands, U.S.",
-            "dialCode": "+1340",
-            "isoCode": "VI",
-            "flag": "https://www.countryflags.io/VI/flat/64.png"
-          },
-          {
-            "name": "Wallis and Futuna",
-            "dialCode": "+681",
-            "isoCode": "WF",
-            "flag": "https://www.countryflags.io/WF/flat/64.png"
-          },
-          {
-            "name": "Yemen",
-            "dialCode": "+967",
-            "isoCode": "YE",
-            "flag": "https://www.countryflags.io/YE/flat/64.png"
-          },
-          {
-            "name": "Zambia",
-            "dialCode": "+260",
-            "isoCode": "ZM",
-            "flag": "https://www.countryflags.io/ZM/flat/64.png"
-          },
-          {
-            "name": "Zimbabwe",
-            "dialCode": "+263",
-            "isoCode": "ZW",
-            "flag": "https://www.countryflags.io/ZW/flat/64.png"
-          }
-        ];
-
-
-        arr.forEach(el => {
-
-          // console.log(code);
-
-          if (el.dialCode == `+${code}`) {
-            // console.log(el);
-            iso = el.isoCode.toLowerCase();
-            console.log(iso);
 
 
 
-          }
 
-          console.log(iso);
-          document.getElementById("asv").value = iso;
-        })
+      $('#btnSubmit').on('click', function(e) {
+        // e.preventDefault();
+  
+        if (txtPhone1.value !== '') {
+          
+          var code = $("#txtPhone").intlTelInput("getSelectedCountryData").dialCode;
+          var phoneNumber = $('#txtPhone').val();
+          var name = $("#txtPhone").intlTelInput("getSelectedCountryData").name;
+          document.getElementById("txtPhone").value = code;
 
-        $.ajax({
-          url: "./a/m.php",
-          method: "post",
-          data: {
-            code: code,
-            name: name
-          },
-          success: function(data) {
-            console.log(data);
-          }
-        });
+
+          console.log('Country Code : ' + code + '\nPhone Number : ' + phoneNumber + '\nCountry Name : ' + name);
+
+
+          let iso;
+          let str;
+
+          let arr = [{
+              "name": "Afghanistan",
+              "dialCode": "+93",
+              "isoCode": "AF",
+              "flag": "https://www.countryflags.io/AF/flat/64.png"
+            },
+            {
+              "name": "Aland Islands",
+              "dialCode": "+358",
+              "isoCode": "AX",
+              "flag": "https://www.countryflags.io/AX/flat/64.png"
+            },
+            {
+              "name": "Albania",
+              "dialCode": "+355",
+              "isoCode": "AL",
+              "flag": "https://www.countryflags.io/AL/flat/64.png"
+            },
+            {
+              "name": "Algeria",
+              "dialCode": "+213",
+              "isoCode": "DZ",
+              "flag": "https://www.countryflags.io/DZ/flat/64.png"
+            },
+            {
+              "name": "AmericanSamoa",
+              "dialCode": "+1684",
+              "isoCode": "AS",
+              "flag": "https://www.countryflags.io/AS/flat/64.png"
+            },
+            {
+              "name": "Andorra",
+              "dialCode": "+376",
+              "isoCode": "AD",
+              "flag": "https://www.countryflags.io/AD/flat/64.png"
+            },
+            {
+              "name": "Angola",
+              "dialCode": "+244",
+              "isoCode": "AO",
+              "flag": "https://www.countryflags.io/AO/flat/64.png"
+            },
+            {
+              "name": "Anguilla",
+              "dialCode": "+1264",
+              "isoCode": "AI",
+              "flag": "https://www.countryflags.io/AI/flat/64.png"
+            },
+            {
+              "name": "Antarctica",
+              "dialCode": "+672",
+              "isoCode": "AQ",
+              "flag": "https://www.countryflags.io/AQ/flat/64.png"
+            },
+            {
+              "name": "Antigua and Barbuda",
+              "dialCode": "+1268",
+              "isoCode": "AG",
+              "flag": "https://www.countryflags.io/AG/flat/64.png"
+            },
+            {
+              "name": "Argentina",
+              "dialCode": "+54",
+              "isoCode": "AR",
+              "flag": "https://www.countryflags.io/AR/flat/64.png"
+            },
+            {
+              "name": "Armenia",
+              "dialCode": "+374",
+              "isoCode": "AM",
+              "flag": "https://www.countryflags.io/AM/flat/64.png"
+            },
+            {
+              "name": "Aruba",
+              "dialCode": "+297",
+              "isoCode": "AW",
+              "flag": "https://www.countryflags.io/AW/flat/64.png"
+            },
+            {
+              "name": "Ascension Island",
+              "dialCode": "+247",
+              "isoCode": "AC",
+              "flag": "https://www.countryflags.io/AC/flat/64.png"
+            },
+            {
+              "name": "Australia",
+              "dialCode": "+61",
+              "isoCode": "AU",
+              "flag": "https://www.countryflags.io/AU/flat/64.png"
+            },
+            {
+              "name": "Austria",
+              "dialCode": "+43",
+              "isoCode": "AT",
+              "flag": "https://www.countryflags.io/AT/flat/64.png"
+            },
+            {
+              "name": "Azerbaijan",
+              "dialCode": "+994",
+              "isoCode": "AZ",
+              "flag": "https://www.countryflags.io/AZ/flat/64.png"
+            },
+            {
+              "name": "Bahamas",
+              "dialCode": "+1242",
+              "isoCode": "BS",
+              "flag": "https://www.countryflags.io/BS/flat/64.png"
+            },
+            {
+              "name": "Bahrain",
+              "dialCode": "+973",
+              "isoCode": "BH",
+              "flag": "https://www.countryflags.io/BH/flat/64.png"
+            },
+            {
+              "name": "Bangladesh",
+              "dialCode": "+880",
+              "isoCode": "BD",
+              "flag": "https://www.countryflags.io/BD/flat/64.png"
+            },
+            {
+              "name": "Barbados",
+              "dialCode": "+1246",
+              "isoCode": "BB",
+              "flag": "https://www.countryflags.io/BB/flat/64.png"
+            },
+            {
+              "name": "Belarus",
+              "dialCode": "+375",
+              "isoCode": "BY",
+              "flag": "https://www.countryflags.io/BY/flat/64.png"
+            },
+            {
+              "name": "Belgium",
+              "dialCode": "+32",
+              "isoCode": "BE",
+              "flag": "https://www.countryflags.io/BE/flat/64.png"
+            },
+            {
+              "name": "Belize",
+              "dialCode": "+501",
+              "isoCode": "BZ",
+              "flag": "https://www.countryflags.io/BZ/flat/64.png"
+            },
+            {
+              "name": "Benin",
+              "dialCode": "+229",
+              "isoCode": "BJ",
+              "flag": "https://www.countryflags.io/BJ/flat/64.png"
+            },
+            {
+              "name": "Bermuda",
+              "dialCode": "+1441",
+              "isoCode": "BM",
+              "flag": "https://www.countryflags.io/BM/flat/64.png"
+            },
+            {
+              "name": "Bhutan",
+              "dialCode": "+975",
+              "isoCode": "BT",
+              "flag": "https://www.countryflags.io/BT/flat/64.png"
+            },
+            {
+              "name": "Bolivia",
+              "dialCode": "+591",
+              "isoCode": "BO",
+              "flag": "https://www.countryflags.io/BO/flat/64.png"
+            },
+            {
+              "name": "Bosnia and Herzegovina",
+              "dialCode": "+387",
+              "isoCode": "BA",
+              "flag": "https://www.countryflags.io/BA/flat/64.png"
+            },
+            {
+              "name": "Botswana",
+              "dialCode": "+267",
+              "isoCode": "BW",
+              "flag": "https://www.countryflags.io/BW/flat/64.png"
+            },
+            {
+              "name": "Brazil",
+              "dialCode": "+55",
+              "isoCode": "BR",
+              "flag": "https://www.countryflags.io/BR/flat/64.png"
+            },
+            {
+              "name": "British Indian Ocean Territory",
+              "dialCode": "+246",
+              "isoCode": "IO",
+              "flag": "https://www.countryflags.io/IO/flat/64.png"
+            },
+            {
+              "name": "Brunei Darussalam",
+              "dialCode": "+673",
+              "isoCode": "BN",
+              "flag": "https://www.countryflags.io/BN/flat/64.png"
+            },
+            {
+              "name": "Bulgaria",
+              "dialCode": "+359",
+              "isoCode": "BG",
+              "flag": "https://www.countryflags.io/BG/flat/64.png"
+            },
+            {
+              "name": "Burkina Faso",
+              "dialCode": "+226",
+              "isoCode": "BF",
+              "flag": "https://www.countryflags.io/BF/flat/64.png"
+            },
+            {
+              "name": "Burundi",
+              "dialCode": "+257",
+              "isoCode": "BI",
+              "flag": "https://www.countryflags.io/BI/flat/64.png"
+            },
+            {
+              "name": "Cambodia",
+              "dialCode": "+855",
+              "isoCode": "KH",
+              "flag": "https://www.countryflags.io/KH/flat/64.png"
+            },
+            {
+              "name": "Cameroon",
+              "dialCode": "+237",
+              "isoCode": "CM",
+              "flag": "https://www.countryflags.io/CM/flat/64.png"
+            },
+            {
+              "name": "Canada",
+              "dialCode": "+1",
+              "isoCode": "CA",
+              "flag": "https://www.countryflags.io/CA/flat/64.png"
+            },
+            {
+              "name": "Cape Verde",
+              "dialCode": "+238",
+              "isoCode": "CV",
+              "flag": "https://www.countryflags.io/CV/flat/64.png"
+            },
+            {
+              "name": "Cayman Islands",
+              "dialCode": "+1345",
+              "isoCode": "KY",
+              "flag": "https://www.countryflags.io/KY/flat/64.png"
+            },
+            {
+              "name": "Central African Republic",
+              "dialCode": "+236",
+              "isoCode": "CF",
+              "flag": "https://www.countryflags.io/CF/flat/64.png"
+            },
+            {
+              "name": "Chad",
+              "dialCode": "+235",
+              "isoCode": "TD",
+              "flag": "https://www.countryflags.io/TD/flat/64.png"
+            },
+            {
+              "name": "Chile",
+              "dialCode": "+56",
+              "isoCode": "CL",
+              "flag": "https://www.countryflags.io/CL/flat/64.png"
+            },
+            {
+              "name": "China",
+              "dialCode": "+86",
+              "isoCode": "CN",
+              "flag": "https://www.countryflags.io/CN/flat/64.png"
+            },
+            {
+              "name": "Christmas Island",
+              "dialCode": "+61",
+              "isoCode": "CX",
+              "flag": "https://www.countryflags.io/CX/flat/64.png"
+            },
+            {
+              "name": "Cocos (Keeling) Islands",
+              "dialCode": "+61",
+              "isoCode": "CC",
+              "flag": "https://www.countryflags.io/CC/flat/64.png"
+            },
+            {
+              "name": "Colombia",
+              "dialCode": "+57",
+              "isoCode": "CO",
+              "flag": "https://www.countryflags.io/CO/flat/64.png"
+            },
+            {
+              "name": "Comoros",
+              "dialCode": "+269",
+              "isoCode": "KM",
+              "flag": "https://www.countryflags.io/KM/flat/64.png"
+            },
+            {
+              "name": "Congo",
+              "dialCode": "+242",
+              "isoCode": "CG",
+              "flag": "https://www.countryflags.io/CG/flat/64.png"
+            },
+            {
+              "name": "Cook Islands",
+              "dialCode": "+682",
+              "isoCode": "CK",
+              "flag": "https://www.countryflags.io/CK/flat/64.png"
+            },
+            {
+              "name": "Costa Rica",
+              "dialCode": "+506",
+              "isoCode": "CR",
+              "flag": "https://www.countryflags.io/CR/flat/64.png"
+            },
+            {
+              "name": "Croatia",
+              "dialCode": "+385",
+              "isoCode": "HR",
+              "flag": "https://www.countryflags.io/HR/flat/64.png"
+            },
+            {
+              "name": "Cuba",
+              "dialCode": "+53",
+              "isoCode": "CU",
+              "flag": "https://www.countryflags.io/CU/flat/64.png"
+            },
+            {
+              "name": "Cyprus",
+              "dialCode": "+357",
+              "isoCode": "CY",
+              "flag": "https://www.countryflags.io/CY/flat/64.png"
+            },
+            {
+              "name": "Czech Republic",
+              "dialCode": "+420",
+              "isoCode": "CZ",
+              "flag": "https://www.countryflags.io/CZ/flat/64.png"
+            },
+            {
+              "name": "Democratic Republic of the Congo",
+              "dialCode": "+243",
+              "isoCode": "CD",
+              "flag": "https://www.countryflags.io/CD/flat/64.png"
+            },
+            {
+              "name": "Denmark",
+              "dialCode": "+45",
+              "isoCode": "DK",
+              "flag": "https://www.countryflags.io/DK/flat/64.png"
+            },
+            {
+              "name": "Djibouti",
+              "dialCode": "+253",
+              "isoCode": "DJ",
+              "flag": "https://www.countryflags.io/DJ/flat/64.png"
+            },
+            {
+              "name": "Dominica",
+              "dialCode": "+1767",
+              "isoCode": "DM",
+              "flag": "https://www.countryflags.io/DM/flat/64.png"
+            },
+            {
+              "name": "Dominican Republic",
+              "dialCode": "+1849",
+              "isoCode": "DO",
+              "flag": "https://www.countryflags.io/DO/flat/64.png"
+            },
+            {
+              "name": "Ecuador",
+              "dialCode": "+593",
+              "isoCode": "EC",
+              "flag": "https://www.countryflags.io/EC/flat/64.png"
+            },
+            {
+              "name": "Egypt",
+              "dialCode": "+20",
+              "isoCode": "EG",
+              "flag": "https://www.countryflags.io/EG/flat/64.png"
+            },
+            {
+              "name": "El Salvador",
+              "dialCode": "+503",
+              "isoCode": "SV",
+              "flag": "https://www.countryflags.io/SV/flat/64.png"
+            },
+            {
+              "name": "Equatorial Guinea",
+              "dialCode": "+240",
+              "isoCode": "GQ",
+              "flag": "https://www.countryflags.io/GQ/flat/64.png"
+            },
+            {
+              "name": "Eritrea",
+              "dialCode": "+291",
+              "isoCode": "ER",
+              "flag": "https://www.countryflags.io/ER/flat/64.png"
+            },
+            {
+              "name": "Estonia",
+              "dialCode": "+372",
+              "isoCode": "EE",
+              "flag": "https://www.countryflags.io/EE/flat/64.png"
+            },
+            {
+              "name": "Eswatini",
+              "dialCode": "+268",
+              "isoCode": "SZ",
+              "flag": "https://www.countryflags.io/SZ/flat/64.png"
+            },
+            {
+              "name": "Ethiopia",
+              "dialCode": "+251",
+              "isoCode": "ET",
+              "flag": "https://www.countryflags.io/ET/flat/64.png"
+            },
+            {
+              "name": "Falkland Islands (Malvinas)",
+              "dialCode": "+500",
+              "isoCode": "FK",
+              "flag": "https://www.countryflags.io/FK/flat/64.png"
+            },
+            {
+              "name": "Faroe Islands",
+              "dialCode": "+298",
+              "isoCode": "FO",
+              "flag": "https://www.countryflags.io/FO/flat/64.png"
+            },
+            {
+              "name": "Fiji",
+              "dialCode": "+679",
+              "isoCode": "FJ",
+              "flag": "https://www.countryflags.io/FJ/flat/64.png"
+            },
+            {
+              "name": "Finland",
+              "dialCode": "+358",
+              "isoCode": "FI",
+              "flag": "https://www.countryflags.io/FI/flat/64.png"
+            },
+            {
+              "name": "France",
+              "dialCode": "+33",
+              "isoCode": "FR",
+              "flag": "https://www.countryflags.io/FR/flat/64.png"
+            },
+            {
+              "name": "French Guiana",
+              "dialCode": "+594",
+              "isoCode": "GF",
+              "flag": "https://www.countryflags.io/GF/flat/64.png"
+            },
+            {
+              "name": "French Polynesia",
+              "dialCode": "+689",
+              "isoCode": "PF",
+              "flag": "https://www.countryflags.io/PF/flat/64.png"
+            },
+            {
+              "name": "Gabon",
+              "dialCode": "+241",
+              "isoCode": "GA",
+              "flag": "https://www.countryflags.io/GA/flat/64.png"
+            },
+            {
+              "name": "Gambia",
+              "dialCode": "+220",
+              "isoCode": "GM",
+              "flag": "https://www.countryflags.io/GM/flat/64.png"
+            },
+            {
+              "name": "Georgia",
+              "dialCode": "+995",
+              "isoCode": "GE",
+              "flag": "https://www.countryflags.io/GE/flat/64.png"
+            },
+            {
+              "name": "Germany",
+              "dialCode": "+49",
+              "isoCode": "DE",
+              "flag": "https://www.countryflags.io/DE/flat/64.png"
+            },
+            {
+              "name": "Ghana",
+              "dialCode": "+233",
+              "isoCode": "GH",
+              "flag": "https://www.countryflags.io/GH/flat/64.png"
+            },
+            {
+              "name": "Gibraltar",
+              "dialCode": "+350",
+              "isoCode": "GI",
+              "flag": "https://www.countryflags.io/GI/flat/64.png"
+            },
+            {
+              "name": "Greece",
+              "dialCode": "+30",
+              "isoCode": "GR",
+              "flag": "https://www.countryflags.io/GR/flat/64.png"
+            },
+            {
+              "name": "Greenland",
+              "dialCode": "+299",
+              "isoCode": "GL",
+              "flag": "https://www.countryflags.io/GL/flat/64.png"
+            },
+            {
+              "name": "Grenada",
+              "dialCode": "+1473",
+              "isoCode": "GD",
+              "flag": "https://www.countryflags.io/GD/flat/64.png"
+            },
+            {
+              "name": "Guadeloupe",
+              "dialCode": "+590",
+              "isoCode": "GP",
+              "flag": "https://www.countryflags.io/GP/flat/64.png"
+            },
+            {
+              "name": "Guam",
+              "dialCode": "+1671",
+              "isoCode": "GU",
+              "flag": "https://www.countryflags.io/GU/flat/64.png"
+            },
+            {
+              "name": "Guatemala",
+              "dialCode": "+502",
+              "isoCode": "GT",
+              "flag": "https://www.countryflags.io/GT/flat/64.png"
+            },
+            {
+              "name": "Guernsey",
+              "dialCode": "+44",
+              "isoCode": "GG",
+              "flag": "https://www.countryflags.io/GG/flat/64.png"
+            },
+            {
+              "name": "Guinea",
+              "dialCode": "+224",
+              "isoCode": "GN",
+              "flag": "https://www.countryflags.io/GN/flat/64.png"
+            },
+            {
+              "name": "Guinea-Bissau",
+              "dialCode": "+245",
+              "isoCode": "GW",
+              "flag": "https://www.countryflags.io/GW/flat/64.png"
+            },
+            {
+              "name": "Guyana",
+              "dialCode": "+592",
+              "isoCode": "GY",
+              "flag": "https://www.countryflags.io/GY/flat/64.png"
+            },
+            {
+              "name": "Haiti",
+              "dialCode": "+509",
+              "isoCode": "HT",
+              "flag": "https://www.countryflags.io/HT/flat/64.png"
+            },
+            {
+              "name": "Holy See (Vatican City State)",
+              "dialCode": "+379",
+              "isoCode": "VA",
+              "flag": "https://www.countryflags.io/VA/flat/64.png"
+            },
+            {
+              "name": "Honduras",
+              "dialCode": "+504",
+              "isoCode": "HN",
+              "flag": "https://www.countryflags.io/HN/flat/64.png"
+            },
+            {
+              "name": "Hong Kong",
+              "dialCode": "+852",
+              "isoCode": "HK",
+              "flag": "https://www.countryflags.io/HK/flat/64.png"
+            },
+            {
+              "name": "Hungary",
+              "dialCode": "+36",
+              "isoCode": "HU",
+              "flag": "https://www.countryflags.io/HU/flat/64.png"
+            },
+            {
+              "name": "Iceland",
+              "dialCode": "+354",
+              "isoCode": "IS",
+              "flag": "https://www.countryflags.io/IS/flat/64.png"
+            },
+            {
+              "name": "India",
+              "dialCode": "+91",
+              "isoCode": "IN",
+              "flag": "https://www.countryflags.io/IN/flat/64.png"
+            },
+            {
+              "name": "Indonesia",
+              "dialCode": "+62",
+              "isoCode": "ID",
+              "flag": "https://www.countryflags.io/ID/flat/64.png"
+            },
+            {
+              "name": "Iran",
+              "dialCode": "+98",
+              "isoCode": "IR",
+              "flag": "https://www.countryflags.io/IR/flat/64.png"
+            },
+            {
+              "name": "Iraq",
+              "dialCode": "+964",
+              "isoCode": "IQ",
+              "flag": "https://www.countryflags.io/IQ/flat/64.png"
+            },
+            {
+              "name": "Ireland",
+              "dialCode": "+353",
+              "isoCode": "IE",
+              "flag": "https://www.countryflags.io/IE/flat/64.png"
+            },
+            {
+              "name": "Isle of Man",
+              "dialCode": "+44",
+              "isoCode": "IM",
+              "flag": "https://www.countryflags.io/IM/flat/64.png"
+            },
+            {
+              "name": "Italy",
+              "dialCode": "+39",
+              "isoCode": "IT",
+              "flag": "https://www.countryflags.io/IT/flat/64.png"
+            },
+            {
+              "name": "Ivory Coast / Cote d'Ivoire",
+              "dialCode": "+225",
+              "isoCode": "CI",
+              "flag": "https://www.countryflags.io/CI/flat/64.png"
+            },
+            {
+              "name": "Jamaica",
+              "dialCode": "+1876",
+              "isoCode": "JM",
+              "flag": "https://www.countryflags.io/JM/flat/64.png"
+            },
+            {
+              "name": "Japan",
+              "dialCode": "+81",
+              "isoCode": "JP",
+              "flag": "https://www.countryflags.io/JP/flat/64.png"
+            },
+            {
+              "name": "Jersey",
+              "dialCode": "+44",
+              "isoCode": "JE",
+              "flag": "https://www.countryflags.io/JE/flat/64.png"
+            },
+            {
+              "name": "Jordan",
+              "dialCode": "+962",
+              "isoCode": "JO",
+              "flag": "https://www.countryflags.io/JO/flat/64.png"
+            },
+            {
+              "name": "Kazakhstan",
+              "dialCode": "+77",
+              "isoCode": "KZ",
+              "flag": "https://www.countryflags.io/KZ/flat/64.png"
+            },
+            {
+              "name": "Kenya",
+              "dialCode": "+254",
+              "isoCode": "KE",
+              "flag": "https://www.countryflags.io/KE/flat/64.png"
+            },
+            {
+              "name": "Kiribati",
+              "dialCode": "+686",
+              "isoCode": "KI",
+              "flag": "https://www.countryflags.io/KI/flat/64.png"
+            },
+            {
+              "name": "Korea, Democratic People's Republic of Korea",
+              "dialCode": "+850",
+              "isoCode": "KP",
+              "flag": "https://www.countryflags.io/KP/flat/64.png"
+            },
+            {
+              "name": "Korea, Republic of South Korea",
+              "dialCode": "+82",
+              "isoCode": "KR",
+              "flag": "https://www.countryflags.io/KR/flat/64.png"
+            },
+            {
+              "name": "Kosovo",
+              "dialCode": "+383",
+              "isoCode": "XK",
+              "flag": "https://www.countryflags.io/XK/flat/64.png"
+            },
+            {
+              "name": "Kuwait",
+              "dialCode": "+965",
+              "isoCode": "KW",
+              "flag": "https://www.countryflags.io/KW/flat/64.png"
+            },
+            {
+              "name": "Kyrgyzstan",
+              "dialCode": "+996",
+              "isoCode": "KG",
+              "flag": "https://www.countryflags.io/KG/flat/64.png"
+            },
+            {
+              "name": "Laos",
+              "dialCode": "+856",
+              "isoCode": "LA",
+              "flag": "https://www.countryflags.io/LA/flat/64.png"
+            },
+            {
+              "name": "Latvia",
+              "dialCode": "+371",
+              "isoCode": "LV",
+              "flag": "https://www.countryflags.io/LV/flat/64.png"
+            },
+            {
+              "name": "Lebanon",
+              "dialCode": "+961",
+              "isoCode": "LB",
+              "flag": "https://www.countryflags.io/LB/flat/64.png"
+            },
+            {
+              "name": "Lesotho",
+              "dialCode": "+266",
+              "isoCode": "LS",
+              "flag": "https://www.countryflags.io/LS/flat/64.png"
+            },
+            {
+              "name": "Liberia",
+              "dialCode": "+231",
+              "isoCode": "LR",
+              "flag": "https://www.countryflags.io/LR/flat/64.png"
+            },
+            {
+              "name": "Libya",
+              "dialCode": "+218",
+              "isoCode": "LY",
+              "flag": "https://www.countryflags.io/LY/flat/64.png"
+            },
+            {
+              "name": "Liechtenstein",
+              "dialCode": "+423",
+              "isoCode": "LI",
+              "flag": "https://www.countryflags.io/LI/flat/64.png"
+            },
+            {
+              "name": "Lithuania",
+              "dialCode": "+370",
+              "isoCode": "LT",
+              "flag": "https://www.countryflags.io/LT/flat/64.png"
+            },
+            {
+              "name": "Luxembourg",
+              "dialCode": "+352",
+              "isoCode": "LU",
+              "flag": "https://www.countryflags.io/LU/flat/64.png"
+            },
+            {
+              "name": "Macau",
+              "dialCode": "+853",
+              "isoCode": "MO",
+              "flag": "https://www.countryflags.io/MO/flat/64.png"
+            },
+            {
+              "name": "Madagascar",
+              "dialCode": "+261",
+              "isoCode": "MG",
+              "flag": "https://www.countryflags.io/MG/flat/64.png"
+            },
+            {
+              "name": "Malawi",
+              "dialCode": "+265",
+              "isoCode": "MW",
+              "flag": "https://www.countryflags.io/MW/flat/64.png"
+            },
+            {
+              "name": "Malaysia",
+              "dialCode": "+60",
+              "isoCode": "MY",
+              "flag": "https://www.countryflags.io/MY/flat/64.png"
+            },
+            {
+              "name": "Maldives",
+              "dialCode": "+960",
+              "isoCode": "MV",
+              "flag": "https://www.countryflags.io/MV/flat/64.png"
+            },
+            {
+              "name": "Mali",
+              "dialCode": "+223",
+              "isoCode": "ML",
+              "flag": "https://www.countryflags.io/ML/flat/64.png"
+            },
+            {
+              "name": "Malta",
+              "dialCode": "+356",
+              "isoCode": "MT",
+              "flag": "https://www.countryflags.io/MT/flat/64.png"
+            },
+            {
+              "name": "Marshall Islands",
+              "dialCode": "+692",
+              "isoCode": "MH",
+              "flag": "https://www.countryflags.io/MH/flat/64.png"
+            },
+            {
+              "name": "Martinique",
+              "dialCode": "+596",
+              "isoCode": "MQ",
+              "flag": "https://www.countryflags.io/MQ/flat/64.png"
+            },
+            {
+              "name": "Mauritania",
+              "dialCode": "+222",
+              "isoCode": "MR",
+              "flag": "https://www.countryflags.io/MR/flat/64.png"
+            },
+            {
+              "name": "Mauritius",
+              "dialCode": "+230",
+              "isoCode": "MU",
+              "flag": "https://www.countryflags.io/MU/flat/64.png"
+            },
+            {
+              "name": "Mayotte",
+              "dialCode": "+262",
+              "isoCode": "YT",
+              "flag": "https://www.countryflags.io/YT/flat/64.png"
+            },
+            {
+              "name": "Mexico",
+              "dialCode": "+52",
+              "isoCode": "MX",
+              "flag": "https://www.countryflags.io/MX/flat/64.png"
+            },
+            {
+              "name": "Micronesia, Federated States of Micronesia",
+              "dialCode": "+691",
+              "isoCode": "FM",
+              "flag": "https://www.countryflags.io/FM/flat/64.png"
+            },
+            {
+              "name": "Moldova",
+              "dialCode": "+373",
+              "isoCode": "MD",
+              "flag": "https://www.countryflags.io/MD/flat/64.png"
+            },
+            {
+              "name": "Monaco",
+              "dialCode": "+377",
+              "isoCode": "MC",
+              "flag": "https://www.countryflags.io/MC/flat/64.png"
+            },
+            {
+              "name": "Mongolia",
+              "dialCode": "+976",
+              "isoCode": "MN",
+              "flag": "https://www.countryflags.io/MN/flat/64.png"
+            },
+            {
+              "name": "Montenegro",
+              "dialCode": "+382",
+              "isoCode": "ME",
+              "flag": "https://www.countryflags.io/ME/flat/64.png"
+            },
+            {
+              "name": "Montserrat",
+              "dialCode": "+1664",
+              "isoCode": "MS",
+              "flag": "https://www.countryflags.io/MS/flat/64.png"
+            },
+            {
+              "name": "Morocco",
+              "dialCode": "+212",
+              "isoCode": "MA",
+              "flag": "https://www.countryflags.io/MA/flat/64.png"
+            },
+            {
+              "name": "Mozambique",
+              "dialCode": "+258",
+              "isoCode": "MZ",
+              "flag": "https://www.countryflags.io/MZ/flat/64.png"
+            },
+            {
+              "name": "Myanmar",
+              "dialCode": "+95",
+              "isoCode": "MM",
+              "flag": "https://www.countryflags.io/MM/flat/64.png"
+            },
+            {
+              "name": "Namibia",
+              "dialCode": "+264",
+              "isoCode": "NA",
+              "flag": "https://www.countryflags.io/NA/flat/64.png"
+            },
+            {
+              "name": "Nauru",
+              "dialCode": "+674",
+              "isoCode": "NR",
+              "flag": "https://www.countryflags.io/NR/flat/64.png"
+            },
+            {
+              "name": "Nepal",
+              "dialCode": "+977",
+              "isoCode": "NP",
+              "flag": "https://www.countryflags.io/NP/flat/64.png"
+            },
+            {
+              "name": "Netherlands",
+              "dialCode": "+31",
+              "isoCode": "NL",
+              "flag": "https://www.countryflags.io/NL/flat/64.png"
+            },
+            {
+              "name": "Netherlands Antilles",
+              "dialCode": "+599",
+              "isoCode": "AN",
+              "flag": "https://www.countryflags.io/AN/flat/64.png"
+            },
+            {
+              "name": "New Caledonia",
+              "dialCode": "+687",
+              "isoCode": "NC",
+              "flag": "https://www.countryflags.io/NC/flat/64.png"
+            },
+            {
+              "name": "New Zealand",
+              "dialCode": "+64",
+              "isoCode": "NZ",
+              "flag": "https://www.countryflags.io/NZ/flat/64.png"
+            },
+            {
+              "name": "Nicaragua",
+              "dialCode": "+505",
+              "isoCode": "NI",
+              "flag": "https://www.countryflags.io/NI/flat/64.png"
+            },
+            {
+              "name": "Niger",
+              "dialCode": "+227",
+              "isoCode": "NE",
+              "flag": "https://www.countryflags.io/NE/flat/64.png"
+            },
+            {
+              "name": "Nigeria",
+              "dialCode": "+234",
+              "isoCode": "NG",
+              "flag": "https://www.countryflags.io/NG/flat/64.png"
+            },
+            {
+              "name": "Niue",
+              "dialCode": "+683",
+              "isoCode": "NU",
+              "flag": "https://www.countryflags.io/NU/flat/64.png"
+            },
+            {
+              "name": "Norfolk Island",
+              "dialCode": "+672",
+              "isoCode": "NF",
+              "flag": "https://www.countryflags.io/NF/flat/64.png"
+            },
+            {
+              "name": "North Macedonia",
+              "dialCode": "+389",
+              "isoCode": "MK",
+              "flag": "https://www.countryflags.io/MK/flat/64.png"
+            },
+            {
+              "name": "Northern Mariana Islands",
+              "dialCode": "+1670",
+              "isoCode": "MP",
+              "flag": "https://www.countryflags.io/MP/flat/64.png"
+            },
+            {
+              "name": "Norway",
+              "dialCode": "+47",
+              "isoCode": "NO",
+              "flag": "https://www.countryflags.io/NO/flat/64.png"
+            },
+            {
+              "name": "Oman",
+              "dialCode": "+968",
+              "isoCode": "OM",
+              "flag": "https://www.countryflags.io/OM/flat/64.png"
+            },
+            {
+              "name": "Pakistan",
+              "dialCode": "+92",
+              "isoCode": "PK",
+              "flag": "https://www.countryflags.io/PK/flat/64.png"
+            },
+            {
+              "name": "Palau",
+              "dialCode": "+680",
+              "isoCode": "PW",
+              "flag": "https://www.countryflags.io/PW/flat/64.png"
+            },
+            {
+              "name": "Palestine",
+              "dialCode": "+970",
+              "isoCode": "PS",
+              "flag": "https://www.countryflags.io/PS/flat/64.png"
+            },
+            {
+              "name": "Panama",
+              "dialCode": "+507",
+              "isoCode": "PA",
+              "flag": "https://www.countryflags.io/PA/flat/64.png"
+            },
+            {
+              "name": "Papua New Guinea",
+              "dialCode": "+675",
+              "isoCode": "PG",
+              "flag": "https://www.countryflags.io/PG/flat/64.png"
+            },
+            {
+              "name": "Paraguay",
+              "dialCode": "+595",
+              "isoCode": "PY",
+              "flag": "https://www.countryflags.io/PY/flat/64.png"
+            },
+            {
+              "name": "Peru",
+              "dialCode": "+51",
+              "isoCode": "PE",
+              "flag": "https://www.countryflags.io/PE/flat/64.png"
+            },
+            {
+              "name": "Philippines",
+              "dialCode": "+63",
+              "isoCode": "PH",
+              "flag": "https://www.countryflags.io/PH/flat/64.png"
+            },
+            {
+              "name": "Pitcairn",
+              "dialCode": "+872",
+              "isoCode": "PN",
+              "flag": "https://www.countryflags.io/PN/flat/64.png"
+            },
+            {
+              "name": "Poland",
+              "dialCode": "+48",
+              "isoCode": "PL",
+              "flag": "https://www.countryflags.io/PL/flat/64.png"
+            },
+            {
+              "name": "Portugal",
+              "dialCode": "+351",
+              "isoCode": "PT",
+              "flag": "https://www.countryflags.io/PT/flat/64.png"
+            },
+            {
+              "name": "Puerto Rico",
+              "dialCode": "+1939",
+              "isoCode": "PR",
+              "flag": "https://www.countryflags.io/PR/flat/64.png"
+            },
+            {
+              "name": "Qatar",
+              "dialCode": "+974",
+              "isoCode": "QA",
+              "flag": "https://www.countryflags.io/QA/flat/64.png"
+            },
+            {
+              "name": "Reunion",
+              "dialCode": "+262",
+              "isoCode": "RE",
+              "flag": "https://www.countryflags.io/RE/flat/64.png"
+            },
+            {
+              "name": "Romania",
+              "dialCode": "+40",
+              "isoCode": "RO",
+              "flag": "https://www.countryflags.io/RO/flat/64.png"
+            },
+            {
+              "name": "Russia",
+              "dialCode": "+7",
+              "isoCode": "RU",
+              "flag": "https://www.countryflags.io/RU/flat/64.png"
+            },
+            {
+              "name": "Rwanda",
+              "dialCode": "+250",
+              "isoCode": "RW",
+              "flag": "https://www.countryflags.io/RW/flat/64.png"
+            },
+            {
+              "name": "Saint Barthelemy",
+              "dialCode": "+590",
+              "isoCode": "BL",
+              "flag": "https://www.countryflags.io/BL/flat/64.png"
+            },
+            {
+              "name": "Saint Helena, Ascension and Tristan Da Cunha",
+              "dialCode": "+290",
+              "isoCode": "SH",
+              "flag": "https://www.countryflags.io/SH/flat/64.png"
+            },
+            {
+              "name": "Saint Kitts and Nevis",
+              "dialCode": "+1869",
+              "isoCode": "KN",
+              "flag": "https://www.countryflags.io/KN/flat/64.png"
+            },
+            {
+              "name": "Saint Lucia",
+              "dialCode": "+1758",
+              "isoCode": "LC",
+              "flag": "https://www.countryflags.io/LC/flat/64.png"
+            },
+            {
+              "name": "Saint Martin",
+              "dialCode": "+590",
+              "isoCode": "MF",
+              "flag": "https://www.countryflags.io/MF/flat/64.png"
+            },
+            {
+              "name": "Saint Pierre and Miquelon",
+              "dialCode": "+508",
+              "isoCode": "PM",
+              "flag": "https://www.countryflags.io/PM/flat/64.png"
+            },
+            {
+              "name": "Saint Vincent and the Grenadines",
+              "dialCode": "+1784",
+              "isoCode": "VC",
+              "flag": "https://www.countryflags.io/VC/flat/64.png"
+            },
+            {
+              "name": "Samoa",
+              "dialCode": "+685",
+              "isoCode": "WS",
+              "flag": "https://www.countryflags.io/WS/flat/64.png"
+            },
+            {
+              "name": "San Marino",
+              "dialCode": "+378",
+              "isoCode": "SM",
+              "flag": "https://www.countryflags.io/SM/flat/64.png"
+            },
+            {
+              "name": "Sao Tome and Principe",
+              "dialCode": "+239",
+              "isoCode": "ST",
+              "flag": "https://www.countryflags.io/ST/flat/64.png"
+            },
+            {
+              "name": "Saudi Arabia",
+              "dialCode": "+966",
+              "isoCode": "SA",
+              "flag": "https://www.countryflags.io/SA/flat/64.png"
+            },
+            {
+              "name": "Senegal",
+              "dialCode": "+221",
+              "isoCode": "SN",
+              "flag": "https://www.countryflags.io/SN/flat/64.png"
+            },
+            {
+              "name": "Serbia",
+              "dialCode": "+381",
+              "isoCode": "RS",
+              "flag": "https://www.countryflags.io/RS/flat/64.png"
+            },
+            {
+              "name": "Seychelles",
+              "dialCode": "+248",
+              "isoCode": "SC",
+              "flag": "https://www.countryflags.io/SC/flat/64.png"
+            },
+            {
+              "name": "Sierra Leone",
+              "dialCode": "+232",
+              "isoCode": "SL",
+              "flag": "https://www.countryflags.io/SL/flat/64.png"
+            },
+            {
+              "name": "Singapore",
+              "dialCode": "+65",
+              "isoCode": "SG",
+              "flag": "https://www.countryflags.io/SG/flat/64.png"
+            },
+            {
+              "name": "Sint Maarten",
+              "dialCode": "+1721",
+              "isoCode": "SX",
+              "flag": "https://www.countryflags.io/SX/flat/64.png"
+            },
+            {
+              "name": "Slovakia",
+              "dialCode": "+421",
+              "isoCode": "SK",
+              "flag": "https://www.countryflags.io/SK/flat/64.png"
+            },
+            {
+              "name": "Slovenia",
+              "dialCode": "+386",
+              "isoCode": "SI",
+              "flag": "https://www.countryflags.io/SI/flat/64.png"
+            },
+            {
+              "name": "Solomon Islands",
+              "dialCode": "+677",
+              "isoCode": "SB",
+              "flag": "https://www.countryflags.io/SB/flat/64.png"
+            },
+            {
+              "name": "Somalia",
+              "dialCode": "+252",
+              "isoCode": "SO",
+              "flag": "https://www.countryflags.io/SO/flat/64.png"
+            },
+            {
+              "name": "South Africa",
+              "dialCode": "+27",
+              "isoCode": "ZA",
+              "flag": "https://www.countryflags.io/ZA/flat/64.png"
+            },
+            {
+              "name": "South Georgia and the South Sandwich Islands",
+              "dialCode": "+500",
+              "isoCode": "GS",
+              "flag": "https://www.countryflags.io/GS/flat/64.png"
+            },
+            {
+              "name": "South Sudan",
+              "dialCode": "+211",
+              "isoCode": "SS",
+              "flag": "https://www.countryflags.io/SS/flat/64.png"
+            },
+            {
+              "name": "Spain",
+              "dialCode": "+34",
+              "isoCode": "ES",
+              "flag": "https://www.countryflags.io/ES/flat/64.png"
+            },
+            {
+              "name": "Sri Lanka",
+              "dialCode": "+94",
+              "isoCode": "LK",
+              "flag": "https://www.countryflags.io/LK/flat/64.png"
+            },
+            {
+              "name": "Sudan",
+              "dialCode": "+249",
+              "isoCode": "SD",
+              "flag": "https://www.countryflags.io/SD/flat/64.png"
+            },
+            {
+              "name": "Suriname",
+              "dialCode": "+597",
+              "isoCode": "SR",
+              "flag": "https://www.countryflags.io/SR/flat/64.png"
+            },
+            {
+              "name": "Svalbard and Jan Mayen",
+              "dialCode": "+47",
+              "isoCode": "SJ",
+              "flag": "https://www.countryflags.io/SJ/flat/64.png"
+            },
+            {
+              "name": "Sweden",
+              "dialCode": "+46",
+              "isoCode": "SE",
+              "flag": "https://www.countryflags.io/SE/flat/64.png"
+            },
+            {
+              "name": "Switzerland",
+              "dialCode": "+41",
+              "isoCode": "CH",
+              "flag": "https://www.countryflags.io/CH/flat/64.png"
+            },
+            {
+              "name": "Syrian Arab Republic",
+              "dialCode": "+963",
+              "isoCode": "SY",
+              "flag": "https://www.countryflags.io/SY/flat/64.png"
+            },
+            {
+              "name": "Taiwan",
+              "dialCode": "+886",
+              "isoCode": "TW",
+              "flag": "https://www.countryflags.io/TW/flat/64.png"
+            },
+            {
+              "name": "Tajikistan",
+              "dialCode": "+992",
+              "isoCode": "TJ",
+              "flag": "https://www.countryflags.io/TJ/flat/64.png"
+            },
+            {
+              "name": "Tanzania, United Republic of Tanzania",
+              "dialCode": "+255",
+              "isoCode": "TZ",
+              "flag": "https://www.countryflags.io/TZ/flat/64.png"
+            },
+            {
+              "name": "Thailand",
+              "dialCode": "+66",
+              "isoCode": "TH",
+              "flag": "https://www.countryflags.io/TH/flat/64.png"
+            },
+            {
+              "name": "Timor-Leste",
+              "dialCode": "+670",
+              "isoCode": "TL",
+              "flag": "https://www.countryflags.io/TL/flat/64.png"
+            },
+            {
+              "name": "Togo",
+              "dialCode": "+228",
+              "isoCode": "TG",
+              "flag": "https://www.countryflags.io/TG/flat/64.png"
+            },
+            {
+              "name": "Tokelau",
+              "dialCode": "+690",
+              "isoCode": "TK",
+              "flag": "https://www.countryflags.io/TK/flat/64.png"
+            },
+            {
+              "name": "Tonga",
+              "dialCode": "+676",
+              "isoCode": "TO",
+              "flag": "https://www.countryflags.io/TO/flat/64.png"
+            },
+            {
+              "name": "Trinidad and Tobago",
+              "dialCode": "+1868",
+              "isoCode": "TT",
+              "flag": "https://www.countryflags.io/TT/flat/64.png"
+            },
+            {
+              "name": "Tunisia",
+              "dialCode": "+216",
+              "isoCode": "TN",
+              "flag": "https://www.countryflags.io/TN/flat/64.png"
+            },
+            {
+              "name": "Turkey",
+              "dialCode": "+90",
+              "isoCode": "TR",
+              "flag": "https://www.countryflags.io/TR/flat/64.png"
+            },
+            {
+              "name": "Turkmenistan",
+              "dialCode": "+993",
+              "isoCode": "TM",
+              "flag": "https://www.countryflags.io/TM/flat/64.png"
+            },
+            {
+              "name": "Turks and Caicos Islands",
+              "dialCode": "+1649",
+              "isoCode": "TC",
+              "flag": "https://www.countryflags.io/TC/flat/64.png"
+            },
+            {
+              "name": "Tuvalu",
+              "dialCode": "+688",
+              "isoCode": "TV",
+              "flag": "https://www.countryflags.io/TV/flat/64.png"
+            },
+            {
+              "name": "Uganda",
+              "dialCode": "+256",
+              "isoCode": "UG",
+              "flag": "https://www.countryflags.io/UG/flat/64.png"
+            },
+            {
+              "name": "Ukraine",
+              "dialCode": "+380",
+              "isoCode": "UA",
+              "flag": "https://www.countryflags.io/UA/flat/64.png"
+            },
+            {
+              "name": "United Arab Emirates",
+              "dialCode": "+971",
+              "isoCode": "AE",
+              "flag": "https://www.countryflags.io/AE/flat/64.png"
+            },
+            {
+              "name": "United Kingdom",
+              "dialCode": "+44",
+              "isoCode": "GB",
+              "flag": "https://www.countryflags.io/GB/flat/64.png"
+            },
+            {
+              "name": "United States",
+              "dialCode": "+1",
+              "isoCode": "US",
+              "flag": "https://www.countryflags.io/US/flat/64.png"
+            },
+            {
+              "name": "Uruguay",
+              "dialCode": "+598",
+              "isoCode": "UY",
+              "flag": "https://www.countryflags.io/UY/flat/64.png"
+            },
+            {
+              "name": "Uzbekistan",
+              "dialCode": "+998",
+              "isoCode": "UZ",
+              "flag": "https://www.countryflags.io/UZ/flat/64.png"
+            },
+            {
+              "name": "Vanuatu",
+              "dialCode": "+678",
+              "isoCode": "VU",
+              "flag": "https://www.countryflags.io/VU/flat/64.png"
+            },
+            {
+              "name": "Venezuela, Bolivarian Republic of Venezuela",
+              "dialCode": "+58",
+              "isoCode": "VE",
+              "flag": "https://www.countryflags.io/VE/flat/64.png"
+            },
+            {
+              "name": "Vietnam",
+              "dialCode": "+84",
+              "isoCode": "VN",
+              "flag": "https://www.countryflags.io/VN/flat/64.png"
+            },
+            {
+              "name": "Virgin Islands, British",
+              "dialCode": "+1284",
+              "isoCode": "VG",
+              "flag": "https://www.countryflags.io/VG/flat/64.png"
+            },
+            {
+              "name": "Virgin Islands, U.S.",
+              "dialCode": "+1340",
+              "isoCode": "VI",
+              "flag": "https://www.countryflags.io/VI/flat/64.png"
+            },
+            {
+              "name": "Wallis and Futuna",
+              "dialCode": "+681",
+              "isoCode": "WF",
+              "flag": "https://www.countryflags.io/WF/flat/64.png"
+            },
+            {
+              "name": "Yemen",
+              "dialCode": "+967",
+              "isoCode": "YE",
+              "flag": "https://www.countryflags.io/YE/flat/64.png"
+            },
+            {
+              "name": "Zambia",
+              "dialCode": "+260",
+              "isoCode": "ZM",
+              "flag": "https://www.countryflags.io/ZM/flat/64.png"
+            },
+            {
+              "name": "Zimbabwe",
+              "dialCode": "+263",
+              "isoCode": "ZW",
+              "flag": "https://www.countryflags.io/ZW/flat/64.png"
+            }
+          ];
+
+          arr.forEach(el => {
+
+            // console.log(code);
+
+            if (el.dialCode == `+${code}`) {
+              // console.log(el);
+              iso = el.isoCode.toLowerCase();
+              console.log(iso);
+
+            }
+            // console.log(iso);
+            document.getElementById("asv").value = iso;
+          })
+
+          $.ajax({
+            url: "./a/m.php",
+            method: "post",
+            data: {
+              code: code,
+              name: name
+            },
+            success: function(data) {
+              // console.log(data);
+            }
+          });
+        } else {
+          console.log('error');
+          // e.preventDefault();
+          // e.stopPropagation();
+        }
       });
     });
 
@@ -4898,7 +4921,10 @@
         preferredCountries: ['US'],
         separateDialCode: true
       });
+
+
       $('#btnSubmit1').on('click', function() {
+
         var code = $("#1txtPhone").intlTelInput("getSelectedCountryData").dialCode;
         var phoneNumber = $('#1txtPhone').val();
         var name = $("#1txtPhone").intlTelInput("getSelectedCountryData").name;
@@ -10974,7 +11000,7 @@
       var a = document.getElementById("txtPhone");
       const formGrab = document.querySelector('.form-grab');
       const child = formGrab.childNodes[1].childNodes[0];
-      const targetElm =  document.querySelector('.iti__country-list');
+      const targetElm = document.querySelector('.iti__country-list');
       targetElm.addEventListener('click', function() {
         document.getElementById("txtPhone1").disabled = false;
       });
@@ -10982,10 +11008,10 @@
     }
 
     function enable_disable2() {
-      var a = document.getElementById("txtPhone2");
+      var a = document.getElementById("txtPhone1");
       const formGrab = document.querySelector('.form-grab');
       const child = formGrab.childNodes[1].childNodes[0];
-      const targetElm =  document.querySelector('.iti__country-list');
+      const targetElm = document.querySelector('.iti__country-list');
       targetElm.addEventListener('click', function() {
         document.getElementById("txtPhone2").disabled = false;
       });
@@ -10996,7 +11022,7 @@
       var a = document.getElementById("txtPhone3");
       const formGrab = document.querySelector('.form-grab');
       const child = formGrab.childNodes[1].childNodes[0];
-      const targetElm =  document.querySelector('.iti__country-list');
+      const targetElm = document.querySelector('.iti__country-list');
       targetElm.addEventListener('click', function() {
         document.getElementById("txtPhone3").disabled = false;
       });
@@ -11007,7 +11033,7 @@
       var a = document.getElementById("txtPhone4");
       const formGrab = document.querySelector('.form-grab');
       const child = formGrab.childNodes[1].childNodes[0];
-      const targetElm =  document.querySelector('.iti__country-list');
+      const targetElm = document.querySelector('.iti__country-list');
       targetElm.addEventListener('click', function() {
         document.getElementById("txtPhone4").disabled = false;
       });
@@ -11019,7 +11045,7 @@
       var a = document.getElementById("txtPhone5");
       const formGrab = document.querySelector('.form-grab');
       const child = formGrab.childNodes[1].childNodes[0];
-      const targetElm =  document.querySelector('.iti__country-list');
+      const targetElm = document.querySelector('.iti__country-list');
       targetElm.addEventListener('click', function() {
         document.getElementById("txtPhone5").disabled = false;
       });
