@@ -37,9 +37,10 @@ if (isset($_GET['email'])) {
 }
 
 
-function mailer($email){
-    
-    
+function mailer($email)
+{
+
+
     //Create instance of PHPMailer
     $mail = new PHPMailer();
     //Set mailer to use smtp
@@ -63,12 +64,12 @@ function mailer($email){
     $mail->setFrom("developer559872@gmail.com");
     //Enable HTML
     $mail->isHTML(true);
-    
+
     // if (isset($rental_type_vacatoin)) {
     //     $mail->Body = $mailbody;
     //     // $mail->addCC($visitor_email);
     // }
-    $mailbody="<!DOCTYPE html>
+    $mailbody = "<!DOCTYPE html>
     <!doctype html>
     <html lang='en-US'>
     
@@ -90,15 +91,15 @@ function mailer($email){
     <table style='background-color: #f2f3f8; max-width:670px;  margin:0 auto;' width='100%' border='0'
     align='center' cellpadding='0' cellspacing='0'>
     <tr>
-                                    <td style='height:80px;'>&nbsp;</td>
-                                </tr>
-                                <tr>
-                                <td style='text-align:center;'>
-                                <div style='position: relative;'>
-                                <img width='60' src='https://www.essentialyfe.com/images/12345.png' title='logo' alt='logo' style='height: 214px;width: 639px;overflow: hidden; '>
-                                </div>
-                                </td>
-                                </tr>
+       <td style='height:80px;'>&nbsp;</td>
+   </tr>
+   <tr>
+   <td style='text-align:center;'>
+   <div style='position: relative;'>
+   <img width='60' src='https://www.essentialyfe.com/images/12345.png' title='logo' altstyle='height: 214px;width: 639px;overflow: hidden; '>
+   </div>
+   </td>
+   </tr>
                                 
  <tr>
 <td>
@@ -146,11 +147,11 @@ style='max-width:670px;background:#fff; border-radius:3px; text-align:center;-we
     
     </html>";
     $mail->Body = $mailbody;
-                                                
+
     $res = $email;
     $mail->addAddress($res);
     //Add recipient
-                                                
+
     if ($mail->send()) {
         echo "Email Sent..!";
         // die();
@@ -159,8 +160,8 @@ style='max-width:670px;background:#fff; border-radius:3px; text-align:center;-we
     } else {
         echo "Message could not be sent. Mailer Error: " . $mail->ErrorInfo;
     }
-    
-    
+
+
     //Closing smtp connection
     $mail->smtpClose();
 }

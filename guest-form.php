@@ -1,3 +1,6 @@
+<?php
+error_reporting(E_ALL ^ E_WARNING);
+?>
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
 
@@ -246,7 +249,7 @@
           <div class="row" style="flex-wrap: inherit;">
             <!-- <div class="col-sm-10"> -->
             <section name="vacation-rental" id="vacation-rental" style="display:none; width:100%;">
-              <form name="myemailform" class="rd-form rd-form-variant-2 rd-mailform" method="post" action="form-to-email.php">
+              <form name="myemailform" class="rd-form rd-form-variant-2 rd-mailform" method="POST" action="form-to-email.php">
                 <!-- <input type="text" class="form-control" id="date"/> -->
 
                 <input type="text" name="vacation" value="Vacation Rental/ Short Term Stay" style="display:none;" required>
@@ -276,6 +279,7 @@
                         <input class="form-input" id='txtPhone1' type='tel' name="txtPhone1" style="background:#0E0C0D; color:white; height:30px;" disabled required />
                         <label class="form-label" for="txtPhone1" style="margin-left: 75px; color:white;">Phone Number:</label>
                       </div>
+                      <p id="val"></p>
                     </div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
@@ -431,7 +435,7 @@
                     <div class="col-md-12" id="vr-other_city" style="padding:10px;display:none;">
                       <div class="form-wrap">
                         <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                        <textarea class="form-control" rows="2" id="vr-other_city" name="vr-other_city" style="background:#0E0C0D; color:white;" placeholder="Please enter the information about the city: " ></textarea>
+                        <textarea class="form-control" rows="2" id="vr-other_city" name="vr-other_city" style="background:#0E0C0D; color:white;" placeholder="Please enter the information about the city: "></textarea>
                         <!-- <label class="form-label" for="vr-other_city" style="color:white;">Please fill where did you hear about us:</label> -->
                       </div>
                     </div>
@@ -459,7 +463,7 @@
                     <div class="col-md-12" id="vr-other_style" style="padding:10px;display:none;">
                       <div class="form-wrap">
                         <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                        <textarea class="form-control" rows="2" id="vr-other_style" name="vr-other_style" style="background:#0E0C0D; color:white;" placeholder="Please enter the information about the house style: " ></textarea>
+                        <textarea class="form-control" rows="2" id="vr-other_style" name="vr-other_style" style="background:#0E0C0D; color:white;" placeholder="Please enter the information about the house style: "></textarea>
                         <!-- <label class="form-label" for="vr-other_style" style="color:white;">Please fill where did you hear about us:</label> -->
                       </div>
                     </div>
@@ -528,7 +532,7 @@
                 <div class="col-md-12" id="vr-other" style="padding:10px;display:none;">
                   <div class="form-wrap">
                     <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                    <textarea class="form-control" rows="3" id="vr-other_info" name="vr-other_info" style="background:#0E0C0D; color:white;" ></textarea>
+                    <textarea class="form-control" rows="3" id="vr-other_info" name="vr-other_info" style="background:#0E0C0D; color:white;"></textarea>
                     <label class="form-label" for="vr-other_info" style="color:white;">Please fill your required services:</label>
                   </div>
                 </div>
@@ -653,7 +657,7 @@
                 <div class="col-12" id="vr-where_hear" style="padding:10px;display:none;">
                   <div class="form-wrap">
                     <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                    <textarea class="form-control" rows="3" id="vr-where_hear" name="vr-where_hear" style="background:#0E0C0D; color:white;" placeholder="Please fill where did you hear about us:" ></textarea>
+                    <textarea class="form-control" rows="3" id="vr-where_hear" name="vr-where_hear" style="background:#0E0C0D; color:white;" placeholder="Please fill where did you hear about us:"></textarea>
                     <!-- <label class="form-label" for="vr-where_hear" style="color:white;">Please fill where did you hear about us:</label> -->
                   </div>
                 </div>
@@ -672,7 +676,7 @@
                   </div>
                 </article><br><br>
                 <center>
-                  <button class="button button-black-outline" type="submit" data-toggle="modal" id="btnSubmit" data-target="#exampleModalCenter">Submit</button>
+                  <button class="button button-black-outline" type="submit" data-toggle="modal" id="btnSubmit" name="btnSubmit" data-target="#exampleModalCenter">Submit</button>
                   <!-- <input id="btnSubmit" class="btn" type="submit" value="SUBMIT" > -->
                 </center>
               </form>
@@ -711,6 +715,7 @@
                         <input class="form-input" id='txtPhone2' type='tel' name="txtPhone2" style="background:#0E0C0D; color:white; height:30px;" disabled required />
                         <label class="form-label" for="txtPhone2" style="margin-left: 75px; color:white;">Phone Number:</label>
                       </div>
+                      <p id="val2"></p>
                     </div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
@@ -897,7 +902,7 @@
                     <div class="col-md-12" id="ev-info_city" style="padding:10px;display:none;">
                       <div class="form-wrap">
                         <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                        <textarea class="form-control" rows="2" id="ev-info_city" name="ev-info_city" style="background:#0E0C0D; color:white;" placeholder="Please enter the information about the city:" ></textarea>
+                        <textarea class="form-control" rows="2" id="ev-info_city" name="ev-info_city" style="background:#0E0C0D; color:white;" placeholder="Please enter the information about the city:"></textarea>
                         <!-- <label class="form-label" for="ev-info_city" style="color:white;">Please describe:</label> -->
                       </div>
                     </div>
@@ -926,7 +931,7 @@
                     <div class="col-md-12" id="ev-info_house_style" style="padding:10px;display:none;">
                       <div class="form-wrap">
                         <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                        <textarea class="form-control" rows="2" id="ev-info_house_style" name="ev-info_house_style" style="background:#0E0C0D; color:white;" placeholder="Please enter the information about the house style:" ></textarea>
+                        <textarea class="form-control" rows="2" id="ev-info_house_style" name="ev-info_house_style" style="background:#0E0C0D; color:white;" placeholder="Please enter the information about the house style:"></textarea>
                         <!-- <label class="form-label" for="ev-info_house_style" style="color:white;">Please describe:</label> -->
                       </div>
                     </div>
@@ -1090,12 +1095,12 @@
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                       </select>
-                      <select name="ev-no_pets" id="ev-no_pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px; display:none;">
+                      <select name="ev-no_pets" id="ev-no_pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px; display:none; " required>
                         <option value="1" selected>No of pets:</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                       </select>
-                      <select name="ev-yes_pets" id="ev-yes_pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px; display:none;">
+                      <select name="ev-yes_pets" id="ev-yes_pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px; display:none;" required>
                         <option value="0" selected>Pet Size:</option>
                         <option value="Up to 20 Pounds">Up to 20 pounds</option>
                         <option value="20-50 pounds">20-50 pounds</option>
@@ -1117,7 +1122,7 @@
                 <div class="col-md-12" id="ev-exotic_info" style="padding:10px;display:none;">
                   <div class="form-wrap">
                     <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                    <textarea class="form-control" rows="3" id="ev-exotic_info" name="ev-exotic_info" style="background:#0E0C0D; color:white;" placeholder="Please describe:" ></textarea>
+                    <textarea class="form-control" rows="3" id="ev-exotic_info" name="ev-exotic_info" style="background:#0E0C0D; color:white;" placeholder="Please describe:"></textarea>
                     <!-- <label class="form-label" for="ev-exotic_info" style="color:white;">Please describe:</label> -->
                   </div>
                 </div>
@@ -1323,7 +1328,7 @@
                 <div class="col-md-12" id="ev-other" style="padding:10px;display:none;">
                   <div class="form-wrap">
                     <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                    <textarea class="form-control" rows="3" id="ev-other_info" name="ev-other_info" style="background:#0E0C0D; color:white;" ></textarea>
+                    <textarea class="form-control" rows="3" id="ev-other_info" name="ev-other_info" style="background:#0E0C0D; color:white;"></textarea>
                     <label class="form-label" for="ev-other_info" style="color:white;">Please fill your required services:</label>
                   </div>
                 </div>
@@ -1370,7 +1375,7 @@
                 <div class="col-md-12" id="ev-where_hear" style="padding:10px;display:none;">
                   <div class="form-wrap">
                     <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                    <textarea class="form-control" rows="3" id="ev-where_hear" name="ev-where_hear" style="background:#0E0C0D; color:white;" placeholder="Please fill where did you hear about us" ></textarea>
+                    <textarea class="form-control" rows="3" id="ev-where_hear" name="ev-where_hear" style="background:#0E0C0D; color:white;" placeholder="Please fill where did you hear about us"></textarea>
                     <!-- <label class="form-label" for="ev-where_hear" style="color:white;">Please fill your required services:</label> -->
                   </div>
                 </div>
@@ -1428,6 +1433,7 @@
                         <label class="form-label" for="txtPhone3" style="margin-left: 75px; color:white;">Phone
                           Number:</label>
                       </div>
+                      <p id="val3"></p>
                     </div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
@@ -1585,7 +1591,7 @@
                     <div class="col-md-12" id="f-other_city" style="padding:10px;display:none;">
                       <div class="form-wrap">
                         <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                        <textarea class="form-control" rows="3" id="f-other_city" name="f-other_city" style="background:#0E0C0D; color:white;" placeholder="Please fill the information about the city/area:" ></textarea>
+                        <textarea class="form-control" rows="3" id="f-other_city" name="f-other_city" style="background:#0E0C0D; color:white;" placeholder="Please fill the information about the city/area:"></textarea>
                         <!-- <label class="form-label" for="f-other_city" style="color:white;">Please describe:</label> -->
                       </div>
                     </div>
@@ -1614,7 +1620,7 @@
                     <div class="col-md-12" id="f-house_style" style="padding:10px;display:none;">
                       <div class="form-wrap">
                         <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                        <textarea class="form-control" rows="3" id="f-house_style" name="f-house_style" style="background:#0E0C0D; color:white;" placeholder="Please fill information about house style:" ></textarea>
+                        <textarea class="form-control" rows="3" id="f-house_style" name="f-house_style" style="background:#0E0C0D; color:white;" placeholder="Please fill information about house style:"></textarea>
                         <!-- <label class="form-label" for="f-house_style" style="color:white;">Please describe:</label> -->
                       </div>
                     </div>
@@ -1659,7 +1665,7 @@
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px; margin-bottom:10px;">
                     <div class="form-wrap">
-                      <select name="f-flex-pr" id="f-flex-pr" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
+                      <select name="f-flex-prermit" id="f-flex-prermit" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Will you be applying for a permit:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -1689,7 +1695,7 @@
                     <div class="col-md-12" id="f-info_production" style="padding:10px;display:none;">
                       <div class="form-wrap">
                         <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                        <textarea class="form-control" rows="3" id="f-info_production" name="f-info_production" style="background:#0E0C0D; color:white;" placeholder="Please fill information about production type:" ></textarea>
+                        <textarea class="form-control" rows="3" id="f-info_production" name="f-info_production" style="background:#0E0C0D; color:white;" placeholder="Please fill information about production type:"></textarea>
                         <!-- <label class="form-label" for="f-info_production" style="color:white;">Please describe:</label> -->
                       </div>
                     </div>
@@ -1794,8 +1800,7 @@
                 <div class="col-md-12" id="f-where_hear" style="padding:10px;display:none;">
                   <div class="form-wrap">
                     <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                    <textarea class="form-control" rows="3" id="f-where_hear" name="f-where_hear" style="background:#0E0C0D; color:white;" placeholder="Please fill where did you hear about us:" 
-                    ></textarea>
+                    <textarea class="form-control" rows="3" id="f-where_hear" name="f-where_hear" style="background:#0E0C0D; color:white;" placeholder="Please fill where did you hear about us:"></textarea>
                     <!-- <label class="form-label" for="f-where_hear" style="color:white;">Please describe:</label> -->
                   </div>
                 </div>
@@ -1834,7 +1839,7 @@
                 <div class="col-md-12" id="f-exotic_info" style="padding:10px;display:none;">
                   <div class="form-wrap">
                     <!-- <intextareaput class="form-input" id="vr-other_info" type="textarea" name="vr-other_info" style="background:#0E0C0D; color:white;"> -->
-                    <textarea class="form-control" rows="3" id="f-exotic_info" name="f-exotic_info" style="background:#0E0C0D; color:white;" placeholder="Please describe:" ></textarea>
+                    <textarea class="form-control" rows="3" id="f-exotic_info" name="f-exotic_info" style="background:#0E0C0D; color:white;" placeholder="Please describe:"></textarea>
                     <!-- <label class="form-label" for="f-exotic_info" style="color:white;">Please describe:</label> -->
                   </div>
                 </div>
@@ -1881,7 +1886,7 @@
                 <div class="row times">
                   <div class="col-12 col-sm-12 col-md-6" style="margin-left: auto; padding:10px;">
                     <div class="form-wrap">
-                      <select name="ev-app_behalf" id="ev-app_behalf" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
+                      <select name="f-app_behalf" id="f-app_behalf" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px;" required>
                         <option value="">Are you applying on behalf of your self:</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -2268,12 +2273,12 @@
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                       </select>
-                      <select name="st-no_pets" id="st-no_pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px; display:none; ">
+                      <select name="st-no_pets" id="st-no_pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px; display:none; " required>
                         <option value="1" selected>No of pets:</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                       </select>
-                      <select name="st-yes_pets" id="st-yes_pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px; display:none;">
+                      <select name="st-yes_pets" id="st-yes_pets" class=" btn btn-secondary dropdown-toggle" style="background:#0E0C0D; color:white; border:1px solid white; width:100%; height: 60px; text-align:left; font-weight:400; font-size:14px; display:none;" required>
                         <option value="0" selected>Pet Size:</option>
                         <option value="Up to 20 Pounds">Up to 20 pounds</option>
                         <option value="20-50 pounds">20-50 pounds</option>
@@ -2569,6 +2574,7 @@
                         <input class="form-input" id='txtPhone5' type='tel' name="txtPhone5" style="background:#0E0C0D; color:white; height:30px;" disabled required />
                         <label class="form-label" for="txtPhone5" style="margin-left: 75px; color:white;">Phone Number:</label>
                       </div>
+                      <p id="val4"></p>
                     </div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-6" style="margin-right: auto;  padding:10px;">
@@ -2733,7 +2739,7 @@
                     <div class="col-md-12" id="lt-city_information" style="padding:10px;display:none;">
                       <div class="form-wrap">
                         <!-- <intextareaput class="form-input" id="lt-other_info" type="textarea" name="lt-other_info" style="background:#0E0C0D; color:white;"> -->
-                        <textarea class="form-control" rows="3" id="lt-city_information" name="lt-city_information" style="background:#0E0C0D; color:white;" placeholder="Please fill city/area are you intrested in:" ></textarea>
+                        <textarea class="form-control" rows="3" id="lt-city_information" name="lt-city_information" style="background:#0E0C0D; color:white;" placeholder="Please fill city/area are you intrested in:"></textarea>
                         <!-- <label class="form-label" for="lt-city_information" style="color:white;">Please fill city/area are you intrested in:</label> -->
                       </div>
                     </div>
@@ -2760,8 +2766,7 @@
                     <div class="col-md-12" id="lt-style_information" style="padding:10px;display:none;">
                       <div class="form-wrap">
                         <!-- <intextareaput class="form-input" id="lt-other_info" type="textarea" name="lt-other_info" style="background:#0E0C0D; color:white;"> -->
-                        <textarea class="form-control" rows="3" id="lt-style_information" name="lt-style_information" style="background:#0E0C0D; color:white;" placeholder="Please fill house style are you intrested in:" 
-                        ></textarea>
+                        <textarea class="form-control" rows="3" id="lt-style_information" name="lt-style_information" style="background:#0E0C0D; color:white;" placeholder="Please fill house style are you intrested in:"></textarea>
                         <!-- <label class="form-label" for="lt-style_information" style="color:white;">Please fill city/area are you intrested in:</label> -->
                       </div>
                     </div>
@@ -2824,7 +2829,7 @@
                 <div class="col-md-12" id="lt-where_hear_us" style="padding:10px;display:none;">
                   <div class="form-wrap">
                     <!-- <intextareaput class="form-input" id="lt-other_info" type="textarea" name="lt-other_info" style="background:#0E0C0D; color:white;"> -->
-                    <textarea class="form-control" rows="3" id="lt-where_hear_us" name="lt-where_hear_us" style="background:#0E0C0D; color:white;" placeholder="Please fill where did you hear about us:" ></textarea>
+                    <textarea class="form-control" rows="3" id="lt-where_hear_us" name="lt-where_hear_us" style="background:#0E0C0D; color:white;" placeholder="Please fill where did you hear about us:"></textarea>
                     <!-- <label class="form-label" for="lt-where_hear_us" style="color:white;">Please fill where did you hear about us:</label> -->
                   </div>
                 </div>
@@ -2953,7 +2958,7 @@
                   <div class="col-md-12" id="lt-other" style="padding:10px;display:none;">
                     <div class="form-wrap">
                       <!-- <intextareaput class="form-input" id="lt-other_info" type="textarea" name="lt-other_info" style="background:#0E0C0D; color:white;"> -->
-                      <textarea class="form-control" rows="3" id="lt-other_info" name="lt-other_info" style="background:#0E0C0D; color:white;" ></textarea>
+                      <textarea class="form-control" rows="3" id="lt-other_info" name="lt-other_info" style="background:#0E0C0D; color:white;"></textarea>
                       <label class="form-label" for="lt-other_info" style="color:white;">Please fill your required
                         services:</label>
                     </div>
@@ -3021,9 +3026,14 @@
       width: auto;
     }
   </style>
+  <script>
+
+
+  </script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="/js/app.js"></script>
   <script>
     $(".datepicker").datepicker()
   </script>
@@ -3046,8 +3056,6 @@
     const filmlocationForm = document.querySelector(`#film-location`)
     const selectType = document.querySelector(`#rental-type`)
     // const selectType1 = document.querySelector(`#rental-type1`)
-
-
 
     selectType.addEventListener(`click`, function() {
       console.log(selectType.value)
@@ -3328,7 +3336,6 @@
 
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
-
   <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
   <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/js/intlTelInput-jquery.min.js"></script> -->
   <!-- <script type="text/javascript">
@@ -3370,6 +3377,11 @@
       }
     }
     const txtPhone1 = grabElem('#txtPhone1');
+    const txtPhone2 = grabElem('#txtPhone2');
+    const txtPhone3 = grabElem('#txtPhone3');
+    const txtPhone4 = grabElem('#txtPhone4');
+
+
 
     $(function() {
       var code = ""; // Assigning value from model.
@@ -3389,7 +3401,9 @@
 
 
 
+      const PhoneVal = document.querySelector('#val');
 
+      console.log('validation working');
       $('#btnSubmit').on('click', function(e) {
         // e.preventDefault();
   
@@ -4899,12 +4913,18 @@
             }
           });
         } else {
+          val.textContent = "!!!Please fill the phone number";
+          val.style.color = "red";
           console.log('error');
-          // e.preventDefault();
+          e.preventDefault();
           // e.stopPropagation();
         }
       });
     });
+
+
+    const PhoneVal2 = document.querySelector('#val2');
+     
 
     $(function() {
       var code = ""; // Assigning value from model.
@@ -4923,12 +4943,14 @@
       });
 
 
-      $('#btnSubmit1').on('click', function() {
+     
 
+      $('#btnSubmit1').on('click', function(e) {
+        if (txtPhone2.value !== ''){
         var code = $("#1txtPhone").intlTelInput("getSelectedCountryData").dialCode;
         var phoneNumber = $('#1txtPhone').val();
         var name = $("#1txtPhone").intlTelInput("getSelectedCountryData").name;
-        document.getElementById("1txtPhone").value = code;
+        document.getElementById("1txtPhone").value = code;  
         console.log('Country Code : ' + code + '\nPhone Number : ' + phoneNumber + '\nCountry Name : ' + name);
         let iso;
         let str;
@@ -6425,8 +6447,18 @@
             console.log(data);
           }
         });
+        }else{
+          PhoneVal2.textContent = "Please fill phone number";
+          PhoneVal2.style.color = "red";
+          e.preventDefault();
+          console.log('error');
+        }
+        
       });
     });
+
+    const PhoneVal3 = document.querySelector('#val3');
+    console.log('its working');
 
     $(function() {
       var code = ""; // Assigning value from model.
@@ -6443,8 +6475,9 @@
         preferredCountries: ['US'],
         separateDialCode: true
       });
-      $('#btnSubmit2').on('click', function() {
-        var code = $("#2txtPhone").intlTelInput("getSelectedCountryData").dialCode;
+      $('#btnSubmit2').on('click', function(e) {
+        if (txtPhone3.value !== ''){
+          var code = $("#2txtPhone").intlTelInput("getSelectedCountryData").dialCode;
         var phoneNumber = $('#2txtPhone').val();
         var name = $("#2txtPhone").intlTelInput("getSelectedCountryData").name;
         document.getElementById("2txtPhone").value = code;
@@ -7945,6 +7978,14 @@
             console.log(data);
           }
         });
+        }else{
+          PhoneVal3.textContent = "Please fill phone number";
+          PhoneVal3.style.color = "red";
+
+          console.log('error');
+          e.preventDefault();
+        }
+        
       });
     });
 
@@ -9467,6 +9508,10 @@
         });
       });
     });
+
+
+    const PhoneVal4 = document.querySelector('#val4')
+    console.log('val4 working');
     $(function() {
       var code = ""; // Assigning value from model.
       $('#4txtPhone').val(code);
@@ -9482,8 +9527,9 @@
         preferredCountries: ['US'],
         separateDialCode: true
       });
-      $('#btnSubmit4').on('click', function() {
-        var code = $("#4txtPhone").intlTelInput("getSelectedCountryData").dialCode;
+      $('#btnSubmit4').on('click', function(e) {
+        if (txtPhone5.value !== ''){
+          var code = $("#4txtPhone").intlTelInput("getSelectedCountryData").dialCode;
         var phoneNumber = $('#4txtPhone').val();
         var name = $("#4txtPhone").intlTelInput("getSelectedCountryData").name;
         document.getElementById("4txtPhone").value = code;
@@ -10984,6 +11030,14 @@
             console.log(data);
           }
         });
+        }else{
+          PhoneVal4.textContent = "Please fill phone number";
+          PhoneVal4.style.color = "red";
+
+          console.log('its working finally');
+          e.preventDefault();
+        }
+        
       });
     });
 

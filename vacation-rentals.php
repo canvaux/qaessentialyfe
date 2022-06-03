@@ -161,7 +161,7 @@ try {
   area LIKE '%" . $_SESSION['Location'] . "%' AND 
   pool IN " . $_SESSION['Pool'] . " AND 
   Wedding ='Y' AND
-  guest BETWEEN " . $_SESSION['value'][0] . " AND " . $_SESSION['value'][1] . "
+  guest BETWEEN " . $_SESSION['value'][0] . " AND " . $_SESSION['value'][1] . " 
   ");
           $sql->execute();
           if ($result = $sql->fetch()) {
@@ -312,7 +312,7 @@ try {
           //".number_format($result['price'])."
         } else {
 
-          $stmt = $conn->prepare("SELECT * FROM properties WHERE vacation='on'");
+          $stmt = $conn->prepare("SELECT * FROM properties WHERE vacation='on' " );
           $stmt->execute();
 
           while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
@@ -348,7 +348,8 @@ try {
 
       </div>
     </div>
-
+        
+        
 
     <!-- Page Footer-->
     <?php require('footer.php'); ?>

@@ -45,7 +45,7 @@
               </li><span id="nav-link-spacer">&bull;</span>
               <li class="rd-nav-item"><a class="rd-nav-link" href="long-term-rentals">Long Term Rentals</a>
               </li><span id="nav-link-spacer">&bull;</span>
-              <li class="rd-nav-item"><a class="rd-nav-link" href="cars">Cars</a>
+              <!-- <li class="rd-nav-item"><a class="rd-nav-link" href="cars">Cars</a> -->
               </li><span id="nav-link-spacer">&bull;</span>
               <li class="rd-nav-item"><a class="rd-nav-link" href="services">Services</a>
               </li><span id="nav-link-spacer">&bull;</span>

@@ -26,7 +26,7 @@ require("./admin/newsletter_action.php");
   </div>
   <div class="container">
     <div class="row row-40 justify-content-lg-between">
-      <div class="col-12 col-sm-12 col-sm-6 col-md-12 col-lg-3 col-xl-4 text-center text-md-start">
+      <div class="col-12 col-sm-12 col-sm-6 col-md-12 col-lg-3 col-xl-4 text-center text-md-start d-flex">
         <div class="oh-desktop">
           <div class="wow slideInRight" data-wow-delay="0s">
             <h6 class="text-spacing-100 text-uppercase"><img src="images/logo1.png" width="200px"></h6><br>
@@ -78,15 +78,15 @@ require("./admin/newsletter_action.php");
               <li><a href="vacation-rentals">Vacation Rentals</a></li>
               <li><a href="event-venues">Event Venues</a></li>
               <li><a href="film-locations">Film Locations</a></li>
-              <li><a href="cars">Cars</a></li>
+              <!-- <li><a href="cars">Cars</a></li> -->
               <li><a href="services">Services</a></li>
-              <li><a href="blog">Blog</a></li>
+              <!-- <li><a href="blog">Blog</a></li> -->
               <li><a href="contact">Contact Us</a></li>
               <li><a href="guest-form">Guest Form</a></li>
               <li><a href="about">Who we are</a></li>
-              <li><a href="ambassador-program">Ambassador Program</a></li>
+              <!-- <li><a href="ambassador-program">Ambassador Program</a></li> -->
               <li><a href="list-your-property">List Your Property</a></li>
-              <li><a href="join">Careers</a></li>
+              <!-- <li><a href="join">Careers</a></li> -->
               <li><a href="privacy-policy">Privacy Policy</a></li>
               <li><a href="terms-of-use">Terms Of Use</a></li>
             </ul>
@@ -106,9 +106,10 @@ require("./admin/newsletter_action.php");
   <div class="footer-corporate-bottom-panel">
     <div class="container">
       <div class="row justfy-content-xl-space-berween row-10 align-items-md-center2" style="padding:15px;">
-        <div class="col-12">
+        <div class="col-12 ">
           <!-- Rights-->
           <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span>EssentiaLyfe, Inc. - All Rights Reserved. Designed and Powered by EssentiaLyfe, Inc. All photos are property of EssentiaLyfe, Inc., or used with permission of owners. Photos may not be used for any other purpose without written consent from EssentiaLyfe, Inc.</p>
+          <p id="powered"><a  href="#">Powered by ASH Capital</a></p>
         </div>
       </div>
     </div>

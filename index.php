@@ -1,5 +1,6 @@
-<?php 
-error_reporting(E_ALL ^ E_NOTICE); 
+<?php
+error_reporting(E_ALL ^ E_NOTICE);
+error_reporting(E_ALL ^ E_WARNING);
 
 $servername = "localhost";
 $username = "root";
@@ -19,37 +20,35 @@ $daterange = $_POST['daterange'];
 $stay = $_POST['stay'];
 $search = $_POST['search'];
 $pool = $_POST['pool'];
-$Location =$_POST['Location'];
-$Capacity =$_POST['Capacity'];
+$Location = $_POST['Location'];
+$Capacity = $_POST['Capacity'];
 if (isset($Capacity)) {
   $value = explode('-', $Capacity);
   // print_r($value);
   // die();
 }
 
-if(isset($pool))
-{
+if (isset($pool)) {
   $sql = $conn->prepare("
     SELECT * FROM properties WHERE 
-    ".$_SESSION['stay'] ."='on' AND 
+    " . $_SESSION['stay'] . "='on' AND 
     area LIKE '%" . $_SESSION['Location'] . "%' AND 
     pool = 'Y' AND
     guest BETWEEN " . $_SESSION['value'][0] .  " AND  " . $_SESSION['value'][1] . "
     ");
-    $sql->execute();
-}elseif(isset($search))
-{
-  $_SESSION['stay'] = $stay ;
+  $sql->execute();
+} elseif (isset($search)) {
+  $_SESSION['stay'] = $stay;
   $_SESSION['Location'] = $Location;
   $_SESSION['value'] = $value;
 
   $sql = $conn->prepare("
     SELECT * FROM properties WHERE 
-    ".$stay."='on' AND 
+    " . $stay . "='on' AND 
     area LIKE '%" . $Location . "%' AND 
     guest BETWEEN " . $value[0] .  " AND  " . $value[1] . "
     ");
-    $sql->execute();
+  $sql->execute();
 }
 ?>
 <!DOCTYPE html>
@@ -172,7 +171,7 @@ if(isset($pool))
         <!-- Owl Carousel-->
       </div>
       <!--<div>-->
-       
+
       <!--</div>-->
     </section>
     <!-- Discover New Horizons-->
@@ -342,9 +341,10 @@ if(isset($pool))
               </div>
               <div class="col-sm-6 col-md-5 col-lg-3">
                 <div class="counter-classic">
-                  <div class="counter-classic-number"><span class="counter!">4.7</span>
+                  <div class="counter-classic-number mt-4"><span class="counter!">4.8</span>
                   </div>
-                  <h5 class="counter-classic-title">Customer & Homeowner Satisfaction</h5>
+                  <!-- <h5 class="counter-classic-title">Customer & Homeowner Satisfaction</h5> -->
+                  <h5 class="counter-classic-title ">AVERAGE</h5>
                 </div>
               </div>
               <div class="col-sm-6 col-md-5 col-lg-3">
@@ -363,12 +363,12 @@ if(isset($pool))
 
 
     <!-- Hot tours-->
-    <section class="section section-sm bg-default">
+    <!-- <section class="section section-sm bg-default">
       <div class="container">
         <h3 class="oh-desktop"><span class="d-inline-block wow slideInDown">Our Properties</span></h3>
         <div class="row row-sm row-40 row-md-50">
           <div class="col-sm-6 col-md-12 wow fadeInRight">
-            <!-- Product Big-->
+      
             <article class="product-big">
               <div class="unit flex-column flex-md-row align-items-md-stretch">
                 <div class="unit-left"><a class="product-big-figure" href="vacation-rentals"><img src="images/image_2021-08-11_090738.png" alt="" width="600" height="366" /></a></div>
@@ -385,7 +385,7 @@ if(isset($pool))
             </article>
           </div>
           <div class="col-sm-6 col-md-12 wow fadeInLeft">
-            <!-- Product Big-->
+         
             <article class="product-big">
               <div class="unit flex-column flex-md-row align-items-md-stretch">
                 <div class="unit-left"><a class="product-big-figure" href="vacation-rentals"><img src="images/o-XxiYLI.jpeg" alt="" width="600" height="366" /></a></div>
@@ -403,9 +403,47 @@ if(isset($pool))
           </div>
         </div>
       </div>
-    </section><br>
-  <!--subscribe newsletetter start-->
-<?php require('footer.php'); ?>
+    </section> -->
+    <div class="container">
+      <div class="row">
+        <div class="col mt-4 mb-4">
+          <h1 class="text-center">AS SEEN IN</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="main_div">
+            <div class="container-fluid">
+              <div class="slides">
+                <div class="slide">
+                  <img src="./images/Frame 10.png" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="./images/Frame 11.png" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="./images/Frame 13 (1).png" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="./images/Frame 14.png" alt="" />
+                </div>
+              </div>
+              <div class="slide-controls">
+                <button id="prev-btn">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="next-btn">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!--subscribe newsletetter start-->
+    <?php require('footer.php'); ?>
 
   </div>
   <!-- Global Mailform Output-->
@@ -417,8 +455,8 @@ if(isset($pool))
     $(document).ready(function() {
       $(function() {
         $('input[name="daterange"]').daterangepicker({
-        //   "startDate": "21/04/2022",
-        //   "endDate": "11/05/2022",
+          //   "startDate": "21/04/2022",
+          //   "endDate": "11/05/2022",
           opens: 'center',
           locale: {
             format: 'DD/MM/YYYY'
@@ -426,15 +464,16 @@ if(isset($pool))
         });
       });
     });
-    
-  document.querySelector(`.checkInOut`).addEventListener(`click`, function(){
-  document.querySelector(`.inputCheckInOut`).click()
-  document.querySelector(`.checkInOut`).innerHTML = document.querySelector(`.inputCheckInOut`).value
-})
+
+    document.querySelector(`.checkInOut`).addEventListener(`click`, function() {
+      document.querySelector(`.inputCheckInOut`).click()
+      document.querySelector(`.checkInOut`).innerHTML = document.querySelector(`.inputCheckInOut`).value
+    })
   </script>
   <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script> -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script src="./js/app.js"></script>
 </body>
 
 </html>
