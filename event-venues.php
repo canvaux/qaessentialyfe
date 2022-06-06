@@ -133,57 +133,21 @@ try {
       </div>
     </section>
     <?php
-    require('search_venues.php');
+    require('search_event.php');
 
     if (isset($search) || isset($_SESSION['search'])) {
       if (isset($wedding_y)) {
         echo "
-      <div style='margin-left: -155px;'>
-      <h5>Wedding OK</h5>
-          <form method='post' action='event-venues.php' style='margin-top: -22px; margin-left: 230px;'>
-          <label>
-          <input type='text' value = 'previous_result' name = 'previous_result' style='display:none;'>
-      <input type='checkbox' name='wedding_y' onChange='submit();'value ='wedding_y' checked> YES
-      </label>
-      </form>
-      <form method='post' action='event-venues.php' style='margin-top: -24px; margin-left: 360px;'>
-        <label>
-        <input type='checkbox' name='wedding_n' onChange='submit();'value ='wedding_n' > NO
-        </label>
-        </form>
-        </div>";
+    ";
       } elseif (isset($wedding_n)) {
         echo "
-        <div style='margin-left: -155px;'>
-        <h5>Wedding OK</h5>
-            <form method='post' action='event-venues.php' style='margin-top: -22px; margin-left: 230px;'>
-            <label>
-        <input type='checkbox' name='wedding_y' onChange='submit();'value ='wedding_y' > YES
-        </label>
-        </form>
-        <form method='post' action='event-venues.php' style='margin-top: -24px; margin-left: 360px;'>
-          <label>
-          <input type='text' value = 'previous_result' name = 'previous_result' style='display:none;'>
-          <input type='checkbox' name='wedding_n' onChange='submit();'value ='wedding_n' checked> NO
-          </label>
-          </form>
-          </div>";
+        ";
       } else {
         // require('div.php');
         echo "
       <div style='margin-left: -155px;'>
-      <h5>Wedding OK</h5>
-          <form method='post' action='event-venues.php' style='margin-top: -22px; margin-left: 230px;'>
-          <label>
-      <input type='checkbox' name='wedding_y' onChange='submit();'value ='wedding_y' > YES
-      </label>
-      </form>
-      <form method='post' action='event-venues.php' style='margin-top: -24px; margin-left: 360px;'>
-        <label>
-        <input type='checkbox' name='wedding_n' onChange='submit();'value ='wedding_n' > NO
-        </label>
-        </form>
-        </div>";
+      
+    ";
       }
     }
     ?>
@@ -359,33 +323,40 @@ try {
           $stmt = $conn->prepare("SELECT * FROM properties WHERE venue='on'");
           $stmt->execute();
 
-          while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
+          $result = $stmt->fetchAll();
 
-            echo "  
+          usort($result, function ($a, $b) {
+            return $a['name'] <=> $b['name'];
+          });
+
+
+          foreach ($result as $key => $value) {
+            ?>  
             <div class='w-25 d-none d-sm-block'>
               <div class='card mb-4' style='margin-top:20px;'>
                   <form method='post' action='property.php'><a href='contact.php'>
                           <div class='card-img-caption'>
-                              <img src='https://www.essentialyfe.com/images/properties/$result[file]' class='card-img-top' alt='...'>
+                              <img src='https://www.essentialyfe.com/images/properties/<?php echo $value['file'] ?>' class='card-img-top' alt='...'>
                           </div>
                           <div class='card-body'>
-                              <h5 class='card-title' style='line-height:20px; padding-bottom:20px;'> $result[name] <br><small class='text-muted' style='font-size:14px; margin-top:-18px;'><br>$result[area]</small></h5>
+                              <h5 class='card-title' style='line-height:20px; padding-bottom:20px;'> <?php echo $value['name'] ?> <br><small class='text-muted' style='font-size:14px; margin-top:-18px;'><br><?php $value['area']?></small></h5>
                               <hr><br>
                               <div class='card-text' style='text-align:left; font-size:14px; line-height:25px;'>
                                   <ul>
-                               
-                                      <li>&#8226 Up to $result[guest] Attendees</li>
-                                      <li>&#8226 $result[bedroom] Bedrooms</li>
-                                      <li>&#8226 $result[bathroom] Baths</li>
-                                      <li>&#8226 $result[sqft] Sq. Ft.</li>
+                                      <li>&#8226 Up to <?php echo $value['guest']; ?> Guests</li>
+                                  
+                                      <li>&#8226 <?php echo $value['bedroom']; ?> Bedrooms</li>
+                                      <li>&#8226 <?php echo $value['bathroom']; ?> Baths</li>
+                                      <li>&#8226 <?php echo $value['sqft']; ?> Sq. Ft.</li>
                                   </ul>
                               </div>
-                              <p style='float:right; margin-bottom:5px; margin-top:-22px; font-size:12.5px;'><b>Starting at $result[price] Per Event</b></p>
-                              <input type='text' name='real_id' value='$result[id]' style='display:none;'>
+                              <p style='float:right; margin-bottom:5px; margin-top:-22px; font-size:12.5px;'><b>Starting at <?php echo $value['price']; ?> Per Night</b></p>
+                              <input type='text' name='real_id' value='<?php echo $value['id']; ?>' style='display:none;'>
           
-                          </div><input value='Starting at $result[price] Per Event' type='submit' class='btn btn-purple' style='display:none; width:100%; font-size:14px;'></form>
+                          </div><input value='Starting at <?php echo $value['price']; ?> Per Night' type='submit' class='btn btn-purple' style='display:none; width:100%; font-size:14px;'></form>
               </div></a>
-            </div>";
+            </div>
+            <?php 
           }
         }
         ?>

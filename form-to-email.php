@@ -9,6 +9,7 @@ error_reporting(0);
 //   setcookie('flag' ,'' , time()-3600);
 
 
+
 //Include required PHPMailer files
 require 'bat/phpmailer/PHPMailer.php';
 require 'bat/phpmailer/SMTP.php';
@@ -465,13 +466,12 @@ $mailbody = "
 
 
 </html>
+
 ";
 
 ?>
 
-
 <?php
-
 //Create instance of PHPMailer
 $mail = new PHPMailer();
 //Set mailer to use smtp
@@ -967,7 +967,6 @@ if (isset($vr_rental_type_vacatoin)) {
     
     </html>
 ";
-
     // $mail->addCC($fl_visitor_email);
 } elseif (isset($rental_type_shortterm)) {
     $mail->Body = "
@@ -1162,7 +1161,6 @@ if (isset($vr_rental_type_vacatoin)) {
         </tr>
     </table>
 </body>
-
 </html>
     ";
     //   echo $rental_type_shortterm;

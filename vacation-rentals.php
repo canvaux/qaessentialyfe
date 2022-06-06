@@ -145,7 +145,7 @@ try {
       </div>
     </section>
     <?php
-    require('search_venues.php'); ?>
+    require('search_vacation.php'); ?>
     <!-- Card Deck -->
     <div class="card-deck-container">
       <div class="card-deck">
@@ -312,44 +312,51 @@ try {
           //".number_format($result['price'])."
         } else {
 
-          $stmt = $conn->prepare("SELECT * FROM properties WHERE vacation='on' " );
+          $stmt = $conn->prepare("SELECT * FROM properties WHERE vacation='on' LIMIT 8");
           $stmt->execute();
 
-          while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
+          $result = $stmt->fetchAll();
 
-            echo "  
-    <div class='w-25 d-none d-sm-block'>
-      <div class='card mb-4' style='margin-top:20px;'>
-          <form method='post' action='property.php'><a href='contact.php'>
-                  <div class='card-img-caption'>
-                      <img src='https://www.essentialyfe.com/images/properties/$result[file]' class='card-img-top' alt='...'>
-                  </div>
-                  <div class='card-body'>
-                      <h5 class='card-title' style='line-height:20px; padding-bottom:20px;'> $result[name] <br><small class='text-muted' style='font-size:14px; margin-top:-18px;'><br>$result[area]</small></h5>
-                      <hr><br>
-                      <div class='card-text' style='text-align:left; font-size:14px; line-height:25px;'>
-                          <ul>
-                              <li>&#8226 Up to $result[guest] Guests</li>
-                          
-                              <li>&#8226 $result[bedroom] Bedrooms</li>
-                              <li>&#8226 $result[bathroom] Baths</li>
-                              <li>&#8226 $result[sqft] Sq. Ft.</li>
-                          </ul>
-                      </div>
-                      <p style='float:right; margin-bottom:5px; margin-top:-22px; font-size:12.5px;'><b>Starting at $result[price] Per Night</b></p>
-                      <input type='text' name='real_id' value='$result[id]' style='display:none;'>
-  
-                  </div><input value='Starting at $result[price] Per Night' type='submit' class='btn btn-purple' style='display:none; width:100%; font-size:14px;'></form>
-      </div></a>
-    </div>";
+          usort($result, function ($a, $b) {
+            return $a['name'] <=> $b['name'];
+          });
+
+
+          foreach ($result as $key => $value) {
+            ?>  
+            <div class='w-25 d-none d-sm-block'>
+              <div class='card mb-4' style='margin-top:20px;'>
+                  <form method='post' action='property.php'><a href='contact.php'>
+                          <div class='card-img-caption'>
+                              <img src='https://www.essentialyfe.com/images/properties/<?php echo $value['file'] ?>' class='card-img-top' alt='...'>
+                          </div>
+                          <div class='card-body'>
+                              <h5 class='card-title' style='line-height:20px; padding-bottom:20px;'> <?php echo $value['name'] ?> <br><small class='text-muted' style='font-size:14px; margin-top:-18px;'><br><?php $value['area']?></small></h5>
+                              <hr><br>
+                              <div class='card-text' style='text-align:left; font-size:14px; line-height:25px;'>
+                                  <ul>
+                                      <li>&#8226 Up to <?php echo $value['guest']; ?> Guests</li>
+                                  
+                                      <li>&#8226 <?php echo $value['bedroom']; ?> Bedrooms</li>
+                                      <li>&#8226 <?php echo $value['bathroom']; ?> Baths</li>
+                                      <li>&#8226 <?php echo $value['sqft']; ?> Sq. Ft.</li>
+                                  </ul>
+                              </div>
+                              <p style='float:right; margin-bottom:5px; margin-top:-22px; font-size:12.5px;'><b>Starting at <?php echo $value['price']; ?> Per Night</b></p>
+                              <input type='text' name='real_id' value='<?php echo $value['id']; ?>' style='display:none;'>
+          
+                          </div><input value='Starting at <?php echo $value['price']; ?> Per Night' type='submit' class='btn btn-purple' style='display:none; width:100%; font-size:14px;'></form>
+              </div></a>
+            </div>
+            <?php 
           }
         }
         ?>
 
       </div>
     </div>
-        
-        
+
+
 
     <!-- Page Footer-->
     <?php require('footer.php'); ?>

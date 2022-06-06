@@ -13,6 +13,7 @@ const firstClone = slides[0].cloneNode(true);
 const lastClone = slides[slides.length - 1].cloneNode(true);
 const secondClone = slides[1].cloneNode(true);
 const thirdClone = slides[2].cloneNode(true);
+const fourClone = slides[3].cloneNode(true);
 
 slide.addEventListener("transitionend", () => {
 
@@ -37,6 +38,7 @@ lastClone.id = "last-clone";
 slide.append(firstClone);
 slide.append(secondClone);
 slide.append(thirdClone);
+slide.append(fourClone);
 slide.prepend(lastClone);
 
 const slideWidth = slides[index].clientWidth;

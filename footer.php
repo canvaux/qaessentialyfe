@@ -38,7 +38,7 @@ require("./admin/newsletter_action.php");
               <li><a class="icon fa fa-youtube" href="https://www.youtube.com/channel/UCPtwluXjJbKLDva9E289eDg" target="_blank"></a></li>
               <li><a class="icon fa fa-pinterest" href="https://www.pinterest.com/0m0yut4g235odzk7zzdrxpf69teykj/" target="_blank"></a></li>
             </ul>
-            <div class="group-md group-middle justify-content-sm-start"><img src="images/EssentiaLyfe QR Code.png" width="75px"><img src="https://tetonhabitat.org/wp-content/uploads/2018/01/equal-housing-opportunity-logo-vector.white_.png" width="75px"></div>
+            <div class="group-md group-middle justify-content-sm-start"><img src="images/EssentiaLyfe QR Code.png" width="75px"><a href="https://www.hud.gov/program_offices/fair_housing_equal_opp/fair_housing_act_overview"><img src="https://tetonhabitat.org/wp-content/uploads/2018/01/equal-housing-opportunity-logo-vector.white_.png" width="75px"></a></div>
           </div>
         </div>
       </div>
@@ -83,6 +83,7 @@ require("./admin/newsletter_action.php");
               <!-- <li><a href="blog">Blog</a></li> -->
               <li><a href="contact">Contact Us</a></li>
               <li><a href="guest-form">Guest Form</a></li>
+              <li><a href="faq">FAQ</a></li>
               <li><a href="about">Who we are</a></li>
               <!-- <li><a href="ambassador-program">Ambassador Program</a></li> -->
               <li><a href="list-your-property">List Your Property</a></li>
@@ -109,7 +110,7 @@ require("./admin/newsletter_action.php");
         <div class="col-12 ">
           <!-- Rights-->
           <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span>EssentiaLyfe, Inc. - All Rights Reserved. Designed and Powered by EssentiaLyfe, Inc. All photos are property of EssentiaLyfe, Inc., or used with permission of owners. Photos may not be used for any other purpose without written consent from EssentiaLyfe, Inc.</p>
-          <p id="powered"><a  href="#">Powered by ASH Capital</a></p>
+          <p id="powered" class="text-center"><a  href="#">Powered by ASH Capital</a></p>
         </div>
       </div>
     </div>

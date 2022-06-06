@@ -16,8 +16,7 @@
   <body>
     <div class="page">
       <?php require('header.php'); ?>
-    <div class="container" style="margin: ` ;">
-        
+    <div class="container">
  <!--	Our Services-->
       <section class="section section-sm">
         <div class="container">

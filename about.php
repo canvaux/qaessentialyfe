@@ -190,11 +190,13 @@
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3 mb-lg-0">
           <div class="card">
-            <img class="card-img-top img-fluid" src="./images/about/3new.jpg" alt="Card image cap">
+            <div class="card-img-top">
+              <img class="img-fluid" src="./images/about/3new.jpg" alt="Card image cap">
+            </div>
             <div class="card-body about_card_body">
               <h3 class="card-text text-center about-card-name_first ">Martina Makarova</h3>
               <h6 class="card-text text-center about-card-name mt-2">Client Relations/ Vacation Rentals & Private Events Dept.</h6>
-              <p class="card-text text-center about-card  mt-2 about_card_bio ">Bio </p>
+              <p class="card-text text-center about-card  mt-2 about_card_bio ">Originally from Russia & moved to the USA at 18 years old. Martina has 4+ years of experience in Entertainment and Production & 3+ years in Hospitality and Luxury retail. Martina loves to travel and explore the world with her dog Channing.</p>
 
               <div class="mt-3">
                 <p class="card-text text-center about-card about_card_hobbies ">Hobbies
@@ -210,7 +212,7 @@
             <div class="card-body about_card_body">
               <h3 class="card-text text-center about-card-name_first ">Lea Verlin</h3>
               <h6 class="card-text text-center about-card-name mt-2">Client Relations/ Corporate Events & Film Locations Dept. </h6>
-              <p class="card-text text-center about-card  mt-2 about_card_bio ">Bio </p>
+              <p class="card-text text-center about-card  mt-2 about_card_bio ">Originally from France, Léa is a passionate professional with 8+ years experience in hospitality, private events and customer service working across major cities in the USA.</p>
 
               <div class="mt-3">
                 <p class="card-text text-center about-card about_card_hobbies ">Hobbies
@@ -251,7 +253,7 @@
             <div class="card-body about_card_body">
               <h3 class="card-text text-center about-card-name_first ">Parker Tenov</h3>
               <h6 class="card-text text-center about-card-name mt-2">IT & Cyber</h6>
-              <p class="card-text text-center about-card  mt-2 about_card_bio ">Bio </p>
+              <p class="card-text text-center about-card  mt-2 about_card_bio ">Over 10+ years of experience in programming & creation, Parker loves music & traveling on his free time. </p>
               <p class="card-text text-center about-card about_card_hobbies ">Classic Music l Chess l Math
               </p>
               <p class="card-text text-center about-card about_card_email"><a style="color: blue;" href="mailto:parker@essentialyfe.com">parker@essentialyfe.com</a></p>
@@ -264,7 +266,7 @@
             <div class="card-body about_card_body">
               <h3 class="card-text text-center about-card-name_first ">Dylan Abekasis</h3>
               <h6 class="card-text text-center about-card-name mt-2">Marketing / Listings & Pricing Specialist</h6>
-              <p class="card-text text-center about-card  mt-2 about_card_bio ">Bio </p>
+              <p class="card-text text-center about-card  mt-2 about_card_bio ">Born and raised in LA, Dylan has 8+ years of experience in Sales and 4+ years in Construction. Dylan loves to live life and play sports.	</p>
               <p class="card-text text-center about-card about_card_hobbies ">Hobbies
               </p>
               <p class="card-text text-center about-card about_card_email"><a style="color: blue;" href="mailto:dylan@essentialyfe.com">dylan@essentialyfe.com</a></p>
@@ -277,7 +279,7 @@
             <div class="card-body about_card_body">
               <h3 class="card-text text-center about-card-name_first ">Joe Chavez</h3>
               <h6 class="card-text text-center about-card-name mt-2">In-Home Service Coordinator</h6>
-              <p class="card-text text-center about-card  mt-2 about_card_bio ">Bio </p>
+              <p class="card-text text-center about-card  mt-2 about_card_bio ">Born in _ relocated to LA. Joe has 5+ experience in customer relations likes to party, golf & race cars.</p>
               <p class="card-text text-center about-card about_card_hobbies ">Hobbies
               </p>
               <p class="card-text text-center about-card about_card_email"><a style="color: blue;" href="mailto:joe@essentialyfe.com">joe@essentialyfe.com</a></p>
@@ -290,7 +292,7 @@
             <div class="card-body about_card_body">
               <h3 class="card-text text-center about-card-name_first ">Orel Shemen</h3>
               <h6 class="card-text text-center about-card-name mt-2">Admin Assistant</h6>
-              <p class="card-text text-center about-card  mt-2 about_card_bio ">Bio </p>
+              <p class="card-text text-center about-card  mt-2 about_card_bio ">Born & raised in LA, Orel has 10+ experience in marketing, communications & startups. Orel likes to innovate, create, make music & travel. </p>
               <p class="card-text text-center about-card about_card_hobbies ">Hobbies
               </p>
               <p class="card-text text-center about-card about_card_email"><a style="color: blue;" href="mailto:orel@essentialyfe.com">orel@essentialyfe.com</a></p>
@@ -318,7 +320,7 @@
             <div class="card-body about_card_body">
               <h3 class="card-text text-center about-card-name_first ">Alexa Khoury</h3>
               <h6 class="card-text text-center about-card-name mt-2">Housekeeping Inspector</h6>
-              <p class="card-text text-center about-card  mt-2 about_card_bio ">Bio </p>
+              <p class="card-text text-center about-card  mt-2 about_card_bio ">Alexa is a team-player who loves art & business development. Dedicated to ensuring the highest level of customer service! </p>
               <p class="card-text text-center about-card about_card_hobbies ">Hobbies
               </p>
               <p class="card-text text-center about-card about_card_email"><a style="color: blue;" href="mailto:alexa@essentialyfe.com">alexa@essentialyfe.com</a></p>

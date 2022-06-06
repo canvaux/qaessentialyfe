@@ -407,22 +407,22 @@ if (isset($pool)) {
     <div class="container">
       <div class="row">
         <div class="col mt-4 mb-4">
-          <h1 class="text-center">AS SEEN IN</h1>
+          <h1 class="text-center slide-logo">AS SEEN IN</h1>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
+      <div class="row justify-content-center mt-0">
+        <div class="col-9">
           <div class="main_div">
             <div class="container-fluid">
               <div class="slides">
                 <div class="slide">
-                  <img src="./images/Frame 10.png" alt="" />
+                  <img src="./images/Frame 10.png" alt=""/>
                 </div>
                 <div class="slide">
-                  <img src="./images/Frame 11.png" alt="" />
+                  <img src="./images/Frame 11.png" alt=""/>
                 </div>
                 <div class="slide">
-                  <img src="./images/Frame 13 (1).png" alt="" />
+                  <img src="./images/Frame 13 (1).png" alt=""/>
                 </div>
                 <div class="slide">
                   <img src="./images/Frame 14.png" alt="" />
@@ -430,10 +430,10 @@ if (isset($pool)) {
               </div>
               <div class="slide-controls">
                 <button id="prev-btn">
-                  <i class="fas fa-chevron-left"></i>
+                  <!-- <i class="fas fa-chevron-left"></i> -->
                 </button>
                 <button id="next-btn">
-                  <i class="fas fa-chevron-right"></i>
+                  <!-- <i class="fas fa-chevron-right"></i> -->
                 </button>
               </div>
             </div>
