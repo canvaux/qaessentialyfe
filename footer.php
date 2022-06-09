@@ -1,12 +1,18 @@
 <?php
 require("./admin/newsletter_action.php");
 ?>
+<style>
+  #ash{
+    height: 45px;
+    margin-left: -30px;
+  }
+</style>
 <!--subscribe newsletter end-->
 <!-- Page Footer-->
 <footer class="section footer-corporate context-dark">
   <div class="footer-corporate-inset" style="padding: 25px;">
     <div class="container-fluid subscribe_container">
-      <div class="row pt-5">
+      <div class="row pt-3 pb-5">
         <div class="col-12 col-sm-12 col-md-4 offset-md-2 offset-0">
           <h3 class=" text-white" id="subscribe_head" style="margin-top: 3px; font-size: 28px!important; font-family:raleway; ">Subscribe to our Newsletter</h3>
           <!-- <p class="text-white " id="subscribe_text">Subscribe newsletter to get updated</p> -->
@@ -29,8 +35,8 @@ require("./admin/newsletter_action.php");
       <div class="col-12 col-sm-12 col-sm-6 col-md-12 col-lg-3 col-xl-4 text-center text-md-start d-flex">
         <div class="oh-desktop">
           <div class="wow slideInRight" data-wow-delay="0s">
-            <h6 class="text-spacing-100 text-uppercase"><img src="images/logo1.png" width="200px"></h6><br>
-            <ul class="list-inline list-inline-sm footer-social-list-2 footer-links">
+            <h6 class="text-spacing-100 text-left text-uppercase"><img src="images/logo1.png" width="200px"></h6><br>
+            <ul class="list-inline text-left list-inline-sm footer-social-list-2 footer-links">
               <li><a class="icon fa fa-facebook" href="https://www.facebook.com/EssentiaLyfe-106484414382866/" target="_blank"></a></li>
               <li><a class="icon fa fa-twitter" href="https://twitter.com/Essentialyfe2" target="_blank"></a></li>
               <li><a class="icon fa fa-linkedin" href="https://www.linkedin.com/company/42762466" target="_blank"></a></li>
@@ -39,6 +45,10 @@ require("./admin/newsletter_action.php");
               <li><a class="icon fa fa-pinterest" href="https://www.pinterest.com/0m0yut4g235odzk7zzdrxpf69teykj/" target="_blank"></a></li>
             </ul>
             <div class="group-md group-middle justify-content-sm-start"><img src="images/EssentiaLyfe QR Code.png" width="75px"><a href="https://www.hud.gov/program_offices/fair_housing_equal_opp/fair_housing_act_overview"><img src="https://tetonhabitat.org/wp-content/uploads/2018/01/equal-housing-opportunity-logo-vector.white_.png" width="75px"></a></div>
+              <div class=" justify-content-center" >
+                <h6 class="text-center mt-2">&copy; &nbsp;Powered By-</h6>
+                <a href="http://ashcapitalventures.com/"><img id="ash" src="./images/ash.png" alt=""></a>
+              </div>
           </div>
         </div>
       </div>

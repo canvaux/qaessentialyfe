@@ -36,16 +36,27 @@
                         <input type='text' value = 'search' name = 'search' style='display:none;'>
                         <select name='House_style' class='custom-select' id='inputGroupSelect01'>
                             <option value=" " selected >House Style</option>
-                            <option value='Modern'>Modern</option>
-                            <option value='Vintage'>Vintage</option>
-                            <option value='Traditional'>Traditional</option>
-                            <option value='Asian'>Asian</option>
-                            <option value='Victorian'>Victorian</option>
-                            <option value='Spanish'>Spanish</option>
-                            <option value='French'>French</option>
-                            <option value='Mediteranean'>Mediteranean</option>
-                            <option value='Desert'>Desert</option>
-                            <option value='Hi-Tech'>Hi-Tech</option>
+                                <option value='Modern'>Modern</option>
+                                <option value='Vintage'>Vintage</option>
+                                <option value='Traditional'>Traditional</option>
+                                <option value='Asian'>Asian</option>
+                                <option value='Victorian'>Victorian</option>
+                                <option value='Spanish'>Spanish</option>
+                                <option value='French'>French</option>
+                                <option value='Mediteranean'>Mediteranean</option>
+                                <option value='Desert'>Desert</option>
+                                <option value='Hi-Tech'>Hi-Tech</option>
+                                <option value="Asian/Zen">Asian/Zen</option>
+                                        <option value="Oceanfront">Oceanfront</option>
+                                        <option value="Greek">Greek</option>
+                                        <option value="Industrial">Industrial</option>
+                                        <option value="Moroccan">Moroccan</option>
+                                        <option value="Old Hollywood">Old Hollywood</option>
+                                        <option value="Bohemian">Bohemian</option>
+                                        <option value="Lakehouse/Cabin">Lakehouse/Cabin</option>
+                                        <option value="Castle/Chateau">Castle/Chateau</option>
+                                        <option value="Exotic/Tropical">Exotic/Tropical</option>
+                                        <option value="Ranch">Ranch</option>
                         </select>
                         <select name='Location' class='custom-select'  id='inputGroupSelect01'>
                             <option value="%" selected>Location</option>
@@ -67,7 +78,7 @@
                             <option value='Tarzana'>Tarzana</option>
                         </select>
                         <select name='Capacity' class='custom-select' id='inputGroupSelect01'>
-                            <option value="0-999999" selected># of attendees</option>
+                            <option value="0-999999" selected># of guest</option>
                             <option value='0-30'>0-30</option>
                             <option value='30-60'>30-60</option>
                             <option value='60-90'>60-90</option>
@@ -85,22 +96,22 @@
                             <option value="('Y','N')" selected>View</option>
                             <option value="('Y')">Yes</option>
                             <option value="('N')">No</option>
-                            <option value="('Y','N')" >Doesn't Matter</option>
+                            <option value="('Y','N')" >No preference</option>
                         </select>
                         <select name='Pool' class='custom-select' id='inputGroupSelect01'>
                             <option value='("Y","N")' elected>Pool</option>
                             <option value='("Y")'>Yes</option>
                             <option value='("N")'>No</option>
-                            <option value='("Y","N")'>Doesn't Matter</option>
+                            <option value='("Y","N")'>No preference</option>
                         </select>
                         <select name='Parking' class='custom-select' id='inputGroupSelect01'>
                             <option value="('Y','N')"  selected>Parking</option>
                             <option value="('Y')">Yes</option>
                             <option value="('N')">No</option>
-                            <option value="('Y','N')" >Doesn't Matter</option>
+                            <option value="('Y','N')" >No preference</option>
                         </select>
                         <select name='Price' class='custom-select' id='inputGroupSelect01'>
-                            <option value=" " selected>Venue Price</option>
+                            <option value=" " selected>Montly price</option>
                             <option value='5000'>Up to $5,000</option>
                             <option value='10000'>$5,000 - $10,000</option>
                             <option value='25000'>$10,000 - $25,000</option>

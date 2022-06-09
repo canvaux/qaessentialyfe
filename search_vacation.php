@@ -6,11 +6,14 @@
         background: #fff;
         border: 1px solid #bab5b5;
     }
+
+
+
 </style>
 <div>
     <div style="margin-top: 45px;">
         <div class="col">
-            <form autocomplete="off" action='' method='post'>
+            <form autocomplete="off" action='vacation-rentals.php' method='POST'>
                 <!-- <button class='button button-black-outline' type='submit' data-toggle='modal' data-target='#exampleModalCenter'>Submit</button>
                     </form> -->
                 <!-- <form > -->
@@ -49,6 +52,7 @@
                                     <option value="Mid Century">Mid Century</option>
                                     <option value="Modern">modern</option>
                                     <option value="Spanish">Spanish</option>
+                                    
                                     <option value="Asian/Zen">Asian/Zen</option>
                                     <option value="Oceanfront">Oceanfront</option>
                                     <option value="Greek">Greek</option>
@@ -62,7 +66,7 @@
                                     <option value="Ranch">Ranch</option>
                                 </select>
                                 <select name='Location' class='custom-select' id='inputGroupSelect01'>
-                                    <option value="%" selected>Location</option>
+                                    <option value="" selected>Location</option>
                                     <option value='Beverly Hills'>Beverly Hills</option>
                                     <option value='Bel Air'>Bellair</option>
                                     <option value='Brentwood'>Brentwood</option>
@@ -92,44 +96,25 @@
                                 </select>
                                 <select name="bedroom" id="inputgroupselect01" class="custom-select" >
                                     <option value="" selected># of bedrooms</option>
-                                    <option value="1-2">1-2</option>
-                                    <option value="3-4">3-4</option>
-                                    <option value="4-5">4-5</option>
-                                    <option value="5-6">5-6</option>
-                                    <option value="7-8">7-8</option>
-                                    <option value="8-9">8-9</option>
+                                    <option value="2">1-2</option>
+                                    <option value="4">3-4</option>
+                                    <option value="5">4-5</option>
+                                    <option value="6">5-6</option>
+                                    <option value="8">7-8</option>
+                                    <option value="9">8-9</option>
                                     <option value="10+">10+</option>
                                 </select>
-                                <!-- <select name='View' class='custom-select' id='inputGroupSelect01'>
-                            <option value="('Y','N')" selected>View</option>
-                            <option value="('Y')">Yes</option>
-                            <option value="('N')">No</option>
-                            <option value="('Y','N')" >Doesn't Matter</option>
-                        </select>
-                        <select name='Pool' class='custom-select' id='inputGroupSelect01'>
-                            <option value='("Y","N")' elected>Pool</option>
-                            <option value='("Y")'>Yes</option>
-                            <option value='("N")'>No</option>
-                            <option value='("Y","N")'>Doesn't Matter</option>
-                        </select>
-                        <select name='Parking' class='custom-select' id='inputGroupSelect01'>
-                            <option value="('Y','N')"  selected>Parking</option>
-                            <option value="('Y')">Yes</option>
-                            <option value="('N')">No</option>
-                            <option value="('Y','N')" >Doesn't Matter</option>
-                         </select> -->
-                                <select name='Price' class='custom-select' id='inputGroupSelect01'>
-                                    <option value=" " selected>Nightly Rate</option>
-                                    <option value='2500'>Up to $2,500</option>
-                                    <option value='5000'>$2,500-$5,000</option>
-                                    <option value='10000'>$5,000-$10,000</option>
-                                    <option value='15000'>$10,000-$15,000</option>
-                                    <option value='25000'>$15,000-$25,000</option>
-                                    <option value='50000'>$25,000-$50,000</option>
-                                    <option value='50001'>$50,000 and up</option>
+                                <select name="Price" class="custom-select" id="inputGroupSelect01">
+                                    <option value="" selected>Nightly Rate</option>
+                                    <option value="2500">Up to $2,500</option>
+                                    <option value="5000">$2,500-$5,000</option>
+                                    <option value="10000">$5,000-$10,000</option>
+                                    <option value="15000">$10,000-$15,000</option>
+                                    <option value="25000">$15,000-$25,000</option>
+                                    <option value="50000">$25,000-$50,000</option>
+                                    <option value="50001">$50,000 and up</option>
                                 </select>
-                                <!-- <button class='button button-black-outline' type='submit' data-toggle='modal' data-target='#exampleModalCenter'>Submit</button> -->
-                                <button id="searchBtn" type="submit" class="btn btn-secondary btn-search search-btng" style="font-weight:300; color:white; background:black; margin-left:-4px; width: 115px;"><span class="glyphicon glyphicon-search">&nbsp;</span> <span class="label-icon"><i class="fa-solid fa-magnifying-glass" style="font-size:13px; margin-right:2px; height:24px; margin-top:12px;"></i> Search</span></button>
+                                <button id="searchBtn" type="submit" class="btn btn-secondary btn-search search-btng" name="searchBtn" style="font-weight:300; color:white; background:black; margin-left:-4px; width: 115px;"><span class="glyphicon glyphicon-search">&nbsp;</span> <span class="label-icon"><i class="fa-solid fa-magnifying-glass" style="font-size:13px; margin-right:2px; height:24px; margin-top:12px;"></i> Search</span></button>
                             </div>
                         </div>
                     </div>

@@ -46,6 +46,17 @@
                             <option value='Mediteranean'>Mediteranean</option>
                             <option value='Desert'>Desert</option>
                             <option value='Hi-Tech'>Hi-Tech</option>
+                            <option value="Asian/Zen">Asian/Zen</option>
+                                    <option value="Oceanfront">Oceanfront</option>
+                                    <option value="Greek">Greek</option>
+                                    <option value="Industrial">Industrial</option>
+                                    <option value="Moroccan">Moroccan</option>
+                                    <option value="Old Hollywood">Old Hollywood</option>
+                                    <option value="Bohemian">Bohemian</option>
+                                    <option value="Lakehouse/Cabin">Lakehouse/Cabin</option>
+                                    <option value="Castle/Chateau">Castle/Chateau</option>
+                                    <option value="Exotic/Tropical">Exotic/Tropical</option>
+                                    <option value="Ranch">Ranch</option>
                         </select>
                         <select name='Location' class='custom-select'  id='inputGroupSelect01'>
                             <option value="%" selected>Location</option>
@@ -100,7 +111,7 @@
                             <option value="('Y','N')" >Doesn't Matter</option>
                         </select>
                         <select name='Price' class='custom-select' id='inputGroupSelect01'>
-                            <option value=" " selected>Venue Price</option>
+                            <option value=" " selected>Hourly Price</option>
                             <option value='5000'>Up to $5,000</option>
                             <option value='10000'>$5,000 - $10,000</option>
                             <option value='25000'>$10,000 - $25,000</option>

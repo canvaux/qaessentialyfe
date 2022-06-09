@@ -39,10 +39,10 @@
     <div class="container">
 
       <!-- Why choose us-->
-      <section class="section section-sm section-first bg-default text-md-left">
+      <section class="section section-sm section-first bg-default text-md-left pt-5">
         <div class="container">
           <caption>
-            <h2 class="text-center">About Us</h2>
+            <h2 class="text-center pb-5">About Us</h2>
           </caption>
           <div class="row row-50 justify-content-center align-items-xl-center">
             <div class="col-md-10 col-lg-5 col-xl-6"><img src="images/teamwork.jpg" alt="" width="519" height="364" style="height: 450px !important;" />

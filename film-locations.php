@@ -76,7 +76,7 @@ try {
 
 
         <?php
-        $stmt = $conn->prepare("SELECT * FROM properties WHERE film='on'");
+        $stmt = $conn->prepare("SELECT * FROM properties WHERE film='on' limit 8");
         $stmt->execute();
 
 
@@ -85,8 +85,6 @@ try {
         usort($result, function ($a, $b) {
           return $a['name'] <=> $b['name'];
         });
-
-
         foreach ($result as $key => $value) {
           ?>  
           <div class='w-25 d-none d-sm-block'>

@@ -1,11 +1,10 @@
+
 <?php
 error_reporting(E_ALL ^ E_NOTICE);
 error_reporting(E_ALL ^ E_WARNING);
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-
+$servername = "Localhost";
+$username = "ybuhphmy_prp";
+$password = "5f;F?-4S9{c*";
 session_start();
 
 $previous_result = $_POST['previous_result'];
@@ -40,6 +39,7 @@ try {
   echo "Connection failed: " . $e->getMessage();
 }
 ?>
+
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
 
@@ -146,212 +146,97 @@ try {
     </section>
     <?php
     require('search_vacation.php'); ?>
+ 
     <!-- Card Deck -->
     <div class="card-deck-container">
       <div class="card-deck">
+      <?php
+error_reporting(E_ALL ^ E_WARNING);
 
-        <?php
-
-
-        // echo $Rental . ' ' .$Country . ' ' .$Location . ' ' .$Style . ' ' .$Bedrooms . ' ' . $Pool  . ' ' .$View  . ' ' .$Capacity . ' ' .$Price;  
-        if (isset($wedding_y)) {
-          $sql = $conn->prepare("
-  SELECT * FROM properties WHERE 
-  vacation='on' AND 
-  area LIKE '%" . $_SESSION['Location'] . "%' AND 
-  pool IN " . $_SESSION['Pool'] . " AND 
-  Wedding ='Y' AND
-  guest BETWEEN " . $_SESSION['value'][0] . " AND " . $_SESSION['value'][1] . " 
-  ");
-          $sql->execute();
-          if ($result = $sql->fetch()) {
-            do {
-
-              echo "  
-    <div class='w-25 d-none d-sm-block'>
-      <div class='card mb-4' style='margin-top:20px;'>
-          <form method='post' action='property.php'><a href='contact.php'>
-                  <div class='card-img-caption'>
-                      <img src='https://www.essentialyfe.com/images/properties/$result[image]' class='card-img-top' alt='...'>
-                  </div>
-                  <div class='card-body'>
-                      <h5 class='card-title' style='line-height:20px; padding-bottom:20px;'> $result[name] <br><small class='text-muted' style='font-size:14px; margin-top:-18px;'><br>$result[area]</small></h5>
-                      <hr><br>
-                      <div class='card-text' style='text-align:left; font-size:14px; line-height:25px;'>
-                          <ul>
-                              <li>&#8226 Up to $result[guest] Guests</li>
-                              <li>&#8226 $result[bedroom] Bedrooms</li>
-                              <li>&#8226 $result[bathroom] Baths</li>
-                              <li>&#8226 $result[sqft] Sq. Ft.</li>
-                          </ul>
-                      </div>
-                      <p style='float:right; margin-bottom:5px; margin-top:-22px; font-size:12.5px;'><b>Starting at $result[price] Per Night</b></p>
-                      <input type='text' name='real_id' value='$result[id]' style='display:none;'>
-  
-                  </div><input value='Starting at $result[price] Per Night' type='submit' class='btn btn-purple' style='display:none; width:100%; font-size:14px;'></form>
-      </div></a>
-    </div>";
-            } while ($result = $sql->fetch());
-          } else {
-            echo "<h4 style='margin: revert;'>No Result Found</h4>";
-          }
-        } elseif (isset($wedding_n)) {
-          $sql = $conn->prepare("
-    SELECT * FROM properties WHERE 
-    vacation='on' AND 
-    area LIKE '%" . $_SESSION['Location'] . "%' AND 
-    pool IN " . $_SESSION['Pool'] . " AND 
-    Wedding ='N' AND
-    guest BETWEEN " . $_SESSION['value'][0] . "  AND " . $_SESSION['value'][1] . "
-    ");
-          $sql->execute();
-
-          if ($result = $sql->fetch()) {
-            do {
-
-              echo "  
-      <div class='w-25 d-none d-sm-block'>
+$conn = mysqli_connect("localhost", "ybuhphmy_prp", "5f;F?-4S9{c*", "ybuhphmy_properties");
+if(isset($_POST['searchBtn'])){
+  $Price = $_POST['Price'];
+  $bedroom = $_POST['bedroom'];
+  $Capacity =$_POST['Capacity'];
+  $Location =$_POST['Location'];
+  $House_style =$_POST['House_style'];
+    $mysql =  "SELECT * FROM properties WHERE `bedroom` LIKE '%$bedroom%' and  vacation='on' limit 8";
+    $result = mysqli_query($conn, $mysql);
+    // $row = mysqli_fetch_all($result);
+    while($row = mysqli_fetch_assoc($result)){
+   
+        echo "<div class='w-25 d-none d-sm-block'>
         <div class='card mb-4' style='margin-top:20px;'>
             <form method='post' action='property.php'><a href='contact.php'>
                     <div class='card-img-caption'>
-                        <img src='https://www.essentialyfe.com/images/properties/$result[image]' class='card-img-top' alt='...'>
+                        <img src='https://www.essentialyfe.com/images/properties/$row[file]' class='card-img-top' alt='...'>
                     </div>
                     <div class='card-body'>
-                        <h5 class='card-title' style='line-height:20px; padding-bottom:20px;'> $result[name] <br><small class='text-muted' style='font-size:14px; margin-top:-18px;'><br>$result[area]</small></h5>
+                        <h5 class='card-title' style='line-height:20px; padding-bottom:20px;'> $row[name] <br><small class='text-muted' style='font-size:14px; margin-top:-18px;'><br>$row[area]</small></h5>
                         <hr><br>
                         <div class='card-text' style='text-align:left; font-size:14px; line-height:25px;'>
                             <ul>
-                                <li>&#8226 Up to $result[guest] Guests</li>
-                          
-                                <li>&#8226 $result[bedroom] Bedrooms</li>
-                                <li>&#8226 $result[bathroom] Baths</li>
-                                <li>&#8226 $result[sqft] Sq. Ft.</li>
+                                <li>&#8226 Up to $row[guest] Guests</li>
+                                <li>&#8226 $row[bedroom] Bedrooms</li>
+                                <li>&#8226 $row[bathroom] Baths</li>
+                                <li>&#8226 $row[sqft] Sq. Ft.</li>
                             </ul>
                         </div>
-                        <p style='float:right; margin-bottom:5px; margin-top:-22px; font-size:12.5px;'><b>Starting at $result[price] Per Night</b></p>
-                        <input type='text' name='real_id' value='$result[id]' style='display:none;'>
+                        <p style='float:right; margin-bottom:5px; margin-top:-22px; font-size:12.5px;'><b>Starting at $row[price] Per Night</b></p>
+                        <input type='text' name='real_id' value='$row[id]' style='display:none;'>
     
-                    </div><input value='Starting at $result[price] Per Night' type='submit' class='btn btn-purple' style='display:none; width:100%; font-size:14px;'></form>
+                    </div><input value='Starting at $row[price] Per Night' type='submit' class='btn btn-purple' style='display:none; width:100%; font-size:14px;'></form>
         </div></a>
       </div>";
-            } while ($result = $sql->fetch());
-          } else {
-            echo "<h4 style='margin: revert;'>No Result Found</h4>";
-          }
-        } elseif (isset($search) || isset($previous_result)) {
-          //   $House_style = $_POST['House_style'];
-          // // $Country = $_POST['Country']; 
-          // $Location = $_POST['Location'];
-          // $Capacity = $_POST['Capacity'];
-          // $View  = $_POST['View']; 
-          // $Pool  = $_POST['Pool'];
-          // $Parking  = $_POST['Parking'];
-          // $Price  = $_POST['Price']; 
 
-          if (isset($previous_result)) {
-            $sql = $conn->prepare("
-    SELECT * FROM properties WHERE 
-    vacation='on' AND 
-    area LIKE '%" . $_SESSION['Location'] . "%' AND 
-    pool IN " . $_SESSION['Pool'] . " AND 
-    guest BETWEEN " . $_SESSION['value'][0] . "  AND " . $_SESSION['value'][1] . "
-    ");
-          } else {
-            $_SESSION['search'] = $search;
-            $_SESSION['House_style'] = $House_style;
-            $_SESSION['Location'] = $Location;
-            $_SESSION['value'] = $value;
-            $_SESSION['View'] = $View;
-            $_SESSION['Pool'] = $Pool;
-            $_SESSION['Parking'] = $Parking;
-            $_SESSION['Price'] = $Price;
+    }
+    
+}else{
+  $mysql =  "SELECT * FROM properties WHERE vacation='on' LIMIT 8";
+    $result = mysqli_query($conn, $mysql);
+    // $row = mysqli_fetch_all($result);
+    $newarr = array();
+    foreach ($result as $key => $value) {
+      array_push($newarr , $value);
+    }
 
-            $sql = $conn->prepare("
-    SELECT * FROM properties WHERE 
-    vacation='on' AND 
-    area LIKE '%" . $Location . "%' AND 
-    pool IN " . $Pool . " AND 
-    guest BETWEEN " . $value[0] .  " AND  " . $value[1] . "
-    ");
-          }
-          // print_r($sql);
-          $sql->execute();
-          if ($result = $sql->fetch()) {
-
-            do {
-
-              echo "  
-    <div class='w-25 d-none d-sm-block'>
-      <div class='card mb-4' style='margin-top:20px;'>
-          <form method='post' action='property.php'><a href='contact.php'>
-                  <div class='card-img-caption'>
-                      <img src='https://www.essentialyfe.com/images/properties/$result[file]' class='card-img-top' alt='...'>
-                  </div>
-                  <div class='card-body'>
-                      <h5 class='card-title' style='line-height:20px; padding-bottom:20px;'> $result[name] <br><small class='text-muted' style='font-size:14px; margin-top:-18px;'><br>$result[area]</small></h5>
-                      <hr><br>
-                      <div class='card-text' style='text-align:left; font-size:14px; line-height:25px;'>
-                          <ul>
-                              <li>&#8226 Up to $result[guest] Guests</li>
-                           
-                              <li>&#8226 $result[bedroom] Bedrooms</li>
-                              <li>&#8226 $result[bathroom] Baths</li>
-                              <li>&#8226 $result[sqft] Sq. Ft.</li>
-                          </ul>
-                      </div>
-                      <p style='float:right; margin-bottom:5px; margin-top:-22px; font-size:12.5px;'><b>Starting at $result[price] Per Night</b></p>
-                      <input type='text' name='real_id' value='$result[id]' style='display:none;'>
+    usort($newarr, function ($a, $b) {
+      return $a['name'] <=> $b['name'];
+    });
   
-                  </div><input value='Starting at $result[price] Per Night' type='submit' class='btn btn-purple' style='display:none; width:100%; font-size:14px;'></form>
-      </div></a>
-    </div>";
-            } while ($result = $sql->fetch());
-          } else {
-            echo "<h4 style='margin: revert;'>No Result Found</h4>";
-          }
-          //".number_format($result['price'])."
-        } else {
+    foreach ($newarr as $key => $value) {
+  ?>
+  <div class='w-25 d-none d-sm-block'>
+        <div class='card mb-4' style='margin-top:20px;'>
+            <form method='post' action='property.php'><a href='contact.php'>
+                    <div class='card-img-caption'>
+                        <img src='https://www.essentialyfe.com/images/properties/<?php echo $value['file']; ?>' class='card-img-top' alt='...'>
+                    </div>
+                    <div class='card-body'>
+                        <h5 class='card-title' style='line-height:20px; padding-bottom:20px;'> <?php echo $value['name']; ?> <br><small class='text-muted' style='font-size:14px; margin-top:-18px;'><br><?php echo $value['area']; ?></small></h5>
+                        <hr><br>
+                        <div class='card-text' style='text-align:left; font-size:14px; line-height:25px;'>
+                            <ul>
+                                <li>&#8226 Up to <?php echo $value['guest']; ?> Guests</li>
+                                <li>&#8226 <?php echo $value['bedroom']; ?> Bedrooms</li>
+                                <li>&#8226 <?php echo $value['bathroom']; ?> Baths</li>
+                                <li>&#8226 <?php echo $value['sqft']; ?> Sq. Ft.</li>
+                            </ul>
+                        </div>
+                        <p style='float:right; margin-bottom:5px; margin-top:-22px; font-size:12.5px;'><b>Starting at <?php echo $value['price']; ?> Per Night</b></p>
+                        <input type='text' name='real_id' value='$row[id]' style='display:none;'>
+    
+                    </div><input value='Starting at $row[price] Per Night' type='submit' class='btn btn-purple' style='display:none; width:100%; font-size:14px;'></form>
+        </div></a>
+      </div>
+      
+  <?php 
+    }
+}
 
-          $stmt = $conn->prepare("SELECT * FROM properties WHERE vacation='on' LIMIT 8");
-          $stmt->execute();
-
-          $result = $stmt->fetchAll();
-
-          usort($result, function ($a, $b) {
-            return $a['name'] <=> $b['name'];
-          });
 
 
-          foreach ($result as $key => $value) {
-            ?>  
-            <div class='w-25 d-none d-sm-block'>
-              <div class='card mb-4' style='margin-top:20px;'>
-                  <form method='post' action='property.php'><a href='contact.php'>
-                          <div class='card-img-caption'>
-                              <img src='https://www.essentialyfe.com/images/properties/<?php echo $value['file'] ?>' class='card-img-top' alt='...'>
-                          </div>
-                          <div class='card-body'>
-                              <h5 class='card-title' style='line-height:20px; padding-bottom:20px;'> <?php echo $value['name'] ?> <br><small class='text-muted' style='font-size:14px; margin-top:-18px;'><br><?php $value['area']?></small></h5>
-                              <hr><br>
-                              <div class='card-text' style='text-align:left; font-size:14px; line-height:25px;'>
-                                  <ul>
-                                      <li>&#8226 Up to <?php echo $value['guest']; ?> Guests</li>
-                                  
-                                      <li>&#8226 <?php echo $value['bedroom']; ?> Bedrooms</li>
-                                      <li>&#8226 <?php echo $value['bathroom']; ?> Baths</li>
-                                      <li>&#8226 <?php echo $value['sqft']; ?> Sq. Ft.</li>
-                                  </ul>
-                              </div>
-                              <p style='float:right; margin-bottom:5px; margin-top:-22px; font-size:12.5px;'><b>Starting at <?php echo $value['price']; ?> Per Night</b></p>
-                              <input type='text' name='real_id' value='<?php echo $value['id']; ?>' style='display:none;'>
-          
-                          </div><input value='Starting at <?php echo $value['price']; ?> Per Night' type='submit' class='btn btn-purple' style='display:none; width:100%; font-size:14px;'></form>
-              </div></a>
-            </div>
-            <?php 
-          }
-        }
-        ?>
+?>
 
       </div>
     </div>
@@ -369,6 +254,7 @@ try {
   <script src="js/script.js"></script>
   <script>
     $(document).ready(function() {
+      
       $(function() {
         $('input[name="daterange"]').daterangepicker({
           // "startDate": "21/04/2022",
@@ -396,5 +282,6 @@ try {
   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 </body>
+
 
 </html>

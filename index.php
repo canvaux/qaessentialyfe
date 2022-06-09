@@ -218,7 +218,7 @@ if (isset($pool)) {
     <!--	Our Services-->
     <section class="section section-sm">
       <div class="container">
-        <h3>Our Services</h3>
+        <h3 class="pb-5">Our Services</h3>
         <div class="row row-30">
           <div class="col-sm-6 col-lg-4">
             <article class="box-icon-classic">
@@ -343,8 +343,8 @@ if (isset($pool)) {
                 <div class="counter-classic">
                   <div class="counter-classic-number mt-4"><span class="counter!">4.8</span>
                   </div>
-                  <!-- <h5 class="counter-classic-title">Customer & Homeowner Satisfaction</h5> -->
-                  <h5 class="counter-classic-title ">AVERAGE</h5>
+                  <h5 class="counter-classic-title">Customer Review Rating</h5>
+                  <!-- <h5 class="counter-classic-title ">AVERAGE</h5> -->
                 </div>
               </div>
               <div class="col-sm-6 col-md-5 col-lg-3">
@@ -405,12 +405,12 @@ if (isset($pool)) {
       </div>
     </section> -->
     <div class="container">
-      <div class="row">
+      <div class="row" style="height: 40px;">
         <div class="col mt-4 mb-4">
           <h1 class="text-center slide-logo">AS SEEN IN</h1>
         </div>
       </div>
-      <div class="row justify-content-center mt-0">
+      <div class="row justify-content-center mt-0" style="max-height: 176px;">
         <div class="col-9">
           <div class="main_div">
             <div class="container-fluid">
@@ -442,6 +442,26 @@ if (isset($pool)) {
       </div>
     </div>
     <br>
+    <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLongTitle">This website is under Construction !!!</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!-- <div class="modal-body">
+        
+      </div> -->
+      <!-- <div class="modal-footer"> -->
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
     <!--subscribe newsletetter start-->
     <?php require('footer.php'); ?>
 
@@ -470,10 +490,18 @@ if (isset($pool)) {
       document.querySelector(`.checkInOut`).innerHTML = document.querySelector(`.inputCheckInOut`).value
     })
   </script>
+  <script>
+	$(document).ready(function(){
+		$("#myModal").modal('show');
+	});
+</script>
   <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script> -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <script src="./js/app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  
 </body>
 
 </html>

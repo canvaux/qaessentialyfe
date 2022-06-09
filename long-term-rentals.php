@@ -67,7 +67,7 @@ try {
       <div class="card-deck">
 
         <?php
-        $stmt = $conn->prepare("SELECT * FROM properties WHERE ltfr='on'");
+        $stmt = $conn->prepare("SELECT * FROM properties WHERE ltfr='on' limit 8");
         $stmt->execute();
 
         $result = $stmt->fetchAll();
@@ -95,10 +95,10 @@ try {
                                     <li>&#8226 <?php echo $value['sqft']; ?> Sq. Ft.</li>
                                 </ul>
                             </div>
-                            <p style='float:right; margin-bottom:5px; margin-top:-22px; font-size:12.5px;'><b>Starting at <?php echo $value['price']; ?> Per Night</b></p>
+                            <p style=''><b>Starting at <?php echo $value['price']; ?> Per Night</b></p>
                             <input type='text' name='real_id' value='<?php echo $value['id']; ?>' style='display:none;'>
         
-                        </div><input value='Starting at <?php echo $value['price']; ?> Per Night' type='submit' class='btn btn-purple' style='display:none; width:100%; font-size:14px;'></form>
+                        </div><input class="card-text" value='Starting at <?php echo $value['price']; ?> Per Night' type='submit' class='btn btn-purple' style='display:none; width:100%; font-size:14px;'></form>
             </div></a>
           </div>
           <?php 
