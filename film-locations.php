@@ -73,8 +73,6 @@ try {
     require('search_film.php'); ?>
     <div class="card-deck-container">
       <div class="card-deck">
-
-
         <?php
         $stmt = $conn->prepare("SELECT * FROM properties WHERE film='on' limit 8");
         $stmt->execute();

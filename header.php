@@ -8,6 +8,9 @@
     justify-content: center;
     align-items: center;
   }
+  #header-black{
+    height: 88px;
+  }
 </style>
 <header class="section page-header">
 
@@ -17,7 +20,7 @@
     <nav class="rd-navbar rd-navbar-corporate rd-navbar-original rd-navbar-static" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="106px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
       <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
       <div class="rd-navbar-aside-outer">
-        <div class="rd-navbar-aside">
+        <div class="rd-navbar-aside" id="header-black">
           <!-- RD Navbar Panel-->
           <div class="container">
             <div class="row header-css">
@@ -31,7 +34,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-4 offset-5 " style="display: flex;justify-content: end;">
+              <div class="col-4 offset-5" style="display: flex;justify-content: end;">
                 <div class="rd-navbar-aside-right rd-navbar-collapse" style="color:black;">
                   <ul class="rd-navbar-corporate-contacts">
                     <li>
